@@ -3,7 +3,6 @@ name: Check listings
 on:
   pull_request:
     types: [opened, synchronize, reopened, labeled, unlabeled]
-    paths: ["listings.json", "README.md", "scripts/**", "ignored.json", "watchlist.json", "tests/**"]
   push:
     branches: [main]
     paths: ["listings.json", "README.md", "scripts/**", "ignored.json", "watchlist.json", "tests/**"]

@@ -33,6 +33,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           REPO: ${{ github.repository }}
+          OWNER: ${{ github.repository_owner }}
           STATUS: ${{ steps.check.outputs.status }}
           TITLE: Automation status
         run: |
@@ -42,8 +43,9 @@ jobs:
           last=none
           if [ -n "$number" ]; then
             # Comments come oldest first; paginate so the last one is really the newest.
+            # Only the repo owner's comments count (anyone can comment on a public issue).
             last=$(gh api --paginate "repos/$REPO/issues/$number/comments?per_page=100" \
-              --jq '.[].created_at' | tail -n 1)
+              --jq ".[] | select(.user.login == \"$OWNER\") | .created_at" | tail -n 1)
             last=${last:-none}
           fi
           set +e

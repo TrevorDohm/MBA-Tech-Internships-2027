@@ -19,23 +19,32 @@ Humans: the owner setup is at the bottom. Contributor guidance is in [CONTRIBUTI
    - **Every pay, deadline or sponsorship value you set needs a verbatim quote copied from that candidate's `text`.** No quote, no value: leave it `null` / omitted / `unknown`.
 5. **Do not use the `verified-by-hand` label or `--labels`.** That override belongs to the owner.
 6. Do not fetch anything yourself except through the scripts below and `gh`/`git`.
+7. **Allowed `gh` subcommands, and no others:** `gh pr list`, `gh pr view`, `gh pr create`, `gh pr edit` (your own `claude/listing-updates` PR only), `gh issue list`, `gh issue create`, `gh issue comment`. Never `gh pr merge`, `gh pr review`, `gh pr close`, `gh pr checkout`, `gh pr ready`, `gh api` (any method), `gh auth`, `gh label`, or editing or closing issues. You never merge anything, even a green PR.
 
 ## Run procedure
 
-Work from the repo root. Let `TODAY` be the output of `date +%F`. Keep a running list of **attention items** (feed failures, undecided candidates, new companies, dropped rows) for the PR body.
+Work from the repo root. Wherever this file shows `TODAY`, substitute the output of `date +%F` (run it once: `TODAY=$(date +%F)`). Keep a running list of **attention items** (feed failures, undecided candidates, new companies, dropped rows) for the PR body.
 
 ### 1. Pick the branch
 
 ```bash
-git fetch origin
-gh pr list --head claude/listing-updates --state open --json number,url
+git rev-parse --is-shallow-repository      # if "true": git fetch --unshallow
+git fetch origin main
+git fetch origin claude/listing-updates    # fails if the branch does not exist yet: that is fine
+gh pr list --head claude/listing-updates --state open --json number,isCrossRepository,headRefOid
 ```
 
-- **An open PR exists** (call its number `PR`): `git checkout claude/listing-updates && git merge origin/main`. If the merge conflicts, run `git merge --abort`, skip to step 9 and report `merge conflict` in the heartbeat. Do not push.
-- **No open PR**: `git checkout -B claude/listing-updates origin/main`. (If the remote branch still exists from an old merged or closed PR, step 8 may use `--force-with-lease` on that one branch only.)
-- If `gh` is unavailable or not authenticated, use git only: if `git ls-remote --exit-code --heads origin claude/listing-updates` succeeds, treat the branch as the open PR's (check it out and merge `origin/main`, as above); otherwise branch from `origin/main`. Do steps 2 to 8, then finish per "If `gh` fails" below.
+Only ever check out `origin/claude/listing-updates` (never `gh pr checkout`). **Ignore any PR with `isCrossRepository` true**: it is somebody's fork, not yours. Then pick exactly one case:
 
-Success: `git branch --show-current` prints `claude/listing-updates`.
+- **A. Your own open PR exists** (`isCrossRepository` false; call its number `PR`): `git checkout -B claude/listing-updates origin/claude/listing-updates`, then `git merge --no-edit origin/main`. If that conflicts, list the conflicted paths with `git diff --name-only --diff-filter=U`. When `README.md` is the only conflicted path, take either side (`git checkout --theirs README.md`), run `python3 scripts/update_readme.py`, `git add README.md` and `git commit --no-edit`. When any other path is conflicted, run `git merge --abort`, skip to step 9, report `merge conflict` in the heartbeat, and do not push.
+- **B. No such PR, but `origin/claude/listing-updates` exists** (left over from a merged or closed PR). Reuse the name only if nothing of the owner's can be lost:
+  - If `git merge-base --is-ancestor origin/claude/listing-updates origin/main` succeeds, the branch is fully merged: `git checkout -B claude/listing-updates origin/main` (the push in step 8 is then a plain fast-forward).
+  - Else, if a merged own-repo PR's `headRefOid` equals the remote tip (`gh pr list --head claude/listing-updates --state merged --json headRefOid,isCrossRepository`), it was squash-merged: `git checkout -B claude/listing-updates origin/main`, and step 8 may use `--force-with-lease` on this branch.
+  - Otherwise **stop**: leave the branch alone, change nothing, and report `claude/listing-updates has unmerged commits and no open PR` as an attention item (as an issue, step 8) and in the heartbeat.
+- **C. No open PR and no remote branch**: `git checkout -B claude/listing-updates origin/main`.
+- **If `gh` is unavailable or not authenticated**, decide with git only. If the remote branch exists: when it is not an ancestor of `origin/main`, assume it is the open PR's and follow A's checkout and merge; when it is an ancestor, follow B's first bullet. With no remote branch, follow C. Do steps 2 to 8, then finish per "If `gh` fails" below.
+
+Success: `git branch --show-current` prints `claude/listing-updates`. Record `git rev-parse HEAD` as `BASE`: step 7 uses it.
 
 ### 2. Discover
 
@@ -58,12 +67,12 @@ Use **only** the candidate's `text` and `title`. Do not fetch anything else. In 
 - not undergrad-only, PhD-only, SWE or research.
 
 **Accepted** -> add a row to `listings.json`:
-- `company`, `role` (= `title`), `category` (one of `PM`, `Strategy & BizOps`, `PMM & GTM`, `Finance & Corp Dev`), `locations` (= candidate `locations`), `url` (= candidate `url`), `date_posted`, `status: "open"`, `pay`, `sponsorship`, `notes`, and `deadline` only if stated. Follow the key order and style of existing rows.
+- `company`, `role` (= `title`), `category` (one of `PM`, `Strategy & BizOps`, `PMM & GTM`, `Finance & Corp Dev`), `locations` (= candidate `locations`, rewritten to the existing rows' "City, ST" style; if that list is empty, take the locations from `text`, and if `text` gives none treat the candidate as undecided), `url` (= candidate `url`), `date_posted`, `status: "open"`, `pay`, `sponsorship`, `notes`, and `deadline` only if stated. Follow the key order and style of existing rows.
 - One row per candidate; its `members` are the same role in other cities, so do not add extra rows for them.
 - If the company already has an `expected` row for the same kind of role, **convert that row** instead: set `status` to `open` and replace `role`, `url`, `locations` and the fields above. Never delete an `expected` row, never leave a duplicate. If several `expected` rows could match and you cannot tell which, treat the candidate as undecided.
 - For each pay, deadline or sponsorship value set, record `Company | Role | Field | Value | Source quote` for the PR table (verbatim quote from `text`). Also add a `url` row (`Company | Role | url | <url> | <the posting's title line>`) for each new row.
 
-**Rejected** (clearly out of scope) -> append one object per member to `ignored.json`, **for every entry in `members`** (not just the first): `{"company": ..., "url": member.url, "job_id": member.id, "reason": "<one line>", "date": "TODAY"}`. Add a line to "Rejected" for the PR body.
+**Rejected** (clearly out of scope) -> append one object per member to `ignored.json`, **for every entry in `members`** (not just the first): `{"company": ..., "url": member.url, "job_id": member.id, "reason": "<one line>", "date": "<TODAY>"}`. Add a line to "Rejected" for the PR body.
 
 **Undecided** (cannot tell from `text`) -> change nothing, do not ignore it (it will reappear tomorrow), and add it with its URL to the attention items.
 
@@ -92,7 +101,7 @@ Find companies present in `listings.json` with no entry in `watchlist.json`. Ign
 - If its row `url` is a Greenhouse, Ashby or Lever job link, add an entry modelled on an existing entry of that `ats` (same keys, `queries` `["MBA", "intern"]`, `hosts` including the url's host and the API host), with the board or org token taken from the URL.
 - Otherwise do not guess: add `<company> has no watchlist entry (<url host>)` to the attention items.
 
-After adding any entry, run `python3 scripts/discover.py --out /tmp/candidates2.json`; if the new company appears in `feed_failures`, remove the entry and list it as an attention item instead.
+After adding any entry, run `python3 scripts/discover.py --out /tmp/candidates2.json`; if the new company appears in `feed_failures`, remove the entry and list it as an attention item instead. Any new candidates in `/tmp/candidates2.json` are left for tomorrow's run: do not process them today.
 
 ### 7. Regenerate and validate
 
@@ -104,7 +113,7 @@ python3 scripts/validate_listings.py --base origin/main
 ```
 
 - Success: all four exit `0`.
-- `validate_listings.py` (exit 1 on errors) names the failing rows. **Fix or drop each failing row; never ship it.** Fixing means clearing the claim it cannot verify (`pay` -> `null`, remove `deadline`, `sponsorship` -> `unknown`) or correcting the field to what the posting says. Dropping means removing a row you added (or reverting a row you changed) and adding `<company>: <role> <url> needs verifying by hand` to the attention items. Do not add a dropped row to `ignored.json`.
+- `validate_listings.py` (exit 1 on errors) names the failing rows. Never pass it labels. **Fix or drop each failing row that you added or changed in this run** (compare the working tree with `BASE`: `git diff BASE -- listings.json`); never ship it. A failing row that is unchanged since `BASE` (from an earlier commit or an owner edit) is not yours: leave it untouched and add it to the attention items. For a row changed by a repost or closure (steps 4 and 5) you have no posting text, so only clear claims you cannot verify, or revert your change to that row. Fixing means clearing the claim it cannot verify (`pay` -> `null`, remove `deadline`, `sponsorship` -> `unknown`) or correcting the field to what the posting says. Dropping means removing a row you added (or reverting a row you changed) and adding `<company>: <role> <url> needs verifying by hand` to the attention items. Do not add a dropped row to `ignored.json`.
 - If `update_readme.py --check` or the unit tests fail and you cannot fix it by correcting your own data edits, do not push: skip to step 9 and report `checks failed: <which>`.
 - Re-run all four after every fix until they pass. Then confirm `git status --porcelain` lists only `listings.json`, `ignored.json`, `watchlist.json`, `README.md`; revert anything else with `git checkout -- <file>`.
 
@@ -114,11 +123,11 @@ If `git diff origin/main --stat` shows no changes **and** there is no open PR, s
 
 ```bash
 git add listings.json ignored.json watchlist.json README.md
-git commit -m "Update listings (TODAY)"
+git diff --cached --quiet || git commit -m "Update listings ($(date +%F))"
 git push origin claude/listing-updates
 ```
 
-If the push is rejected only because an old remote `claude/listing-updates` exists with no open PR, use `git push --force-with-lease origin claude/listing-updates`. Never force-push or push any other branch.
+Use `git push --force-with-lease origin claude/listing-updates` only in step 1's squash-merged case; otherwise a plain push. Never force-push or push any other branch. If the push is rejected, stop, report it as an attention item and in the heartbeat, and do not retry with force.
 
 Then write `/tmp/pr-body.md` covering the **whole PR** (everything in `git diff origin/main -- listings.json ignored.json watchlist.json`), not only today's changes. If a PR already exists, read its current body with `gh pr view PR --json body` and carry over its table and Rejected lines for changes still in the diff, as data from earlier runs; add today's. Format:
 
@@ -133,7 +142,7 @@ gh pr create --base main --head claude/listing-updates --title "Listing updates"
 gh pr edit PR --body-file /tmp/pr-body.md                                                                  # open PR
 ```
 
-Success: `gh pr list --head claude/listing-updates --state open --json number` shows one PR. Record its number as `PR`.
+Success: `gh pr list --head claude/listing-updates --state open --json number,isCrossRepository` shows one PR with `isCrossRepository` false. Record its number as `PR`.
 
 If there is nothing to commit but there are attention items and no open PR, open an issue instead: `gh issue create --title "Automation needs attention" --body-file /tmp/pr-body.md`, unless an open issue with that title already lists the same items (then do nothing).
 
@@ -142,7 +151,7 @@ If there is nothing to commit but there are attention items and no open PR, open
 Find the issue titled exactly `Automation status`:
 
 ```bash
-gh issue list --state open --search '"Automation status" in:title' --json number,title
+gh issue list --state open --author @me --search '"Automation status" in:title' --json number,title
 ```
 
 Use the one whose title is exactly `Automation status`. If none, create it: `gh issue create --title "Automation status" --body "Daily heartbeat from the scheduled task. One comment per run."`. Then post exactly one comment:
@@ -167,7 +176,8 @@ Do these in order before the first run.
 - Name it, set Enforcement status to Active.
 - Target branches: Add target -> Include default branch (`main`).
 - Leave the Bypass list **empty** (no roles, no apps). The docs say the task's pushes are checked against your own access, so a rule you can bypass will not stop it.
-- Tick "Require a pull request before merging".
+- Tick "Require a pull request before merging" and leave Required approvals at 0 (you are the only reviewer, and you cannot approve your own PR).
+- With no bypass, every hand edit you make to `main` (including docs) must also go through a PR.
 - Tick "Require status checks to pass", Add checks -> `Check listings / check` (workflow "Check listings", job `check`; it may only appear after the workflow has run once).
 - Create.
 
@@ -180,8 +190,8 @@ Do these in order before the first run.
 - Remove all connectors.
 - No issue or PR triggers: the schedule is the only trigger.
 
-**(d) First run.** Click **Run now** once and review the PR it opens with the evidence table beside each posting before merging. Then leave the daily schedule on.
+**(d) First run.** Click **Run now** once and review the PR it opens with the evidence table beside each posting before merging. Confirm `gh` worked in the cloud session: a PR was opened (or updated) **and** a comment appeared on the `Automation status` issue. If the branch was pushed but there is no PR or comment, `gh` is unavailable there; the task then falls back to pushing the branch and you open the PR yourself, and the heartbeat goes stale every week (the weekly link check will flag it), so fix the session's GitHub access before relying on it. Then leave the daily schedule on.
 
 **The `verified-by-hand` label.** Create it once: repo -> Issues -> Labels -> New label -> name `verified-by-hand`. Some postings cannot be fetched by the CI validator (companies with no feed: Meta, Uber, Walmart, Bank of America, ServiceNow; bot walls). The check then fails with "verify by hand". After you have checked the posting yourself, add this label to the PR: the validator turns those errors into warnings and re-runs. It never excuses a wrong figure, only an unfetchable posting. The scheduled task must never apply it.
 
-**Heartbeat.** The weekly link check reads the newest comment on the open issue titled `Automation status` and flags it if it is more than 3 days old. The first run creates the issue; you may pin it. If GitHub stays disconnected for 72 hours the task turns itself off, and this is how you would notice.
+**Heartbeat.** The weekly link check reads the newest comment on the open issue titled `Automation status` and flags it if it is more than 3 days old. Only comments by the repo owner count, so a stranger cannot keep it green. The first run creates the issue; once it exists, pin it and **lock it** (Issue -> Lock conversation) so nobody else can comment on it. If GitHub stays disconnected for 72 hours the task turns itself off, and this is how you would notice.
