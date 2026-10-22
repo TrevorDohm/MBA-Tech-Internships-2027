@@ -35,11 +35,11 @@ class CheckRowTests(unittest.TestCase):
         self.assertEqual(check(row(pay="$9,400–$11,100/mo"), "$9,400-$11,100 per month"), [])
 
     def test_pay_k_suffix_currency_and_words(self):
-        self.assertEqual(check(row(pay="$169K"), "salary 169,000 per year"), [])
+        self.assertEqual(check(row(pay="$169K"), "salary $169,000 per year"), [])
         self.assertEqual(check(row(pay="€72,000/yr"), "EUR 72000"), [])
         self.assertEqual(check(row(pay="$63/hr annualized"), "$63.00 hourly"), [])
-        self.assertEqual(check(row(pay="$1–$2 (posting also lists $29.5–$56.5)"), "1 2 29.5 56.5"), [])
-        self.assertTrue(check(row(pay="$1–$2 (posting also lists $29.5–$56.5)"), "1 2 29.5"))
+        self.assertEqual(check(row(pay="$1–$2 (posting also lists $29.5–$56.5)"), "$1 - $2; $29.5 - $56.5"), [])
+        self.assertTrue(check(row(pay="$1–$2 (posting also lists $29.5–$56.5)"), "$1 - $2; $29.5"))
         self.assertTrue(check(row(pay="$63"), "$163 or $630"))
 
     def test_deadline_formats(self):
@@ -54,8 +54,48 @@ class CheckRowTests(unittest.TestCase):
     def test_sponsorship_needs_wording(self):
         self.assertEqual(check(row(sponsorship="no"), "will not require work visa sponsorship"), [])
         self.assertEqual(check(row(sponsorship="no"), "not eligible for immigration sponsorship"), [])
-        self.assertEqual(check(row(sponsorship="yes"), "must be authorized to work"), [])
         self.assertTrue(check(row(sponsorship="no"), "a great internship"))
+
+    def test_sponsorship_polarity(self):
+        self.assertTrue(check(row(sponsorship="yes"), "We will not sponsor visas"))
+        self.assertEqual(check(row(sponsorship="yes"), "We sponsor H-1B visas for interns"), [])
+        self.assertEqual(check(row(sponsorship="no"), "will not require work visa sponsorship"), [])
+        self.assertEqual(check(row(sponsorship="no"), "not be eligible for immigration sponsorship"), [])
+        self.assertEqual(check(row(sponsorship="no"), "authorized to work without the need for current or future company sponsorship"), [])
+        self.assertTrue(check(row(sponsorship="no"), "We offer visa sponsorship"))
+        for claim in ("yes", "no"):
+            self.assertTrue(check(row(sponsorship=claim), "legally authorized to work in the US"))
+
+    def test_pay_false_pass_probes(self):
+        self.assertTrue(check(row(pay="$40/hr"), "40 hours per week"))
+        self.assertTrue(check(row(pay="$63–$65/hr"), "Req ID 63; suite 65"))
+        self.assertTrue(check(row(pay="$63/hr"), "salary $63K"))
+        self.assertTrue(check(row(pay="£50/hr"), "$50 USD"))
+        self.assertEqual(check(row(pay="$37–$50/hr"), "$37.00 - $50.00"), [])
+        self.assertEqual(check(row(pay="$47–$57/hr"), "$47 - 57 /hr"), [])
+        self.assertEqual(check(row(pay="$38–$94/hr"), "38 USD - 94 USD"), [])
+        self.assertEqual(check(row(pay="$55/hr"), "rate is $55- $55."), [])
+
+    def test_pay_without_figures_errors(self):
+        errs = check(row(pay="competitive"), "anything")
+        self.assertTrue(errs and "no figures" in errs[0])
+
+    def test_numeric_dates_are_us_order(self):
+        self.assertTrue(check(row(deadline="2026-01-11"), "apply by 11/1/2026"))
+        self.assertEqual(check(row(deadline="2026-11-01"), "apply by 11/1/2026"), [])
+        self.assertEqual(check(row(deadline="2026-11-20"), "apply by 20/11/2026"), [])
+
+    def test_utc_end_date_is_local_evening(self):
+        self.assertEqual(check(row(deadline="2026-10-31"), "Posting end date: 2026-11-01T03:59:00+00:00"), [])
+        self.assertTrue(check(row(deadline="2026-10-31"), "Posting end date: 2026-11-01T15:59:00+00:00"))
+
+    def test_malformed_deadline_is_an_error(self):
+        errs = check(row(deadline="Nov 1"), "anything")
+        self.assertTrue(errs and "YYYY-MM-DD" in errs[0])
+
+    def test_bad_host_skips_claim_checks(self):
+        errs = check(row(url="https://evil.example.org/1", pay="$63"), None)
+        self.assertEqual(len(errs), 1)
 
     def test_url_host_must_be_known(self):
         errs = check(row(url="https://evil.example.org/1"), None)
@@ -110,7 +150,7 @@ class ChangedRowsTests(unittest.TestCase):
 
 
 class MainTests(unittest.TestCase):
-    def run_main(self, base, head, fetch=None):
+    def run_main(self, base, head, fetch=None, labels=""):
         with tempfile.TemporaryDirectory() as d:
             p = Path(d) / "listings.json"
             p.write_text(json.dumps(head))
@@ -120,13 +160,30 @@ class MainTests(unittest.TestCase):
                         {"company": "Acme", "hosts": ["jobs.example.com"], "ats": "greenhouse"}]), \
                     mock.patch.object(v, "fetch_text", side_effect=fetch or (lambda *a, **k: None)), \
                     redirect_stdout(buf):
-                code = v.main(["--base", "x", "--listings", str(p)])
+                code = v.main(["--base", "x", "--listings", str(p), "--labels", labels])
         return code, buf.getvalue()
 
     def test_no_changed_rows(self):
         code, out = self.run_main([row()], [row()])
         self.assertEqual(code, 0)
         self.assertIn("no rows changed", out.lower())
+
+    def test_override_label_downgrades_unfetchable_only(self):
+        head = [row(pay="$63/hr")]
+        code, out = self.run_main([], head, labels="foo, verified-by-hand")
+        self.assertEqual(code, 0)
+        self.assertIn("Warnings", out)
+        self.assertIn("verify by hand", out)
+        code, _ = self.run_main([], head, labels="foo")
+        self.assertEqual(code, 1)
+        code, _ = self.run_main([], head, fetch=lambda *a, **k: "$70", labels="verified-by-hand")
+        self.assertEqual(code, 1)
+
+    def test_bad_host_is_not_fetched(self):
+        calls = []
+        code, _ = self.run_main([], [row(url="https://evil.example.org/1", pay="$63")],
+                                fetch=lambda *a, **k: calls.append(a))
+        self.assertEqual((code, calls), (1, []))
 
     def test_failure_exits_1(self):
         code, out = self.run_main([], [row(pay="$63/hr")], fetch=lambda *a, **k: "pay $70")
@@ -140,6 +197,16 @@ class MainTests(unittest.TestCase):
 
 class FetchTextTests(unittest.TestCase):
     ENTRIES = [{"company": "Acme", "ats": "greenhouse", "board": "acme", "hosts": ["h"]}]
+
+    def test_workday_company_with_public_radancy_url(self):
+        entries = [{"company": "Cap", "ats": "workday", "host": "cap.wd12.myworkdayjobs.com",
+                    "tenant": "t", "site": "s", "hosts": ["cap.wd12.myworkdayjobs.com", "www.cap.com"]}]
+        url = "https://www.cap.com/job/mclean/x/1732/101906667360"
+        with mock.patch.object(v, "posting_text", return_value="T") as pt:
+            self.assertEqual(v.fetch_text("Cap", url, entries), "T")
+            e = pt.call_args[0][0]
+            self.assertEqual((e["ats"], e["host"]), ("radancy", "www.cap.com"))
+            self.assertEqual(pt.call_args[0][1]["id"], "101906667360")
 
     def test_paths(self):
         url = "https://h/x?gh_jid=123"

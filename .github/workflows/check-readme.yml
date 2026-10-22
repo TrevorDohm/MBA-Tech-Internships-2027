@@ -23,4 +23,6 @@ jobs:
         run: python3 -m unittest discover tests
       - name: Verify changed rows against their postings
         if: github.event_name == 'pull_request'
-        run: python3 scripts/validate_listings.py --base origin/${{ github.base_ref }}
+        env:
+          LABELS: ${{ join(github.event.pull_request.labels.*.name, ',') }}
+        run: python3 scripts/validate_listings.py --base origin/${{ github.base_ref }} --labels "$LABELS"
