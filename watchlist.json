@@ -582,8 +582,7 @@
     "host": "jpmc.fa.oraclecloud.com",
     "site_number": "CX_1001",
     "queries": [
-      "MBA",
-      "intern"
+      "MBA"
     ],
     "hosts": [
       "jpmc.fa.oraclecloud.com"
@@ -767,8 +766,7 @@
     "company": "TikTok",
     "ats": "tiktok",
     "queries": [
-      "MBA",
-      "intern"
+      "MBA"
     ],
     "hosts": [
       "api.lifeattiktok.com",
