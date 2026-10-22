@@ -1,0 +1,799 @@
+[
+  {
+    "company": "GoFundMe",
+    "ats": "greenhouse",
+    "board": "gofundme",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "boards-api.greenhouse.io",
+      "job-boards.greenhouse.io"
+    ]
+  },
+  {
+    "company": "Robinhood",
+    "ats": "greenhouse",
+    "board": "robinhood",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "boards-api.greenhouse.io",
+      "boards.greenhouse.io"
+    ]
+  },
+  {
+    "company": "Sony Interactive Entertainment (PlayStation)",
+    "ats": "greenhouse",
+    "board": "usinternshipspubliccareerssite",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "boards-api.greenhouse.io",
+      "job-boards.greenhouse.io"
+    ]
+  },
+  {
+    "company": "Vannevar Labs",
+    "ats": "greenhouse",
+    "board": "vannevarlabs",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "boards-api.greenhouse.io",
+      "job-boards.greenhouse.io"
+    ]
+  },
+  {
+    "company": "Gusto",
+    "ats": "greenhouse",
+    "board": "gusto",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "boards-api.greenhouse.io",
+      "job-boards.greenhouse.io"
+    ]
+  },
+  {
+    "company": "Epic Games",
+    "ats": "greenhouse",
+    "board": "epicgames",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "boards-api.greenhouse.io",
+      "epicgames.com"
+    ]
+  },
+  {
+    "company": "Waymo",
+    "ats": "greenhouse",
+    "board": "waymo",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "boards-api.greenhouse.io",
+      "careers.withwaymo.com"
+    ]
+  },
+  {
+    "company": "Duolingo",
+    "ats": "greenhouse",
+    "board": "duolingo",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "boards-api.greenhouse.io",
+      "careers.duolingo.com"
+    ]
+  },
+  {
+    "company": "C3 AI",
+    "ats": "greenhouse",
+    "board": "c3iot",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "boards-api.greenhouse.io",
+      "c3.ai"
+    ]
+  },
+  {
+    "company": "Airbnb",
+    "ats": "greenhouse",
+    "board": "airbnb",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "boards-api.greenhouse.io",
+      "careers.airbnb.com"
+    ]
+  },
+  {
+    "company": "Databricks",
+    "ats": "greenhouse",
+    "board": "databricks",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "boards-api.greenhouse.io",
+      "www.databricks.com"
+    ]
+  },
+  {
+    "company": "Lyft",
+    "ats": "greenhouse",
+    "board": "lyft",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "boards-api.greenhouse.io",
+      "www.lyft.com"
+    ]
+  },
+  {
+    "company": "Toast",
+    "ats": "greenhouse",
+    "board": "toast",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "boards-api.greenhouse.io",
+      "careers.toasttab.com"
+    ]
+  },
+  {
+    "company": "Cloudflare",
+    "ats": "greenhouse",
+    "board": "cloudflare",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "boards-api.greenhouse.io",
+      "www.cloudflare.com"
+    ]
+  },
+  {
+    "company": "Okta",
+    "ats": "greenhouse",
+    "board": "okta",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "boards-api.greenhouse.io",
+      "www.okta.com"
+    ]
+  },
+  {
+    "company": "Chime",
+    "ats": "greenhouse",
+    "board": "chime",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "boards-api.greenhouse.io",
+      "careers.chime.com"
+    ]
+  },
+  {
+    "company": "Dropbox",
+    "ats": "greenhouse",
+    "board": "dropbox",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "boards-api.greenhouse.io",
+      "www.dropbox.jobs"
+    ]
+  },
+  {
+    "company": "Roblox",
+    "ats": "greenhouse",
+    "board": "roblox",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "boards-api.greenhouse.io",
+      "careers.roblox.com"
+    ]
+  },
+  {
+    "company": "Teamworks",
+    "ats": "ashby",
+    "org": "teamworks",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "api.ashbyhq.com",
+      "jobs.ashbyhq.com"
+    ]
+  },
+  {
+    "company": "Snowflake",
+    "ats": "ashby",
+    "org": "snowflake",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "api.ashbyhq.com",
+      "careers.snowflake.com"
+    ]
+  },
+  {
+    "company": "Spotify",
+    "ats": "lever",
+    "org": "spotify",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "api.lever.co",
+      "www.lifeatspotify.com"
+    ]
+  },
+  {
+    "company": "Adobe",
+    "ats": "workday",
+    "host": "adobe.wd5.myworkdayjobs.com",
+    "tenant": "adobe",
+    "site": "external_experienced",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "adobe.wd5.myworkdayjobs.com"
+    ]
+  },
+  {
+    "company": "Blue Origin",
+    "ats": "workday",
+    "host": "blueorigin.wd5.myworkdayjobs.com",
+    "tenant": "blueorigin",
+    "site": "BlueOrigin",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "blueorigin.wd5.myworkdayjobs.com"
+    ]
+  },
+  {
+    "company": "General Motors",
+    "ats": "workday",
+    "host": "generalmotors.wd5.myworkdayjobs.com",
+    "tenant": "generalmotors",
+    "site": "Careers_GM",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "generalmotors.wd5.myworkdayjobs.com"
+    ],
+    "notes": "Search ignores offset and returns the same page."
+  },
+  {
+    "company": "HP",
+    "ats": "workday",
+    "host": "hp.wd5.myworkdayjobs.com",
+    "tenant": "hp",
+    "site": "ExternalCareerSite",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "hp.wd5.myworkdayjobs.com"
+    ]
+  },
+  {
+    "company": "Intel",
+    "ats": "workday",
+    "host": "intel.wd1.myworkdayjobs.com",
+    "tenant": "intel",
+    "site": "External",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "intel.wd1.myworkdayjobs.com"
+    ]
+  },
+  {
+    "company": "Micron",
+    "ats": "workday",
+    "host": "micron.wd1.myworkdayjobs.com",
+    "tenant": "micron",
+    "site": "External",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "micron.wd1.myworkdayjobs.com"
+    ]
+  },
+  {
+    "company": "Nike",
+    "ats": "workday",
+    "host": "nike.wd1.myworkdayjobs.com",
+    "tenant": "nike",
+    "site": "nke",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "nike.wd1.myworkdayjobs.com"
+    ]
+  },
+  {
+    "company": "Salesforce",
+    "ats": "workday",
+    "host": "salesforce.wd12.myworkdayjobs.com",
+    "tenant": "salesforce",
+    "site": "External_Career_Site",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "salesforce.wd12.myworkdayjobs.com"
+    ]
+  },
+  {
+    "company": "Autodesk",
+    "ats": "workday",
+    "host": "autodesk.wd1.myworkdayjobs.com",
+    "tenant": "autodesk",
+    "site": "Ext",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "autodesk.wd1.myworkdayjobs.com"
+    ]
+  },
+  {
+    "company": "PayPal",
+    "ats": "workday",
+    "host": "paypal.wd1.myworkdayjobs.com",
+    "tenant": "paypal",
+    "site": "jobs",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "paypal.wd1.myworkdayjobs.com"
+    ]
+  },
+  {
+    "company": "Visa",
+    "ats": "workday",
+    "host": "visa.wd5.myworkdayjobs.com",
+    "tenant": "visa",
+    "site": "Visa_Early_Careers",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "visa.wd5.myworkdayjobs.com"
+    ]
+  },
+  {
+    "company": "NVIDIA",
+    "ats": "workday",
+    "host": "nvidia.wd5.myworkdayjobs.com",
+    "tenant": "nvidia",
+    "site": "NVIDIAExternalCareerSite",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "nvidia.wd5.myworkdayjobs.com"
+    ]
+  },
+  {
+    "company": "Cisco",
+    "ats": "workday",
+    "host": "cisco.wd5.myworkdayjobs.com",
+    "tenant": "cisco",
+    "site": "Cisco_Careers",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "careers.cisco.com",
+      "cisco.wd5.myworkdayjobs.com"
+    ]
+  },
+  {
+    "company": "CrowdStrike",
+    "ats": "workday",
+    "host": "crowdstrike.wd5.myworkdayjobs.com",
+    "tenant": "crowdstrike",
+    "site": "crowdstrikecareers",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "crowdstrike.wd5.myworkdayjobs.com",
+      "www.crowdstrike.com"
+    ]
+  },
+  {
+    "company": "Disney",
+    "ats": "workday",
+    "host": "disney.wd5.myworkdayjobs.com",
+    "tenant": "disney",
+    "site": "disneycareer",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "disney.wd5.myworkdayjobs.com",
+      "www.disneycareers.com"
+    ]
+  },
+  {
+    "company": "Comcast",
+    "ats": "workday",
+    "host": "comcast.wd115.myworkdayjobs.com",
+    "tenant": "comcast",
+    "site": "Comcast_Careers",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "comcast.wd115.myworkdayjobs.com",
+      "jobs.comcast.com"
+    ]
+  },
+  {
+    "company": "Warner Bros. Discovery",
+    "ats": "workday",
+    "host": "warnerbros.wd5.myworkdayjobs.com",
+    "tenant": "warnerbros",
+    "site": "global",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "careers.wbd.com",
+      "warnerbros.wd5.myworkdayjobs.com"
+    ]
+  },
+  {
+    "company": "Bose",
+    "ats": "workday",
+    "host": "boseallaboutme.wd503.myworkdayjobs.com",
+    "tenant": "boseallaboutme",
+    "site": "Bose_Careers",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "boseallaboutme.wd503.myworkdayjobs.com",
+      "careers.bose.com"
+    ]
+  },
+  {
+    "company": "Snap",
+    "ats": "workday",
+    "host": "snapchat.wd1.myworkdayjobs.com",
+    "tenant": "snapchat",
+    "site": "snap",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "careers.snap.com",
+      "snapchat.wd1.myworkdayjobs.com"
+    ]
+  },
+  {
+    "company": "Expedia Group",
+    "ats": "workday",
+    "host": "expedia.wd108.myworkdayjobs.com",
+    "tenant": "expedia",
+    "site": "search",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "careers.expediagroup.com",
+      "expedia.wd108.myworkdayjobs.com"
+    ]
+  },
+  {
+    "company": "Capital One",
+    "ats": "workday",
+    "host": "capitalone.wd12.myworkdayjobs.com",
+    "tenant": "capitalone",
+    "site": "Capital_One",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "capitalone.wd12.myworkdayjobs.com",
+      "www.capitalonecareers.com"
+    ]
+  },
+  {
+    "company": "JPMorgan Chase",
+    "ats": "oracle",
+    "host": "jpmc.fa.oraclecloud.com",
+    "site_number": "CX_1001",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "jpmc.fa.oraclecloud.com"
+    ]
+  },
+  {
+    "company": "Macy's",
+    "ats": "oracle",
+    "host": "ebwh.fa.us2.oraclecloud.com",
+    "site_number": "CX_1001",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "ebwh.fa.us2.oraclecloud.com"
+    ]
+  },
+  {
+    "company": "Vertiv",
+    "ats": "oracle",
+    "host": "egup.fa.us2.oraclecloud.com",
+    "site_number": "CX",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "egup.fa.us2.oraclecloud.com"
+    ]
+  },
+  {
+    "company": "American Express",
+    "ats": "oracle",
+    "host": "egug.fa.us2.oraclecloud.com",
+    "site_number": "CX_1",
+    "queries": [
+      "intern"
+    ],
+    "hosts": [
+      "careers.americanexpress.com",
+      "egug.fa.us2.oraclecloud.com"
+    ]
+  },
+  {
+    "company": "Dell Technologies",
+    "ats": "oracle",
+    "host": "enterpriseplatform.dell.com",
+    "site_number": "CX_1001",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "enterpriseplatform.dell.com",
+      "jobs.dell.com"
+    ]
+  },
+  {
+    "company": "Microsoft",
+    "ats": "eightfold",
+    "host": "apply.careers.microsoft.com",
+    "domain": "microsoft.com",
+    "queries": [
+      "MBA internship"
+    ],
+    "hosts": [
+      "apply.careers.microsoft.com",
+      "careers.microsoft.com"
+    ]
+  },
+  {
+    "company": "Qualcomm",
+    "ats": "eightfold",
+    "host": "careers.qualcomm.com",
+    "domain": "qualcomm.com",
+    "queries": [
+      "internship 2027"
+    ],
+    "hosts": [
+      "careers.qualcomm.com"
+    ]
+  },
+  {
+    "company": "Starbucks",
+    "ats": "eightfold",
+    "host": "apply.starbucks.com",
+    "domain": "starbucks.com",
+    "queries": [
+      "MBA internship"
+    ],
+    "hosts": [
+      "apply.starbucks.com",
+      "careers.starbucks.com"
+    ]
+  },
+  {
+    "company": "AMD",
+    "ats": "jibe",
+    "host": "careers.amd.com",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "careers.amd.com"
+    ]
+  },
+  {
+    "company": "Rivian",
+    "ats": "jibe",
+    "host": "careers.rivian.com",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "careers.rivian.com"
+    ]
+  },
+  {
+    "company": "Intuit",
+    "ats": "radancy",
+    "host": "jobs.intuit.com",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "jobs.intuit.com"
+    ],
+    "notes": "Some listings link intuit.avature.net."
+  },
+  {
+    "company": "Electronic Arts",
+    "ats": "avature",
+    "host": "jobs.ea.com",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "jobs.ea.com"
+    ]
+  },
+  {
+    "company": "Amazon",
+    "ats": "amazon",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "www.amazon.jobs"
+    ]
+  },
+  {
+    "company": "Google",
+    "ats": "google",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "www.google.com"
+    ]
+  },
+  {
+    "company": "Apple",
+    "ats": "apple",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "jobs.apple.com"
+    ]
+  },
+  {
+    "company": "TikTok",
+    "ats": "tiktok",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "api.lifeattiktok.com",
+      "lifeattiktok.com"
+    ]
+  },
+  {
+    "company": "IBM",
+    "ats": "ibm",
+    "queries": [
+      "intern"
+    ],
+    "hosts": [
+      "careers.ibm.com",
+      "www-api.ibm.com"
+    ]
+  },
+  {
+    "company": "Atlassian",
+    "ats": "atlassian",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "www.atlassian.com"
+    ]
+  }
+]
