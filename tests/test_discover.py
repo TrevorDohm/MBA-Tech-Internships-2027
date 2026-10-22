@@ -164,11 +164,11 @@ class DiscoverTests(unittest.TestCase):
         f = Feeds({"Acme": [job("1111111", "Strategy Intern"), job("9999999", "Strategy Intern")]})
         r = f.run([W], listings=[row("https://x.com/jobs/1111111", role="Strategy Intern")])
         self.assertEqual(r["reposts"], [])
-        self.assertEqual(len(r["candidates"]), 1)
+        self.assertEqual(r["candidates"], [])  # a sibling of a listed row, not a repost
         f = Feeds({"Acme": [job("9999999", "Strategy Intern")]})
         r = f.run([W], listings=[row("https://x.com/jobs/1111111", role="Strategy Intern", status="closed")])
         self.assertEqual(r["reposts"], [])
-        self.assertEqual(len(r["candidates"]), 1)
+        self.assertEqual(r["candidates"], [])
 
     def test_landing_page_row_does_not_crash_and_matches_by_url(self):
         f = Feeds({"Acme": [job("5555555", "Strategy Intern", url="https://x.com/careers/")]})
@@ -182,7 +182,31 @@ class DiscoverTests(unittest.TestCase):
         r = f.run([W])
         self.assertEqual(len(r["candidates"]), 1)
         self.assertEqual(r["candidates"][0]["locations"], ["Seattle, WA", "Austin, TX"])
-        self.assertEqual(set(r["candidates"][0]), {"company", "title", "url", "job_id", "locations", "text"})
+        self.assertEqual(set(r["candidates"][0]), {"company", "title", "url", "job_id", "locations", "members", "text"})
+        self.assertEqual(r["candidates"][0]["members"],
+                         [{"id": "1111111", "url": "https://x.com/jobs/1111111", "location": "Seattle, WA"},
+                          {"id": "2222222", "url": "https://x.com/jobs/2222222", "location": "Austin, TX"}])
+
+    def test_listed_row_suppresses_sibling_city_postings(self):
+        f = Feeds({"Acme": [job("1111111", "Strategy Intern", "Seattle, WA"),
+                            job("2222222", "Strategy Intern (MBA)", "Austin, TX")]})
+        r = f.run([W], listings=[row("https://x.com/jobs/1111111", role="Summer 2027 Strategy Intern")])
+        self.assertEqual((r["candidates"], r["reposts"]), ([], []))
+
+    def test_repost_claims_one_job_and_siblings_are_suppressed(self):
+        f = Feeds({"Acme": [job("8888888", "Strategy Intern", "Seattle, WA"),
+                            job("9999999", "Strategy Intern", "Austin, TX")]})
+        r = f.run([W], listings=[row("https://x.com/jobs/1111111", role="Strategy Intern")])
+        self.assertEqual(len(r["reposts"]), 1)
+        self.assertEqual(r["candidates"], [])
+
+    def test_unreadable_posting_is_skipped_and_reported(self):
+        f = Feeds({"Acme": [job("1111111", "Summer 2027 Graduate Intern")]})
+        f.posting_text = lambda entry, j, http=None: (_ for _ in ()).throw(FeedError("HTTP 500"))
+        r = f.run([W])
+        self.assertEqual(r["candidates"], [])
+        self.assertEqual(r["feed_failures"], [{"company": "Acme",
+                                               "error": "posting text unavailable: https://x.com/jobs/1111111"}])
 
     def test_feed_failure_reported(self):
         f = Feeds({"Acme": FeedError("HTTP 500"), "Beta": [job("3333333", "Strategy Intern")]})

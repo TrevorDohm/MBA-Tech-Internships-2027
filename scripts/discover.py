@@ -162,22 +162,27 @@ def discover(entries, listings, ignored, http=fetch):
                                            "new_url": j["url"], "title": j["title"]})
                     break
 
+        # Sibling postings (same role, another city) of a row we already list are covered by that row.
+        listed_stems = {title_stem(r["role"]) for r in listings if r["company"] == company} - {""}
         groups = {}
         for j in fresh:
-            if j["id"] in taken or not is_internship_title(j["title"]):
+            if j["id"] in taken or not is_internship_title(j["title"]) or title_stem(j["title"]) in listed_stems:
                 continue
             try:
                 text = posting_text(entry, j, http=http)
             except FeedError:
-                text = ""  # unreadable posting: judge it on its title alone
+                out["feed_failures"].append({"company": company,
+                                             "error": f"posting text unavailable: {j['url']}"})
+                continue
             if not is_candidate(j["title"], text):
                 continue
             key = title_stem(j["title"])
             c = groups.get(key)
             if c is None:
                 groups[key] = {"company": company, "title": j["title"], "url": j["url"], "job_id": j["id"],
-                               "locations": [], "text": text}
+                               "locations": [], "members": [], "text": text}
                 c = groups[key]
+            c["members"].append({"id": j["id"], "url": j["url"], "location": j["location"]})
             if j["location"] and j["location"] not in c["locations"]:
                 c["locations"].append(j["location"])
         out["candidates"] += groups.values()
@@ -215,7 +220,7 @@ def _load_json(path, default):
 
 
 def main(argv):
-    ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
+    ap = argparse.ArgumentParser(description=(__doc__ or "").split("\n")[0])
     ap.add_argument("--listings", default=str(LISTINGS))
     ap.add_argument("--out", default="candidates.json")
     ap.add_argument("--replay", action="store_true", help="print recall of the feeds against the listed open rows")
