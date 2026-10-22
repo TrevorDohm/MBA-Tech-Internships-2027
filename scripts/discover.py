@@ -162,8 +162,10 @@ def discover(entries, listings, ignored, http=fetch):
                                            "new_url": j["url"], "title": j["title"]})
                     break
 
-        # Sibling postings (same role, another city) of a row we already list are covered by that row.
-        listed_stems = {title_stem(r["role"]) for r in listings if r["company"] == company} - {""}
+        # Sibling postings (same role, another city) of an open/closed row are covered by that row;
+        # expected placeholders have generic roles and must stay matchable by real postings.
+        listed_stems = {title_stem(r["role"]) for r in listings
+                         if r["company"] == company and r.get("status") in ("open", "closed")} - {""}
         groups = {}
         for j in fresh:
             if j["id"] in taken or not is_internship_title(j["title"]) or title_stem(j["title"]) in listed_stems:

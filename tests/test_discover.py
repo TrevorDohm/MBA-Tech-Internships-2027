@@ -193,6 +193,11 @@ class DiscoverTests(unittest.TestCase):
         r = f.run([W], listings=[row("https://x.com/jobs/1111111", role="Summer 2027 Strategy Intern")])
         self.assertEqual((r["candidates"], r["reposts"]), ([], []))
 
+    def test_expected_placeholder_does_not_suppress_real_posting(self):
+        f = Feeds({"Acme": [job("1111111", "MBA Intern - Summer 2027")]})
+        r = f.run([W], listings=[row("https://x.com/careers", role="MBA Intern (Summer 2027)", status="expected")])
+        self.assertEqual([c["job_id"] for c in r["candidates"]], ["1111111"])
+
     def test_repost_claims_one_job_and_siblings_are_suppressed(self):
         f = Feeds({"Acme": [job("8888888", "Strategy Intern", "Seattle, WA"),
                             job("9999999", "Strategy Intern", "Austin, TX")]})
