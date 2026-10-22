@@ -162,6 +162,44 @@ class AdapterTests(unittest.TestCase):
         self.assertEqual(seen, ["https://nike.wd1.myworkdayjobs.com/wday/cxs/nike/nke"
                                 "/job/Boston-Massachusetts/X_R-95789-1"])
 
+    def test_tiktok_text_includes_pay_and_uses_detail_endpoint(self):
+        seen = []
+
+        def http(url, method="GET", body=None, headers=None):
+            seen.append(url)
+            return 200, fixture("tiktok", "detail")
+
+        company, id_, _, url, _ = CASES["tiktok"]
+        text = posting_text(ENTRIES[company], {"id": id_, "url": url}, http=http)
+        self.assertEqual(seen, [f"https://api.lifeattiktok.com/api/v1/job/posts/{id_}"])
+        self.assertIn("The base salary range for this position in the selected city is $108000", text)
+
+    def test_ashby_text_includes_compensation(self):
+        board = json.loads(fixture("ashby", "detail"))
+        board["jobs"][0]["compensation"] = {
+            "compensationTierSummary": "$50 – $60 per hour",
+            "compensationTiers": [{"tierSummary": "$50 – $60 per hour"}]}
+        seen = []
+
+        def http(url, method="GET", body=None, headers=None):
+            seen.append(url)
+            return 200, json.dumps(board)
+
+        company, id_, _, url, _ = CASES["ashby"]
+        text = posting_text(ENTRIES[company], {"id": id_, "url": url}, http=http)
+        self.assertTrue(text.endswith("Compensation: $50 – $60 per hour"), text[-60:])
+        self.assertTrue(seen[0].endswith("?includeCompensation=true"))
+
+    def test_radancy_text_includes_page_level_pay_ranges(self):
+        page = ('<html><body><script type="application/ld+json">{"@type": "JobPosting", '
+                '"description": "<p>Intern on the strategy team.</p>"}</script>'
+                '<main><p>The expected base pay range for this position is: Mountain View $37.5 - $68</p>'
+                '<p>Apply Now</p></main></body></html>')
+        company, id_, _, url, _ = CASES["radancy"]
+        text = posting_text(ENTRIES[company], {"id": id_, "url": url}, http=serving(page))
+        self.assertIn("Intern on the strategy team.", text)
+        self.assertIn("pay range for this position is: Mountain View $37.5 - $68", text)
+
     def test_oracle_end_date_appended(self):
         detail = json.loads(fixture("oracle", "detail"))
         detail["items"][0]["ExternalPostedEndDate"] = "2026-12-01"
@@ -169,6 +207,16 @@ class AdapterTests(unittest.TestCase):
                             http=serving(json.dumps(detail)))
         self.assertTrue(text.endswith("Posting end date: 2026-12-01"))
         self.assertIn("$153,140.00-$280,000.00", text)  # pay from the requisition's flex fields
+
+    def test_oracle_bare_salary_fields_marked_as_dollars(self):
+        detail = json.loads(fixture("oracle", "detail"))
+        detail["items"][0]["requisitionFlexFields"] = [
+            {"Prompt": "Salary Range Minimum", "Value": "18.15"},
+            {"Prompt": "Salary Range Maximum", "Value": "27.74"},
+            {"Prompt": "Commission Eligible", "Value": "10"}]
+        text = posting_text(ENTRIES["JPMorgan Chase"], {"id": "210796897", "url": "u"},
+                            http=serving(json.dumps(detail)))
+        self.assertIn("Salary Range Minimum: $18.15 Salary Range Maximum: $27.74 Commission Eligible: 10", text)
 
     def test_oracle_amex_public_host(self):
         listing = json.loads(fixture("oracle", "list"))

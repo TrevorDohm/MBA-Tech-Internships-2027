@@ -176,7 +176,19 @@ def _text_greenhouse(entry, job, http):
 # --- Ashby: whole board in one call, descriptions included ---------------------
 
 def _ashby_board(entry, http):
-    return _get_json(http, f"https://api.ashbyhq.com/posting-api/job-board/{entry['org']}")["jobs"]
+    return _get_json(http, f"https://api.ashbyhq.com/posting-api/job-board/{entry['org']}"
+                           "?includeCompensation=true")["jobs"]
+
+
+def _ashby_pay(j):
+    """The compensation Ashby publishes for a posting, as text ('Compensation: $50 - $60 per hour')."""
+    c = j.get("compensation") or {}
+    seen = []
+    for s in [c.get("compensationTierSummary"), c.get("scrapeableCompensationSalarySummary")] + \
+            [t.get("tierSummary") for t in c.get("compensationTiers") or []]:
+        if s and s not in seen:
+            seen.append(s)
+    return "Compensation: " + "; ".join(seen) if seen else ""
 
 
 def _list_ashby(entry, http):
@@ -187,7 +199,7 @@ def _list_ashby(entry, http):
 def _text_ashby(entry, job, http):
     for j in _ashby_board(entry, http):
         if j["jobUrl"].rstrip("/").endswith("/" + job["id"]):
-            return text_of(j.get("descriptionPlain") or j.get("descriptionHtml", ""))
+            return _parts(j.get("descriptionPlain") or j.get("descriptionHtml", ""), _ashby_pay(j))
     raise FeedError(f"Ashby posting {job['id']} not on the board")
 
 
@@ -273,13 +285,24 @@ def _list_oracle(entry, http):
     return out
 
 
+_PAY_PROMPT = re.compile(r"(?i)salary|pay (?:range|rate)|compensation")
+
+
+def _flex_value(f):
+    """Bare numbers in a salary field (Macy's: 'Salary Range Minimum: 18.15') are dollars; mark them as such."""
+    v = str(f.get("Value", "")).strip()
+    if _PAY_PROMPT.search(f.get("Prompt") or "") and re.fullmatch(r"\d+(?:\.\d+)?", v):
+        return "$" + v
+    return v
+
+
 def _text_oracle(entry, job, http):
     d = _get_json(http, f"https://{entry['host']}/hcmRestApi/resources/latest/recruitingCEJobRequisitionDetails"
                         f"?expand=all&onlyData=true&finder=ById;Id=%22{job['id']}%22,siteNumber={entry['site_number']}")
     if not d.get("items"):
         raise FeedError(f"Oracle posting {job['id']} not found")
     r = d["items"][0]
-    flex = [f"{f.get('Prompt', '')}: {f.get('Value', '')}" for f in r.get("requisitionFlexFields") or []]
+    flex = [f"{f.get('Prompt', '')}: {_flex_value(f)}" for f in r.get("requisitionFlexFields") or []]
     text = _parts(r.get("ExternalDescriptionStr"), r.get("ExternalResponsibilitiesStr"),
                   r.get("ExternalQualificationsStr"), *flex, r.get("CorporateDescriptionStr"))
     if r.get("ExternalPostedEndDate"):
@@ -403,8 +426,24 @@ def _radancy_body(page):
     return desc if desc else _main(page)
 
 
+_PAY_PHRASE = re.compile(r"(?i)\b(?:pay|salary|hourly)\s+(?:range|rate)s?\b")
+
+
+def _radancy_pay(page_text):
+    """Pay-range sentences from the rendered page; Intuit keeps per-city ranges outside the JSON-LD."""
+    out = []
+    for m in _PAY_PHRASE.finditer(page_text):
+        seg = page_text[m.start():m.start() + 160]
+        if "$" in seg and seg not in out:
+            out.append(seg)
+    return " ".join(out)
+
+
 def _text_radancy(entry, job, http):
-    return text_of(_radancy_body(_get(http, job["url"])))
+    page = _get(http, job["url"])
+    body = text_of(_radancy_body(page))
+    pay = _radancy_pay(text_of(page))
+    return f"{body} {pay}".strip() if pay else body
 
 
 # --- Avature (EA): HTML search results ---------------------------------------------------
@@ -592,12 +631,14 @@ def _list_tiktok(entry, http):
 
 
 def _text_tiktok(entry, job, http):
-    # The API has no by-id lookup (and search ignores ids), so scan the watchlist queries.
-    for posts in _tiktok_pages(http, entry["queries"]):
-        for p in posts:
-            if p["id"] == job["id"]:
-                return _parts(p.get("description"), p.get("requirement"))
-    raise FeedError(f"TikTok posting {job['id']} not found")
+    # The by-id endpoint carries the pay paragraph (in job_post_info.job_post_object_value_map),
+    # which the search results omit.
+    d = _get_json(http, f"https://api.lifeattiktok.com/api/v1/job/posts/{job['id']}", TIKTOK_HEADERS)
+    p = (d.get("data") or {}).get("job_post_detail")
+    if not p:
+        raise FeedError(f"TikTok posting {job['id']} not found")
+    extras = ((p.get("job_post_info") or {}).get("job_post_object_value_map") or {}).values()
+    return _parts(p.get("description"), p.get("requirement"), *extras)
 
 
 # --- IBM -----------------------------------------------------------------------------------------
@@ -773,9 +814,9 @@ def _trim_list(ats, text, n=3):
 
 
 def _trim_detail(ats, text):
-    if ats in ("ashby", "jibe", "amazon", "tiktok", "ibm", "atlassian"):
+    if ats in ("ashby", "jibe", "amazon", "ibm", "atlassian"):
         return _trim_json(ats, text, 3)  # the lookup is a search or the whole board
-    if ats in ("greenhouse", "lever", "workday", "oracle", "eightfold"):
+    if ats in ("greenhouse", "lever", "workday", "oracle", "eightfold", "tiktok"):
         obj = json.loads(text)
         for k in _DROP_KEYS:
             obj.pop(k, None)

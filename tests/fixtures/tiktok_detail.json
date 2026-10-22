@@ -1,218 +1,149 @@
 {
  "code": 0,
  "data": {
-  "job_post_list": [
-   {
-    "id": "7669871213245974837",
-    "code": "A175818B",
-    "title": "Project Management Office Associate Graduate (Finance) - 2027 Start (MBA)",
-    "description": "We partner closely with business leaders and cross-functional teams to turn financial insights into better business decisions. Leveraging our expertise in budgeting, forecasting, financial planning, and performance analysis, we provide strategic guidance that helps teams prioritize investments, optimize resources, and drive sustainable growth.\n\nBeyond delivering financial support, we strive to be trusted business partners—bringing commercial insight, challenging assumptions, and enabling informed decision-making to help the business achieve both its operational and financial objectives.\nWe are looking for talented individuals to join our team. As a graduate, you will get opportunities to pursue bold ideas, tackle complex challenges, and unlock limitless growth.\n\nSuccessful candidates must be able to commit to an onboarding date by the end of the year. Please state your availability and graduation date clearly in your resume.\nCandidates can apply to a maximum of two positions and will be considered for jobs in the order you apply. The application limit is applicable to our Company and its affiliates' jobs globally. Applications will be reviewed on a rolling basis - we encourage you to apply early.\n\nAbout the Role\nWe are seeking a high-performing MBA graduate to join our Finance BP - Global Products and Functions as a Project Management Office Associate. This role offers a unique opportunity to work directly with the head of Finance BP team and senior finance leadership team, driving cross-functional initiatives, enabling strategic decision-making, and ensuring the effective execution of high-impact projects.\n\nResponsibilities \n- Partner closely with the Finance leadership team to manage the execution of strategic priorities and cross-functional initiatives.\n- Develop clear, compelling executive-level communications, presentations, and narratives to support decision-making and stakeholder engagement.\n- Drive program governance, including tracking deliverables, timelines, and risks to ensure initiatives are executed with excellence.\n- Collaborate across Finance, Business Units, and Corporate Functions to ensure alignment and delivery of strategic objectives.\n- Synthesize complex financial and operational information into clear, actionable insights for senior executives and stakeholders.\n- Support annual and quarterly business planning, financial reviews, and strategic updates.\n- Collaborate with cross-functional leaders across Ads, E-commerce, Live, and TikTok FBP teams to execute key projects and develop deep functional expertise in underlying business models.",
-    "requirement": "Minimum Qualifications \n- Individuals who are completing or have recently completed an MBA Degree\n- Solid finance background, with prior experience in investment banking, consulting, corporate finance, or related fields.\n- Exceptional executive communication and storytelling skills, with the ability to distill complex topics into clear and impactful narratives.\n- Strong project management and organizational skills, with experience leading cross-functional initiatives.\n- Collaborative mindset and ability to influence stakeholders across levels and functions.\n- High level of integrity, discretion, and professionalism in handling confidential information.\n- Working proficiency in Mandarin and English is required as the role will be working with systems, reading technical documents and communicating with China and Non-China markets in Mandarin and English.\n\nPreferred Qualifications: \n- Minimum of 3 years of industry experience.",
-    "recruit_type": {
-     "id": "201",
-     "name": null,
-     "en_name": "Regular",
-     "i18n_name": "Regular"
-    },
-    "job_category": {
-     "id": "6704215913488451847",
-     "name": null,
-     "en_name": "Corporate Function / Support",
-     "i18n_name": "Corporate Function / Support",
-     "parent": null
-    },
-    "city_info": {
-     "code": "CT_1103355",
-     "location_type": 3,
-     "name": null,
-     "en_name": "San Jose",
-     "i18n_name": "San Jose",
-     "parent": {
-      "code": "ST_31",
-      "location_type": 2,
-      "name": null,
-      "en_name": "California",
-      "i18n_name": "California",
-      "parent": {
-       "code": "CN_6",
-       "location_type": 1,
-       "name": null,
-       "en_name": "United States of America",
-       "i18n_name": "United States of America",
-       "parent": null
-      }
-     }
-    },
-    "tag_list": null,
-    "job_subject": {
-     "id": "7648842986533292341",
-     "name": null,
-     "en_name": "MBA Graduates - 2027 Start",
-     "i18n_name": "MBA Graduates - 2027 Start"
-    },
-    "vacancies": null,
-    "department_info": null,
-    "job_post_info": {
-     "min_salary": null,
-     "max_salary": null,
-     "currency": null,
-     "required_degree": null,
-     "experience": null,
-     "sequence": null,
-     "min_level": null,
-     "max_level": null,
-     "highlight_list": null,
-     "job_post_object_value_list": null,
-     "expiry_time": null
-    },
-    "process_type": null,
-    "channel_online_status": null
+  "job_post_detail": {
+   "id": "7669871213245974837",
+   "title": "Project Management Office Associate Graduate (Finance) - 2027 Start (MBA)",
+   "description": "We partner closely with business leaders and cross-functional teams to turn financial insights into better business decisions. Leveraging our expertise in budgeting, forecasting, financial planning, and performance analysis, we provide strategic guidance that helps teams prioritize investments, optimize resources, and drive sustainable growth.\n\nBeyond delivering financial support, we strive to be trusted business partners—bringing commercial insight, challenging assumptions, and enabling informed decision-making to help the business achieve both its operational and financial objectives.\nWe are looking for talented individuals to join our team. As a graduate, you will get opportunities to pursue bold ideas, tackle complex challenges, and unlock limitless growth.\n\nSuccessful candidates must be able to commit to an onboarding date by the end of the year. Please state your availability and graduation date clearly in your resume.\nCandidates can apply to a maximum of two positions and will be considered for jobs in the order you apply. The application limit is applicable to our Company and its affiliates' jobs globally. Applications will be reviewed on a rolling basis - we encourage you to apply early.\n\nAbout the Role\nWe are seeking a high-performing MBA graduate to join our Finance BP - Global Products and Functions as a Project Management Office Associate. This role offers a unique opportunity to work directly with the head of Finance BP team and senior finance leadership team, driving cross-functional initiatives, enabling strategic decision-making, and ensuring the effective execution of high-impact projects.\n\nResponsibilities \n- Partner closely with the Finance leadership team to manage the execution of strategic priorities and cross-functional initiatives.\n- Develop clear, compelling executive-level communications, presentations, and narratives to support decision-making and stakeholder engagement.\n- Drive program governance, including tracking deliverables, timelines, and risks to ensure initiatives are executed with excellence.\n- Collaborate across Finance, Business Units, and Corporate Functions to ensure alignment and delivery of strategic objectives.\n- Synthesize complex financial and operational information into clear, actionable insights for senior executives and stakeholders.\n- Support annual and quarterly business planning, financial reviews, and strategic updates.\n- Collaborate with cross-functional leaders across Ads, E-commerce, Live, and TikTok FBP teams to execute key projects and develop deep functional expertise in underlying business models.",
+   "requirement": "Minimum Qualifications \n- Individuals who are completing or have recently completed an MBA Degree\n- Solid finance background, with prior experience in investment banking, consulting, corporate finance, or related fields.\n- Exceptional executive communication and storytelling skills, with the ability to distill complex topics into clear and impactful narratives.\n- Strong project management and organizational skills, with experience leading cross-functional initiatives.\n- Collaborative mindset and ability to influence stakeholders across levels and functions.\n- High level of integrity, discretion, and professionalism in handling confidential information.\n- Working proficiency in Mandarin and English is required as the role will be working with systems, reading technical documents and communicating with China and Non-China markets in Mandarin and English.\n\nPreferred Qualifications: \n- Minimum of 3 years of industry experience.",
+   "job_category": {
+    "id": "6704215913488451847",
+    "en_name": "Corporate Function / Support",
+    "i18n_name": "Corporate Function / Support",
+    "depth": 1,
+    "children": []
    },
-   {
-    "id": "7668820702623467781",
-    "code": "A191748A",
-    "title": "Product Operations Intern (TikTok Shop Apps and API) - 2027 Summer (MBA)",
-    "description": "About the team\nOur Partner Product team is responsible for our Open API Platform and TikTok Shop's App Ecosystem for 1P and 3P partners. This team focuses on products that will empower partners to collaborate with the platform together, providing rich and diverse service capabilities to help merchants and creators to operate more effectively and efficiently. We are looking for a product manager who will be responsible for collection of users’ requirements and partner product design to provide our target users/clients with effective product solutions.\n\nWe are looking for talented individuals to join us for an internship. Our internship program offers students hands-on experience, industry exposure, and opportunities to apply their knowledge to real-world challenges while building a strong foundation for personal and professional growth.\nInterns will gain practical experience, explore potential career paths, and participate in social events, learning programs, and development workshops alongside industry professionals.\nCandidates may apply to a maximum of two positions across Our Company and its affiliates globally. Applications will be considered in the order they are submitted.\nApplications are reviewed on a rolling basis, so we encourage you to apply early. Please clearly state your availability in your resume, including your start and end dates.\n\nResponsibilities\n- Conduct extensive quantitative and qualitative market studies to gather deep insights into Sellers, Independent Software Vendors (ISV) Partners and other roles in social content-based Commerce.  \n- Partner with the product management team to devise product strategy to ensure long term vision and success for the product.\n- Combine ROI analysis, dependency analysis and other techniques to prioritize the product requirements. \n- Participate in the product development lifecycle, review various artifacts to ensure quality.  \n- Participate in user acceptance testing to ensure product quality and optimal user experience prior to product launch.",
-    "requirement": "Minimum Qualifications:\n- Currently pursuing a MBA degree\n- Able to commit to working for 12 weeks during Summer 2027.\n- Great communicator & team-partner.  Comfortable navigating complex organizational structures & aligning objectives with cross-functional teams.\n- Analytical, data sensitive & goal-driven.  Comfortable with setting ambitious targets, analyzing the status quo, planning a course of action, executing rapid trial & error iterations and constantly improving. \n\nPreferred Qualifications:\n- Familiar with TikTok and mainstream e-commerce platforms, experience in content-based e-commerce is highly preferred.\n- Experience and understanding of APIs and 3P integrations.",
-    "recruit_type": {
-     "id": "202",
-     "name": null,
-     "en_name": "Intern",
-     "i18n_name": "Intern"
-    },
-    "job_category": {
-     "id": "6704215882479962371",
-     "name": null,
-     "en_name": "Operations",
-     "i18n_name": "Operations",
-     "parent": null
-    },
-    "city_info": {
-     "code": "CT_157",
-     "location_type": 3,
-     "name": null,
-     "en_name": "Seattle",
-     "i18n_name": "Seattle",
-     "parent": {
-      "code": "ST_54",
-      "location_type": 2,
-      "name": null,
-      "en_name": "Washington",
-      "i18n_name": "Washington",
-      "parent": {
-       "code": "CN_6",
-       "location_type": 1,
-       "name": null,
-       "en_name": "United States of America",
-       "i18n_name": "United States of America",
-       "parent": null
-      }
-     }
-    },
-    "tag_list": null,
-    "job_subject": {
-     "id": "7648841736006093061",
-     "name": null,
-     "en_name": "MBA Intern - 2027 Start",
-     "i18n_name": "MBA Intern - 2027 Start"
-    },
-    "vacancies": null,
-    "department_info": null,
-    "job_post_info": {
-     "min_salary": null,
-     "max_salary": null,
-     "currency": null,
-     "required_degree": null,
-     "experience": null,
-     "sequence": null,
-     "min_level": null,
-     "max_level": null,
-     "highlight_list": null,
-     "job_post_object_value_list": null,
-     "expiry_time": null
-    },
-    "process_type": null,
-    "channel_online_status": null
+   "city_info": {
+    "code": "CT_1103355",
+    "en_name": "San Jose",
+    "i18n_name": "San Jose"
    },
-   {
-    "id": "7668180925700065589",
-    "code": "A174505",
-    "title": "US Commercial Infrastructure Management Graduate (Global Procurement) - 2027 Start (MBA)",
-    "description": "The procurement team undertake logistics-related service and physical procurement as well as service provider management work in line with the development of logistics business. Be responsible for the price competitiveness of procurement services while meeting business requirements, and maintain relationships with service providers to ensure long-term cooperation.\n\nWe are looking for talented individuals to join our team. As a graduate, you will get opportunities to pursue bold ideas, tackle complex challenges, and unlock limitless growth.\nSuccessful candidates must be able to commit to an onboarding date by the end of the year. Please state your availability and graduation date clearly in your resume.\nCandidates can apply to a maximum of two positions and will be considered for jobs in the order you apply. The application limit is applicable to our Company and its affiliates' jobs globally. Applications will be reviewed on a rolling basis - we encourage you to apply early.\n\n1. Strategic Sourcing & CapEx Optimization\n- Asset & Category Strategy: Architect and execute comprehensive sourcing strategies for high-capital categories, including long-term warehouse leases, general contractors for facility build-outs, Material Handling Equipment (MHE/Automation), and contingent workforce ecosystems.\n- Market Intelligence & Financial Modeling: Conduct in-depth market analysis and build sophisticated financial models (TCO, ROI, NPV) to evaluate investment scenarios, driving data-driven asset selection and resource allocation across the US network.\n- End-to-End Deal Structuring: Manage the full lifecycle of complex RFI/RFP/RFQ processes. Transition from identifying requirements to stress-testing supplier capabilities and structuring commercially viable deals.\n2. Complex Contract Negotiation & Commercial Management\n- High-Stakes Negotiation: Manage commercial and contractual negotiations for high-value, multi-year agreements. Focus on securing favorable terms related to pricing, agility (e.g., expansion/termination clauses), service levels, and structural risk mitigation.\n- Legal & Commercial Partnership: Partner closely with internal Legal counsel to draft, review, and finalize complex contracts, particularly in commercial real estate (BTS/Leasing), construction, and enterprise staffing.\n- Lifecycle Governance: Establish a robust contract lifecycle management (CLM) framework, driving compliance, executing change orders, and capturing value through strategic renewals.\n3. Strategic Vendor Ecosystem & Performance Management\n- Partnership Ecosystem: Serve as the primary commercial owner for strategic infrastructure partners, cultivating executive-level, collaborative relationships.\n- Governance & Continuous Improvement: Implement a rigorous supplier governance framework. Lead Quarterly Business Reviews (QBRs) to monitor performance, address operational bottlenecks, and identify opportunities for structural cost reduction.\n- Risk Mitigation: Proactively manage multi-dimensional supplier risks, ensuring strict adherence to contractual obligations, insurance mandates, and rigorous safety (EHS) standards.\n4. Cross-Functional Management & Business Partnering\n- Influence Without Authority: Act as the \"commercial CEO\" of your infrastructure portfolio. Work hand-in-hand with Real Estate, Operations, Engineering, Finance, and Legal to drive alignment on multi-million dollar project timelines, budgets, and technical specifications.\n- Strategic Advisory: Serve as a trusted business partner, providing executive leadership with commercial expertise and market intelligence to guide strategic decisions on network expansion and operational design.",
-    "requirement": "Minimum Qualification(s)\n- Individuals who are completing or have recently completed a MBA degree. \n- Experience: 3+ years of solid pre-MBA experience in Management Consulting, Corporate Strategy, Real Estate Finance, Commercial Procurement, or Supply Chain Infrastructure.\n- Commercial & Financial Acumen: Exceptional capability in building financial models and cost analysis trackers. Proven track record in structuring and managing high-value deals or complex capital projects.\n- Strategic Negotiation: Mastery in articulating value propositions and executing high-stakes negotiations across diverse categories (e.g., Real Estate, Construction, Equipment).\n\nPreferred Qualification(s)\n- Bias for Action & Ambiguity Navigation: A self-starter with a \"builder\" mindset. You excel at taking ambiguous business goals, framing a clear commercial strategy, and diving deep to ensure flawless execution.\n- Executive Communication: Sophisticated presentation and verbal/written communication skills. Ability to influence leadership and align diverse cross-functional teams.",
-    "recruit_type": {
+   "recruit_type": {
+    "id": "201",
+    "en_name": "Regular",
+    "i18n_name": "Regular",
+    "depth": 2,
+    "parent": {
+     "id": "2",
+     "en_name": "Campus",
+     "i18n_name": "Campus",
+     "depth": 1,
+     "children": [],
+     "active_status": 1,
+     "selectability": 1
+    },
+    "children": [],
+    "active_status": 1,
+    "selectability": 1
+   },
+   "publish_time": 1785781076384,
+   "channel_online_status": 1,
+   "job_subject": {
+    "id": "7648842986533292341",
+    "name": {
+     "en_us": "MBA Graduates - 2027 Start",
+     "i18n": "MBA Graduates - 2027 Start"
+    },
+    "active_status": 1
+   },
+   "code": "A175818B",
+   "job_id": "7669871197010544949",
+   "job_post_info": {
+    "recruitment_type": {
      "id": "201",
-     "name": null,
      "en_name": "Regular",
-     "i18n_name": "Regular"
-    },
-    "job_category": {
-     "id": "6704215882438019342",
-     "name": null,
-     "en_name": "Commerce ops",
-     "i18n_name": "Commerce ops",
+     "i18n_name": "Regular",
+     "depth": 2,
      "parent": {
-      "id": "6704215882479962371",
-      "name": null,
-      "en_name": "Operations",
-      "i18n_name": "Operations",
-      "parent": null
-     }
+      "id": "2",
+      "en_name": "Campus",
+      "i18n_name": "Campus",
+      "depth": 1,
+      "children": [],
+      "active_status": 1,
+      "selectability": 1
+     },
+     "children": [],
+     "active_status": 1,
+     "selectability": 1
     },
-    "city_info": {
-     "code": "CT_157",
-     "location_type": 3,
-     "name": null,
-     "en_name": "Seattle",
-     "i18n_name": "Seattle",
-     "parent": {
-      "code": "ST_54",
-      "location_type": 2,
-      "name": null,
-      "en_name": "Washington",
-      "i18n_name": "Washington",
-      "parent": {
-       "code": "CN_6",
-       "location_type": 1,
-       "name": null,
-       "en_name": "United States of America",
-       "i18n_name": "United States of America",
-       "parent": null
-      }
-     }
+    "HighlightList": [],
+    "JobChannelPublishList": [],
+    "job_post_object_value_map": {
+     "7470405798847072520": "",
+     "7470375955128092936": "",
+     "7470407698154326280": "",
+     "7669736305558866229": "",
+     "7444756617839806728": "",
+     "7290372308244990267": "",
+     "7375924224660425011": "",
+     "7375918962858658099": "",
+     "7470375955128174856": "",
+     "7154429338292144392": "<div class=\"editor-content\" style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Roboto', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; color: #1f2329; word-wrap: break-word; white-space: pre-wrap;\"><p style=\"font-size: 14px; text-align: left;\">The base salary range for this position in the selected city is $108000 - $208800 annually.<span>&#8203;</span></p><p style=\"font-size: 14px; text-align: left;\">Compensation may vary outside of this range depending on a number of factors, including a candidate’s qualifications, skills, competencies and experience, and location. Base pay is one part of the Total Package that is provided to compensate and recognize employees for their work, and this role may be eligible for additional discretionary bonuses/incentives, and restricted stock units.<span>&#8203;</span></p><p style=\"font-size: 14px; text-align: left;\">Benefits may vary depending on the nature of employment and the country work location. Employees have day one access to medical, dental, and vision insurance, a 401(k) savings plan with company match, paid parental leave, short-term and long-term disability coverage, life insurance, wellbeing benefits, among others. Employees also receive 10 paid holidays per year, 10 paid sick days per year and 17 days of Paid Personal Time (prorated upon hire with increasing accruals by tenure).<span>&#8203;</span></p><p style=\"font-size: 14px; text-align: left;\">The Company reserves the right to modify or change these benefits programs at any time, with or without notice.<span>&#8203;</span></p><p style=\"font-size: 14px; text-align: left;\">For Los Angeles County (unincorporated) Candidates:<span>&#8203;</span></p><p style=\"font-size: 14px; text-align: left;\">Qualified applicants with arrest or conviction records will be considered for employment in accordance with all federal, state, and local laws including the Los Angeles County Fair Chance Ordinance for Employers and the California Fair Chance Act. Our company believes that criminal history may have a direct, adverse and negative relationship on the following job duties, potentially resulting in the withdrawal of the conditional offer of employment:<span>&#8203;</span></p><p style=\"font-size: 14px; text-align: left;\">1. Interacting and occasionally having unsupervised contact with internal/external clients and/or colleagues;<span>&#8203;</span></p><p style=\"font-size: 14px; text-align: left;\">2. Appropriately handling and managing confidential information including proprietary and trade secret information and access to information technology systems; and<span>&#8203;</span></p><p style=\"font-size: 14px; text-align: left;\">3. Exercising sound judgment.<span>&#8203;</span></p></div>",
+     "7470375955128125704": "",
+     "7470407698154309896": "",
+     "7470375955128224008": "",
+     "7669764321410205957": "",
+     "7470375955128207624": "",
+     "7470405798847023368": "",
+     "7290372308244973883": "",
+     "7470375955128158472": "",
+     "7470407698154375432": "",
+     "7638566409409054981": "",
+     "7375924224660441395": "",
+     "7470375955128142088": "",
+     "7581817186706557189": "",
+     "7154429338292128008": "",
+     "7470378172199651592": "",
+     "7375918962858740019": "",
+     "7444756617839757576": "",
+     "7470375955128240392": "",
+     "7470405798847039752": "",
+     "7638566409409022213": "",
+     "7470375955128191240": "",
+     "7470378172199667976": "<div class=\"editor-content\" style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Roboto', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; color: #1f2329; word-wrap: break-word; white-space: pre-wrap;\"><p style=\"font-size: 14px; text-align: left;\">Inspiring creativity is at the core of TikTok's mission. Our innovative product is built to help people authentically express themselves, discover and connect – and our global, diverse teams make that possible. Together, we create value for our communities, inspire creativity and bring joy - a mission we work towards every day.<span>&#8203;</span></p><p style=\"font-size: 14px; text-align: left;\">We strive to do great things with great people. We lead with curiosity, humility, and a desire to make impact in a rapidly growing tech company. Every challenge is an opportunity to learn and innovate as one team. We're resilient and embrace challenges as they come. By constantly iterating and fostering an \"Always Day 1\" mindset, we achieve meaningful breakthroughs for ourselves, our company, and our users. When we create and grow together, the possibilities are limitless. Join us.<span>&#8203;</span></p><p style=\"font-size: 14px; text-align: left;\"><span>&#8203;</span></p><p style=\"font-size: 14px; text-align: left;\">Diversity &amp; Inclusion<span>&#8203;</span></p><p style=\"font-size: 14px; text-align: left;\">TikTok is committed to creating an inclusive space where employees are valued for their skills, experiences, and unique perspectives. Our platform connects people from across the globe and so does our workplace. At TikTok, our mission is to inspire creativity and bring joy. To achieve that goal, we are committed to celebrating our diverse voices and to creating an environment that reflects the many communities we reach. We are passionate about this and hope you are too.<span>&#8203;</span></p></div>",
+     "7470407698154342664": "<div class=\"editor-content\" style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Roboto', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; color: #1f2329; word-wrap: break-word; white-space: pre-wrap;\"><p style=\"font-size: 14px; text-align: left;\">TikTok is committed to providing reasonable accommodations in our recruitment processes for candidates with disabilities, pregnancy, sincerely held religious beliefs or other reasons protected by applicable laws. If you need assistance or a reasonable accommodation, please reach out to us at <a href=\"https://bytedance.us.larkoffice.com/share/base/form/shrusW6pfDVzkZRjoYkIUjlOhth\" rel=\"noopener noreferrer nofollow\" elementtiming=\"admin-element-timing\">https://tinyurl.com/RA-request</a><span>&#8203;</span></p></div>",
+     "7264493901686917431": "",
+     "7638566409409087749": "",
+     "7444750485578467592": "",
+     "7669736305558882613": "",
+     "7290374174236592443": "",
+     "7264492391519357239": "",
+     "7375918962858674483": "",
+     "7444756617839773960": "",
+     "7444750485578451208": "",
+     "7581817186706524421": "",
+     "7669736305558849845": "",
+     "7444756617839790344": "",
+     "7375918962858723635": "",
+     "7470145241187158290": "",
+     "7581817186706491653": "",
+     "7669736305558833461": "",
+     "7290374174236576059": "",
+     "7669736305558817077": "",
+     "7470375955128109320": "<div class=\"editor-content\" style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Roboto', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; color: #1f2329; word-wrap: break-word; white-space: pre-wrap;\"><p style=\"font-size: 14px; text-align: left;\">TikTok is the leading destination for short-form mobile video. At TikTok, our mission is to inspire creativity and bring joy. TikTok's global headquarters are in Los Angeles and Singapore, and we also have offices in New York City, London, Dublin, Paris, Berlin, Dubai, Jakarta, Seoul, and Tokyo.<span>&#8203;</span></p></div>",
+     "7470407698154359048": "",
+     "7470378172199635208": "",
+     "7669764321410173189": "",
+     "7669767416201349429": "",
+     "7470405798847056136": "",
+     "7470407698154293512": ""
     },
-    "tag_list": null,
-    "job_subject": {
-     "id": "7648842986533292341",
-     "name": null,
-     "en_name": "MBA Graduates - 2027 Start",
-     "i18n_name": "MBA Graduates - 2027 Start"
-    },
-    "vacancies": null,
-    "department_info": null,
-    "job_post_info": {
-     "min_salary": null,
-     "max_salary": null,
-     "currency": null,
-     "required_degree": null,
-     "experience": null,
-     "sequence": null,
-     "min_level": null,
-     "max_level": null,
-     "highlight_list": null,
-     "job_post_object_value_list": null,
-     "expiry_time": null
-    },
-    "process_type": null,
-    "channel_online_status": null
-   }
-  ],
-  "count": 3,
-  "BaseResp": {
-   "StatusMessage": "Success",
-   "StatusCode": 0,
-   "Extra": null
-  }
+    "address_list": [],
+    "city_list": [],
+    "correlation_job_list": [],
+    "tag_list": [],
+    "storefront_list": [],
+    "target_major_list": [],
+    "job_post_process_time_list": [],
+    "job_level_id_list": []
+   },
+   "tag_list": [],
+   "storefront_mode": 1,
+   "storefront_list": [],
+   "process_type": 2
+  },
+  "recommend_job_post_List": []
  },
  "message": "ok",
  "error": null

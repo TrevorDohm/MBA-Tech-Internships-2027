@@ -63,6 +63,11 @@ class CheckRowTests(unittest.TestCase):
         self.assertEqual(check(row(sponsorship="no"), "not be eligible for immigration sponsorship"), [])
         self.assertEqual(check(row(sponsorship="no"), "authorized to work without the need for current or future company sponsorship"), [])
         self.assertTrue(check(row(sponsorship="no"), "We offer visa sponsorship"))
+        for text in ("Visa sponsorship is not available for this role",
+                     "This position is ineligible for visa sponsorship",
+                     "We do not offer any type of employment-based immigration sponsorship for this role"):
+            self.assertEqual(check(row(sponsorship="no"), text), [], text)
+            self.assertTrue(check(row(sponsorship="yes"), text), text)
         for claim in ("yes", "no"):
             self.assertTrue(check(row(sponsorship=claim), "legally authorized to work in the US"))
 

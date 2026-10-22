@@ -197,14 +197,20 @@ def deadline_in(iso, text):
 
 # --- sponsorship ---------------------------------------------------------------------------------------------
 
-_NEG = re.compile(r"\b(?:not|no|unable|cannot|can't|won't|doesn't)\b")
+_NEG_BEFORE = re.compile(r"\b(?:not|no|unable|cannot|can't|won't|doesn't|ineligible|unavailable)\b")
+_NEG_AFTER = re.compile(r"\b(?:not|unavailable|ineligible)\b|n't\b")
+BEFORE, AFTER = 60, 40  # R16 says ~40 before; 60 covers "do not offer any type of employment-based immigration sponsorship"
+
+
+def _negated(t, i, j):
+    return bool(_NEG_BEFORE.search(t[max(0, i - BEFORE):i]) or _NEG_AFTER.search(t[j:j + AFTER]))
 
 
 def sponsorship_supports(claim, text):
     """True if the posting's wording supports a sponsorship claim of 'yes' or 'no' (R16)."""
     t = _norm(text)
-    hits = [m.start() for m in re.finditer(r"sponsor", t)]
-    negated = [bool(_NEG.search(t[max(0, i - 40):i])) for i in hits]
+    hits = [(m.start(), m.end()) for m in re.finditer(r"sponsor\w*", t)]
+    negated = [_negated(t, i, j) for i, j in hits]
     if claim == "yes":
         return bool(hits) and not any(negated)
     if any(negated):
