@@ -713,7 +713,8 @@
       "intern"
     ],
     "hosts": [
-      "jobs.intuit.com"
+      "jobs.intuit.com",
+      "intuit.avature.net"
     ],
     "notes": "Some listings link intuit.avature.net."
   },
