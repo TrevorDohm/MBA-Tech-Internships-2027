@@ -289,13 +289,22 @@ def _text_oracle(entry, job, http):
 
 # --- Eightfold: needs >= 4 s between requests ---------------------------------------
 
-def _ef_json(http, url, used):
-    """GET with spacing, and backoff on 429. `used` is truthy once a request has been made."""
+_EF_LAST = {}  # host -> time.monotonic() of its last request; spacing holds across calls
+
+
+def _ef_json(http, url):
+    """GET with >= EIGHTFOLD_DELAY s since the host's previous request, and backoff on 429."""
+    host = urlsplit(url).netloc
     for attempt in range(4):
-        if used or attempt:
+        if attempt:
             time.sleep(EIGHTFOLD_DELAY * (1 + 2 * attempt))
-        used = True
+        last = _EF_LAST.get(host)
+        if last is not None:
+            wait = EIGHTFOLD_DELAY - (time.monotonic() - last)
+            if wait > 0:
+                time.sleep(wait)
         status, text = http(url, method="GET", body=None, headers=None)
+        _EF_LAST[host] = time.monotonic()
         if status != 429:
             break
     if status != 200:
@@ -304,13 +313,12 @@ def _ef_json(http, url, used):
 
 
 def _list_eightfold(entry, http):
-    out, used = [], False
+    out = []
     for q in entry["queries"]:
         start = 0
         while True:
             qs = urlencode({"domain": entry["domain"], "query": q, "start": start, "sort_by": "timestamp"})
-            d = _ef_json(http, f"https://{entry['host']}/api/pcsx/search?{qs}", used)
-            used = True
+            d = _ef_json(http, f"https://{entry['host']}/api/pcsx/search?{qs}")
             ps = d.get("positions") or []
             for p in ps:
                 loc = p.get("standardizedLocations") or p.get("locations") or []
@@ -324,7 +332,7 @@ def _list_eightfold(entry, http):
 
 def _text_eightfold(entry, job, http):
     qs = urlencode({"position_id": job["id"], "domain": entry["domain"], "hl": "en"})
-    d = _ef_json(http, f"https://{entry['host']}/api/pcsx/position_details?{qs}", False)
+    d = _ef_json(http, f"https://{entry['host']}/api/pcsx/position_details?{qs}")
     return text_of(d.get("jobDescription", ""))
 
 

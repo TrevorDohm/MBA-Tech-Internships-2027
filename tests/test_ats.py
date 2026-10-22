@@ -110,7 +110,34 @@ def _make_tests():
         setattr(AdapterTests, f"test_posting_text_{name}", text_test(name, case))
 
 
+class FakeClock:
+    """Replaces time.sleep/monotonic so Eightfold spacing is checked without waiting."""
+
+    def __init__(self):
+        self.now = 1000.0
+        self.sleeps = []
+        self.requests = []  # clock reading at each http call
+
+    def sleep(self, s):
+        self.sleeps.append(s)
+        self.now += s
+
+    def recording(self, http):
+        def wrapped(url, method="GET", body=None, headers=None):
+            self.requests.append(self.now)
+            return http(url, method=method, body=body, headers=headers)
+        return wrapped
+
+    def patched(self):
+        stack = mock.patch.multiple("ats.time", sleep=self.sleep, monotonic=lambda: self.now)
+        ats._EF_LAST.clear()
+        return stack
+
+
 class AdapterTests(unittest.TestCase):
+    def setUp(self):
+        ats._EF_LAST.clear()
+
     def test_every_ats_has_a_case_and_fixtures(self):
         from watchlist import ATS_TYPES
         self.assertEqual(set(CASES), set(ATS_TYPES))
@@ -254,13 +281,37 @@ class AdapterTests(unittest.TestCase):
             positions = [{"id": len(calls) * 100 + i, "name": "n", "positionUrl": "/careers/job/1"} for i in range(10)]
             return 200, json.dumps({"data": {"positions": positions, "count": 20}})
 
-        with mock.patch("ats.time.sleep") as sleep:
-            jobs = list_jobs(entry, http=http)
+        clock = FakeClock()
+        with clock.patched():
+            jobs = list_jobs(entry, http=clock.recording(http))
         self.assertEqual(len(calls), 4)  # two pages per query
         self.assertEqual(len(jobs), 40)
-        self.assertEqual(sleep.call_count, 3)  # between requests, not before the first
-        for c in sleep.call_args_list:
-            self.assertGreaterEqual(c.args[0], 4)
+        self.assertEqual(clock.sleeps, [4, 4, 4])  # between requests, not before the first
+        self.assertGreaterEqual(min(b - a for a, b in zip(clock.requests, clock.requests[1:])), 4)
+
+    def test_eightfold_spacing_holds_across_calls(self):
+        # list_jobs then posting_text, then posting_text again, on the same host.
+        entry = dict(ENTRIES["Microsoft"], queries=["a"])
+        clock = FakeClock()
+
+        def http(url, method="GET", body=None, headers=None):
+            return 200, fixture("eightfold", "detail" if "position_details" in url else "list")
+
+        with clock.patched():
+            h = clock.recording(http)
+            jobs = list_jobs(entry, http=h)
+            posting_text(entry, jobs[0], http=h)
+            posting_text(entry, jobs[1], http=h)
+        self.assertEqual(len(clock.requests), 3)
+        self.assertGreaterEqual(min(b - a for a, b in zip(clock.requests, clock.requests[1:])), 4)
+
+    def test_eightfold_spacing_is_per_host(self):
+        clock = FakeClock()
+        with clock.patched():
+            h = clock.recording(lambda url, **kw: (200, fixture("eightfold", "list")))
+            list_jobs(dict(ENTRIES["Microsoft"], queries=["a"]), http=h)
+            list_jobs(dict(ENTRIES["Qualcomm"], queries=["a"]), http=h)
+        self.assertEqual(clock.sleeps, [])  # different hosts do not wait on each other
 
     def test_eightfold_backs_off_on_429(self):
         statuses = iter([429, 200])
@@ -269,10 +320,11 @@ class AdapterTests(unittest.TestCase):
             s = next(statuses)
             return s, "" if s == 429 else fixture("eightfold", "list")
 
-        with mock.patch("ats.time.sleep") as sleep:
-            jobs = list_jobs(dict(ENTRIES["Qualcomm"], queries=["x"]), http=http)
+        clock = FakeClock()
+        with clock.patched():
+            jobs = list_jobs(dict(ENTRIES["Qualcomm"], queries=["x"]), http=clock.recording(http))
         self.assertEqual(len(jobs), 3)
-        self.assertGreaterEqual(sleep.call_args_list[0].args[0], 4)
+        self.assertGreaterEqual(clock.requests[1] - clock.requests[0], 4)
 
     def test_fetch_uses_browser_user_agent(self):
         resp = mock.MagicMock()
