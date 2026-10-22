@@ -1,0 +1,1116 @@
+{
+ "items": [
+  {
+   "SearchId": 1,
+   "Keyword": "MBA",
+   "CorrectedKeyword": null,
+   "UseExactKeywordFlag": false,
+   "SuggestedKeyword": null,
+   "ExecuteSpellCheckFlag": true,
+   "Location": null,
+   "LocationId": null,
+   "Radius": 0,
+   "RadiusUnit": "MI",
+   "SelectedTitlesFacet": null,
+   "SelectedCategoriesFacet": null,
+   "SelectedPostingDatesFacet": null,
+   "SelectedLocationsFacet": null,
+   "LastSelectedFacet": null,
+   "Facets": "TITLES;LOCATIONS;LOCATION_LEVEL1;LOCATION_LEVEL2;LOCATION_LEVEL3;CATEGORIES;POSTING_DATES;WORK_LOCATIONS;FLEX_FIELDS;ORGANIZATIONS;WORKPLACE_TYPES",
+   "Offset": 0,
+   "Limit": 25,
+   "SortBy": "POSTING_DATES_DESC",
+   "TotalJobsCount": 3,
+   "Latitude": null,
+   "Longitude": null,
+   "SiteNumber": "CX_1001",
+   "JobFamilyId": null,
+   "PostingStartDate": null,
+   "PostingEndDate": null,
+   "SelectedWorkLocationsFacet": null,
+   "RequisitionId": null,
+   "CandidateNumber": null,
+   "WorkLocationZipCode": null,
+   "WorkLocationCountryCode": null,
+   "SelectedFlexFieldsFacets": null,
+   "OrganizationId": null,
+   "SelectedOrganizationsFacet": null,
+   "UserTargetFacetName": null,
+   "UserTargetFacetInputTerm": null,
+   "HotJobFlag": null,
+   "WorkplaceType": null,
+   "SelectedWorkplaceTypesFacet": null,
+   "BotQRShortCode": null,
+   "requisitionList": [
+    {
+     "Id": "210796897",
+     "Title": "Portfolio Manager - Asset Based Lending Credit Risk - Executive Director",
+     "PostedDate": "2026-10-22",
+     "PostingEndDate": null,
+     "Language": "US",
+     "PrimaryLocationCountry": "US",
+     "GeographyId": 300000020694566,
+     "HotJobFlag": false,
+     "WorkplaceTypeCode": null,
+     "JobFamily": "Credit Risk",
+     "JobFunction": "Risk",
+     "WorkerType": null,
+     "ContractType": null,
+     "ManagerLevel": null,
+     "JobSchedule": null,
+     "JobShift": null,
+     "JobType": null,
+     "StudyLevel": null,
+     "DomesticTravelRequired": null,
+     "InternationalTravelRequired": null,
+     "WorkDurationYears": null,
+     "WorkDurationMonths": null,
+     "WorkHours": null,
+     "WorkDays": null,
+     "LegalEmployer": null,
+     "BusinessUnit": null,
+     "Department": null,
+     "Organization": null,
+     "BusinessUnitId": 300060261545756,
+     "LegalEmployerId": 300000087185180,
+     "OrganizationId": 300000164320970,
+     "MediaThumbURL": null,
+     "ShortDescriptionStr": "Join our team as a Portfolio Manager in Asset Based Lending Credit Risk!",
+     "PrimaryLocation": "New York, NY, United States",
+     "Distance": 1792627200000.0,
+     "TrendingFlag": false,
+     "BeFirstToApplyFlag": false,
+     "Relevancy": 11.845995903015137,
+     "WorkplaceType": "",
+     "ExternalQualificationsStr": null,
+     "ExternalResponsibilitiesStr": null
+    },
+    {
+     "Id": "210798720",
+     "Title": "Market Risk VaR and Capital Coverage - Associate",
+     "PostedDate": "2026-10-22",
+     "PostingEndDate": null,
+     "Language": "US",
+     "PrimaryLocationCountry": "GB",
+     "GeographyId": 300000057005324,
+     "HotJobFlag": false,
+     "WorkplaceTypeCode": null,
+     "JobFamily": "Associates",
+     "JobFunction": "Program Analysts & Associate",
+     "WorkerType": null,
+     "ContractType": null,
+     "ManagerLevel": null,
+     "JobSchedule": null,
+     "JobShift": null,
+     "JobType": null,
+     "StudyLevel": null,
+     "DomesticTravelRequired": null,
+     "InternationalTravelRequired": null,
+     "WorkDurationYears": null,
+     "WorkDurationMonths": null,
+     "WorkHours": null,
+     "WorkDays": null,
+     "LegalEmployer": null,
+     "BusinessUnit": null,
+     "Department": null,
+     "Organization": null,
+     "BusinessUnitId": 300060261545756,
+     "LegalEmployerId": 300000087151266,
+     "OrganizationId": 300000164468102,
+     "MediaThumbURL": null,
+     "ShortDescriptionStr": "Drive market risk capital oversight for commodities businesses while shaping the future of risk management and regulation.",
+     "PrimaryLocation": "LONDON, United Kingdom",
+     "Distance": 1792627200000.0,
+     "TrendingFlag": false,
+     "BeFirstToApplyFlag": false,
+     "Relevancy": 11.845995903015137,
+     "WorkplaceType": "",
+     "ExternalQualificationsStr": null,
+     "ExternalResponsibilitiesStr": null
+    },
+    {
+     "Id": "210801046",
+     "Title": "AWM- Trust Officer, VP",
+     "PostedDate": "2026-10-22",
+     "PostingEndDate": null,
+     "Language": "US",
+     "PrimaryLocationCountry": "US",
+     "GeographyId": 300000020705781,
+     "HotJobFlag": false,
+     "WorkplaceTypeCode": null,
+     "JobFamily": "Trusts & Estates",
+     "JobFunction": "Client Management",
+     "WorkerType": null,
+     "ContractType": null,
+     "ManagerLevel": null,
+     "JobSchedule": null,
+     "JobShift": null,
+     "JobType": null,
+     "StudyLevel": null,
+     "DomesticTravelRequired": null,
+     "InternationalTravelRequired": null,
+     "WorkDurationYears": null,
+     "WorkDurationMonths": null,
+     "WorkHours": null,
+     "WorkDays": null,
+     "LegalEmployer": null,
+     "BusinessUnit": null,
+     "Department": null,
+     "Organization": null,
+     "BusinessUnitId": 300000086610172,
+     "LegalEmployerId": 300000087160397,
+     "OrganizationId": 300000164431310,
+     "MediaThumbURL": null,
+     "ShortDescriptionStr": "The Global Trusts & Estates Practice is an integral part of the services we offer to clients. With over 170 years of experience in serving as a corporate fiduciary for families, it is important that our Trusts and Estates services are delivered by the most capable people, with technical experience as well as the ability to interact well with a variety of types of families and individuals. When J.P. Morgan is appointed as corporate trustee of a trust, whether created by a client during their lifetime or upon their death through a provision in their will, it is the Trust Officer's role to oversee the administration of the trust.",
+     "PrimaryLocation": "Newark, DE, United States",
+     "Distance": 1792627200000.0,
+     "TrendingFlag": false,
+     "BeFirstToApplyFlag": false,
+     "Relevancy": 11.705160140991211,
+     "WorkplaceType": "",
+     "ExternalQualificationsStr": null,
+     "ExternalResponsibilitiesStr": null
+    }
+   ],
+   "categoriesFacet": [
+    {
+     "Id": 300000086143853,
+     "Name": "Client Advisory",
+     "TotalCount": 77
+    },
+    {
+     "Id": 300000086144023,
+     "Name": "Private Bankers",
+     "TotalCount": 21
+    },
+    {
+     "Id": 300000086153149,
+     "Name": "Marketing Strategy",
+     "TotalCount": 9
+    },
+    {
+     "Id": 300000086153391,
+     "Name": "Associates",
+     "TotalCount": 8
+    },
+    {
+     "Id": 300000086250752,
+     "Name": "Relationship Manager",
+     "TotalCount": 8
+    },
+    {
+     "Id": 300000086152826,
+     "Name": "Financial Analysis",
+     "TotalCount": 7
+    },
+    {
+     "Id": 300000086251864,
+     "Name": "Product Management",
+     "TotalCount": 7
+    },
+    {
+     "Id": 300001586035594,
+     "Name": "Fund Servicing",
+     "TotalCount": 7
+    },
+    {
+     "Id": 300000086152593,
+     "Name": "Business Management",
+     "TotalCount": 6
+    },
+    {
+     "Id": 300000086152757,
+     "Name": "Credit Risk",
+     "TotalCount": 6
+    },
+    {
+     "Id": 300000086153065,
+     "Name": "Analysts",
+     "TotalCount": 6
+    },
+    {
+     "Id": 300000086249994,
+     "Name": "Controller",
+     "TotalCount": 6
+    },
+    {
+     "Id": 300000086251877,
+     "Name": "Client Management",
+     "TotalCount": 6
+    },
+    {
+     "Id": 300000086251636,
+     "Name": "Strategy",
+     "TotalCount": 5
+    },
+    {
+     "Id": 300000086153090,
+     "Name": "Research",
+     "TotalCount": 4
+    },
+    {
+     "Id": 300000086153186,
+     "Name": "Capital Advisory",
+     "TotalCount": 4
+    },
+    {
+     "Id": 300000086153329,
+     "Name": "Trusts & Estates",
+     "TotalCount": 4
+    },
+    {
+     "Id": 300000086250134,
+     "Name": "Analytics Solutions & Delivery",
+     "TotalCount": 4
+    },
+    {
+     "Id": 300032576452142,
+     "Name": "Customer Success",
+     "TotalCount": 4
+    },
+    {
+     "Id": 300000086144020,
+     "Name": "Product",
+     "TotalCount": 3
+    },
+    {
+     "Id": 300000086144289,
+     "Name": "Sales Support",
+     "TotalCount": 3
+    },
+    {
+     "Id": 300000086249650,
+     "Name": "Quant Analytics",
+     "TotalCount": 3
+    },
+    {
+     "Id": 300000086249827,
+     "Name": "Technical Sales",
+     "TotalCount": 3
+    },
+    {
+     "Id": 300000086249881,
+     "Name": "Client Service",
+     "TotalCount": 3
+    },
+    {
+     "Id": 300032576452222,
+     "Name": "Client Solutions",
+     "TotalCount": 3
+    },
+    {
+     "Id": 300067131678531,
+     "Name": "Compliance & Ops Risk Testing",
+     "TotalCount": 3
+    },
+    {
+     "Id": 300000086152512,
+     "Name": "Program Management",
+     "TotalCount": 2
+    },
+    {
+     "Id": 300000086153239,
+     "Name": "Operations Management",
+     "TotalCount": 2
+    },
+    {
+     "Id": 300009195519534,
+     "Name": "CCOR LOB/CF/Country Coverage",
+     "TotalCount": 2
+    },
+    {
+     "Id": 300035862339235,
+     "Name": "Product Portfolio & Delivery",
+     "TotalCount": 2
+    },
+    {
+     "Id": 300000086152508,
+     "Name": "Predictive Science",
+     "TotalCount": 1
+    },
+    {
+     "Id": 300000086152563,
+     "Name": "Banking",
+     "TotalCount": 1
+    },
+    {
+     "Id": 300000086152573,
+     "Name": "Business Support",
+     "TotalCount": 1
+    },
+    {
+     "Id": 300000086152685,
+     "Name": "Business Analysis",
+     "TotalCount": 1
+    },
+    {
+     "Id": 300000086152904,
+     "Name": "General Management & Ops",
+     "TotalCount": 1
+    },
+    {
+     "Id": 300000086153407,
+     "Name": "Business Transformation",
+     "TotalCount": 1
+    },
+    {
+     "Id": 300000086249536,
+     "Name": "Risk Management",
+     "TotalCount": 1
+    },
+    {
+     "Id": 300000086249772,
+     "Name": "Tax",
+     "TotalCount": 1
+    },
+    {
+     "Id": 300000086249991,
+     "Name": "Control Officers",
+     "TotalCount": 1
+    },
+    {
+     "Id": 300000086250047,
+     "Name": "Client Sales",
+     "TotalCount": 1
+    }
+   ],
+   "locationsFacet": [
+    {
+     "Id": 300000000289738,
+     "Name": "United States",
+     "TotalCount": 195
+    },
+    {
+     "Id": 300000020657200,
+     "Name": "NY, United States",
+     "TotalCount": 66
+    },
+    {
+     "Id": 300000020694566,
+     "Name": "New York, NY, United States",
+     "TotalCount": 56
+    },
+    {
+     "Id": 300000020657211,
+     "Name": "TX, United States",
+     "TotalCount": 41
+    },
+    {
+     "Id": 300000020657172,
+     "Name": "CA, United States",
+     "TotalCount": 34
+    },
+    {
+     "Id": 300000000289360,
+     "Name": "India",
+     "TotalCount": 30
+    },
+    {
+     "Id": 300000020709331,
+     "Name": "Plano, TX, United States",
+     "TotalCount": 25
+    },
+    {
+     "Id": 300000020657177,
+     "Name": "FL, United States",
+     "TotalCount": 23
+    },
+    {
+     "Id": 300000020657175,
+     "Name": "DE, United States",
+     "TotalCount": 19
+    },
+    {
+     "Id": 300000081134215,
+     "Name": "Karnataka, India",
+     "TotalCount": 17
+    },
+    {
+     "Id": 300000020705969,
+     "Name": "San Francisco, CA, United States",
+     "TotalCount": 17
+    },
+    {
+     "Id": 300000081145775,
+     "Name": "Bengaluru, Karnataka, India",
+     "TotalCount": 17
+    },
+    {
+     "Id": 300000020657181,
+     "Name": "IL, United States",
+     "TotalCount": 16
+    },
+    {
+     "Id": 300000020657198,
+     "Name": "NJ, United States",
+     "TotalCount": 16
+    },
+    {
+     "Id": 300000020701539,
+     "Name": "Chicago, IL, United States",
+     "TotalCount": 16
+    },
+    {
+     "Id": 300000020657203,
+     "Name": "OH, United States",
+     "TotalCount": 15
+    },
+    {
+     "Id": 300000020657189,
+     "Name": "MA, United States",
+     "TotalCount": 14
+    },
+    {
+     "Id": 300000081134219,
+     "Name": "Maharashtra, India",
+     "TotalCount": 14
+    },
+    {
+     "Id": 300000020675960,
+     "Name": "Boston, MA, United States",
+     "TotalCount": 14
+    },
+    {
+     "Id": 300000081151360,
+     "Name": "Mumbai, Maharashtra, India",
+     "TotalCount": 14
+    },
+    {
+     "Id": 300000020683471,
+     "Name": "Wilmington, DE, United States",
+     "TotalCount": 13
+    },
+    {
+     "Id": 300000020688371,
+     "Name": "Tampa, FL, United States",
+     "TotalCount": 13
+    },
+    {
+     "Id": 300000020678161,
+     "Name": "Houston, TX, United States",
+     "TotalCount": 12
+    },
+    {
+     "Id": 300000020685544,
+     "Name": "Jersey City, NJ, United States",
+     "TotalCount": 12
+    },
+    {
+     "Id": 300000020694866,
+     "Name": "Columbus, OH, United States",
+     "TotalCount": 12
+    },
+    {
+     "Id": 300000020696987,
+     "Name": "Los Angeles, CA, United States",
+     "TotalCount": 12
+    },
+    {
+     "Id": 300000020657201,
+     "Name": "NC, United States",
+     "TotalCount": 11
+    },
+    {
+     "Id": 300000020657206,
+     "Name": "PA, United States",
+     "TotalCount": 8
+    },
+    {
+     "Id": 300000020691072,
+     "Name": "Philadelphia, PA, United States",
+     "TotalCount": 8
+    },
+    {
+     "Id": 300000020694784,
+     "Name": "Brooklyn, NY, United States",
+     "TotalCount": 8
+    },
+    {
+     "Id": 300000020697144,
+     "Name": "Miami, FL, United States",
+     "TotalCount": 8
+    },
+    {
+     "Id": 300000000289276,
+     "Name": "United Kingdom",
+     "TotalCount": 7
+    },
+    {
+     "Id": 300000020657176,
+     "Name": "DC, United States",
+     "TotalCount": 7
+    },
+    {
+     "Id": 300000020657178,
+     "Name": "GA, United States",
+     "TotalCount": 7
+    },
+    {
+     "Id": 300000057005324,
+     "Name": "LONDON, United Kingdom",
+     "TotalCount": 7
+    },
+    {
+     "Id": 300000020705795,
+     "Name": "Washington, DC, United States",
+     "TotalCount": 7
+    },
+    {
+     "Id": 300000000289576,
+     "Name": "Philippines",
+     "TotalCount": 6
+    },
+    {
+     "Id": 300000020657186,
+     "Name": "LA, United States",
+     "TotalCount": 6
+    },
+    {
+     "Id": 300000020657190,
+     "Name": "MI, United States",
+     "TotalCount": 6
+    },
+    {
+     "Id": 300000020361132,
+     "Name": "National Capital Region, Philippines",
+     "TotalCount": 6
+    }
+   ],
+   "postingDatesFacet": [
+    {
+     "Id": 7,
+     "Name": "Less than 7 days",
+     "TotalCount": 30
+    },
+    {
+     "Id": 30,
+     "Name": "Less than 30 days",
+     "TotalCount": 90
+    },
+    {
+     "Id": 31,
+     "Name": "Greater than 30 days",
+     "TotalCount": 159
+    }
+   ],
+   "titlesFacet": [
+    {
+     "Id": "CLM",
+     "Name": "Client Management",
+     "TotalCount": 129
+    },
+    {
+     "Id": "FIN",
+     "Name": "Finance",
+     "TotalCount": 21
+    },
+    {
+     "Id": "OPS",
+     "Name": "Operations",
+     "TotalCount": 20
+    },
+    {
+     "Id": "PRO",
+     "Name": "Product",
+     "TotalCount": 17
+    },
+    {
+     "Id": "PAA",
+     "Name": "Program Analysts & Associate",
+     "TotalCount": 13
+    },
+    {
+     "Id": "D&A",
+     "Name": "Data & Analytics",
+     "TotalCount": 9
+    },
+    {
+     "Id": "MKT",
+     "Name": "Marketing & Communications",
+     "TotalCount": 9
+    },
+    {
+     "Id": "RSK",
+     "Name": "Risk",
+     "TotalCount": 8
+    },
+    {
+     "Id": "PIM",
+     "Name": "Product/Investment Mgmt",
+     "TotalCount": 7
+    },
+    {
+     "Id": "S&D",
+     "Name": "Strategy & Development",
+     "TotalCount": 6
+    },
+    {
+     "Id": "O&C",
+     "Name": "Oversight & Control",
+     "TotalCount": 5
+    },
+    {
+     "Id": "CMP",
+     "Name": "Compliance",
+     "TotalCount": 1
+    },
+    {
+     "Id": "COR",
+     "Name": "Consumer Operational Risk",
+     "TotalCount": 1
+    },
+    {
+     "Id": "CPR",
+     "Name": "Corporate Responsibility",
+     "TotalCount": 1
+    },
+    {
+     "Id": "GS",
+     "Name": "General Services",
+     "TotalCount": 1
+    },
+    {
+     "Id": "PPM",
+     "Name": "Project & Process Mgmt",
+     "TotalCount": 1
+    }
+   ],
+   "workLocationsFacet": [
+    {
+     "Id": 300000161126808,
+     "Name": "60064-270 Park",
+     "TotalCount": 18
+    },
+    {
+     "Id": 300000161067083,
+     "Name": "03363-277 Park",
+     "TotalCount": 11
+    },
+    {
+     "Id": 300000160289918,
+     "Name": "02042-560 Mission Street",
+     "TotalCount": 10
+    },
+    {
+     "Id": 300000161082797,
+     "Name": "33492-JPMorgan Chase & Co Towers, M",
+     "TotalCount": 10
+    },
+    {
+     "Id": 300000161082803,
+     "Name": "33436-JPMorgan Chase & Co Towers A ",
+     "TotalCount": 10
+    },
+    {
+     "Id": 300000161100439,
+     "Name": "52381-One Christina Center",
+     "TotalCount": 10
+    },
+    {
+     "Id": 300000161117503,
+     "Name": "59636-Legacy West C",
+     "TotalCount": 10
+    },
+    {
+     "Id": 300000161065225,
+     "Name": "10468-Chase Tower Chicago",
+     "TotalCount": 9
+    },
+    {
+     "Id": 300000161067221,
+     "Name": "03354-5 Manhattan West",
+     "TotalCount": 8
+    },
+    {
+     "Id": 300000161064854,
+     "Name": "02968-NOC 4",
+     "TotalCount": 7
+    },
+    {
+     "Id": 300000161127084,
+     "Name": "60062-390 Madison",
+     "TotalCount": 7
+    },
+    {
+     "Id": 300000161067054,
+     "Name": "03357-4 Metrotech",
+     "TotalCount": 6
+    },
+    {
+     "Id": 300000161110891,
+     "Name": "54101-1111 Polaris",
+     "TotalCount": 6
+    },
+    {
+     "Id": 300000161127611,
+     "Name": "59635-Legacy West B",
+     "TotalCount": 6
+    },
+    {
+     "Id": 300000160289954,
+     "Name": "02037-50 Rowes Wharf",
+     "TotalCount": 5
+    },
+    {
+     "Id": 300000161098338,
+     "Name": "51563-2029 Century Park East",
+     "TotalCount": 5
+    },
+    {
+     "Id": 300000161107849,
+     "Name": "52988-3 Park Plaza - Jamboree Cente",
+     "TotalCount": 5
+    },
+    {
+     "Id": 300000161127581,
+     "Name": "59693-Legacy West A",
+     "TotalCount": 5
+    },
+    {
+     "Id": 300000159300430,
+     "Name": "01525-712 Main",
+     "TotalCount": 4
+    },
+    {
+     "Id": 300000161019390,
+     "Name": "00735-One Liberty Place",
+     "TotalCount": 4
+    },
+    {
+     "Id": 300000161078910,
+     "Name": "32173-25 Bank Street",
+     "TotalCount": 4
+    },
+    {
+     "Id": 300000161079333,
+     "Name": "41016-Monarch Tower",
+     "TotalCount": 4
+    },
+    {
+     "Id": 300000161082635,
+     "Name": "33308-Blue Bay Building",
+     "TotalCount": 4
+    },
+    {
+     "Id": 300000161096225,
+     "Name": "51117-Brickell Ave and SE 15th Rd",
+     "TotalCount": 4
+    },
+    {
+     "Id": 300000161100834,
+     "Name": "51304-451 D Street",
+     "TotalCount": 4
+    },
+    {
+     "Id": 300000161123157,
+     "Name": "59919-Capitol Towers",
+     "TotalCount": 4
+    },
+    {
+     "Id": 300000161127151,
+     "Name": "60114-Bowen Building",
+     "TotalCount": 4
+    },
+    {
+     "Id": 300000161019414,
+     "Name": "00768-NCC1",
+     "TotalCount": 3
+    },
+    {
+     "Id": 300000161064896,
+     "Name": "02974-Highland Oaks 2",
+     "TotalCount": 3
+    },
+    {
+     "Id": 300000161065556,
+     "Name": "01530-JPMorgan Chase Tower Houston",
+     "TotalCount": 3
+    },
+    {
+     "Id": 300000161078892,
+     "Name": "32183-Prima Bay",
+     "TotalCount": 3
+    },
+    {
+     "Id": 300000161096327,
+     "Name": "51111-100 North Tampa",
+     "TotalCount": 3
+    },
+    {
+     "Id": 300000161125043,
+     "Name": "60796-Market Station",
+     "TotalCount": 3
+    },
+    {
+     "Id": 300034459227574,
+     "Name": "00856-Rockefeller Center",
+     "TotalCount": 3
+    },
+    {
+     "Id": 300035128317753,
+     "Name": "00997-One Cabot Square",
+     "TotalCount": 3
+    },
+    {
+     "Id": 300000160299419,
+     "Name": "02176-300 South Grand Avenue",
+     "TotalCount": 2
+    },
+    {
+     "Id": 300000161064830,
+     "Name": "02976-Fountain Square 1",
+     "TotalCount": 2
+    },
+    {
+     "Id": 300000161064872,
+     "Name": "02936-Easton - Vision Drive",
+     "TotalCount": 2
+    },
+    {
+     "Id": 300000161064890,
+     "Name": "02969-NOC 5",
+     "TotalCount": 2
+    },
+    {
+     "Id": 300000161070471,
+     "Name": "32167-Torre Amadeus",
+     "TotalCount": 2
+    }
+   ],
+   "flexFieldsFacet": [],
+   "organizationsFacet": [
+    {
+     "Id": 300000164839264,
+     "Name": "254921-USPB CHARLOTTE (SC) - 802",
+     "TotalCount": 4
+    },
+    {
+     "Id": 300000164934402,
+     "Name": "234732-USPB SAN FRANCISCO (SC) - 802",
+     "TotalCount": 4
+    },
+    {
+     "Id": 300000164222151,
+     "Name": "240330-USPB HOUSTON (SC) - 802",
+     "TotalCount": 3
+    },
+    {
+     "Id": 300000164342041,
+     "Name": "254912-USPB ATLANTA (SC) - 802",
+     "TotalCount": 3
+    },
+    {
+     "Id": 300000164431310,
+     "Name": "134258-DE EAST REGION",
+     "TotalCount": 3
+    },
+    {
+     "Id": 300000164452064,
+     "Name": "254833-USPB MID-ATLANTIC (SC) - 802",
+     "TotalCount": 3
+    },
+    {
+     "Id": 300000164838881,
+     "Name": "234708-USPB BOSTON (SC) - 802",
+     "TotalCount": 3
+    },
+    {
+     "Id": 300000165346683,
+     "Name": "322229-COMMERCIAL EAST REGIONAL SALES",
+     "TotalCount": 3
+    },
+    {
+     "Id": 300057744545289,
+     "Name": "119253-TRANSFORMATION OFFICE - US",
+     "TotalCount": 3
+    },
+    {
+     "Id": 300063442926506,
+     "Name": "468352-AM OPS - PHILIPPINES 3491",
+     "TotalCount": 3
+    },
+    {
+     "Id": 300000164152142,
+     "Name": "322760-US SAN DIEGO (SC)",
+     "TotalCount": 2
+    },
+    {
+     "Id": 300000164153178,
+     "Name": "466131-USPB CHICAGO EXECS (SC)",
+     "TotalCount": 2
+    },
+    {
+     "Id": 300000164206171,
+     "Name": "295169-MARKETING - STRATEGY & TRANSFORMATION",
+     "TotalCount": 2
+    },
+    {
+     "Id": 300000164237397,
+     "Name": "234736-USPB DENVER (SC) - 802",
+     "TotalCount": 2
+    },
+    {
+     "Id": 300000164246288,
+     "Name": "254843-USPB TAMPA (SC) - 802",
+     "TotalCount": 2
+    },
+    {
+     "Id": 300000164280771,
+     "Name": "438303-MID MARKET RM NA",
+     "TotalCount": 2
+    },
+    {
+     "Id": 300000164327935,
+     "Name": "254853-USPB FORT LAUDERDALE (SC) - 802",
+     "TotalCount": 2
+    },
+    {
+     "Id": 300000164353747,
+     "Name": "274942-KAG RECON MNL",
+     "TotalCount": 2
+    },
+    {
+     "Id": 300000164390640,
+     "Name": "138300-CONSUMER / RETAIL",
+     "TotalCount": 2
+    },
+    {
+     "Id": 300000164419995,
+     "Name": "419633-USPB FINANCIAL SPONSORS (SC) - 802",
+     "TotalCount": 2
+    },
+    {
+     "Id": 300000164457178,
+     "Name": "289665-STRESS TESTING US",
+     "TotalCount": 2
+    },
+    {
+     "Id": 300000164465020,
+     "Name": "459718-US CENTURY CITY (PC) - BANKERS",
+     "TotalCount": 2
+    },
+    {
+     "Id": 300000164476339,
+     "Name": "003012-USPB NEW YORK-M (PC) - BANKERS",
+     "TotalCount": 2
+    },
+    {
+     "Id": 300000164696262,
+     "Name": "457833-USPB COLUMBUS (SC) - 802",
+     "TotalCount": 2
+    },
+    {
+     "Id": 300000164747764,
+     "Name": "466087-USPB BATON ROUGE (SC) - 802",
+     "TotalCount": 2
+    },
+    {
+     "Id": 300000164750570,
+     "Name": "316049-USPB ORLANDO (SC) - 802",
+     "TotalCount": 2
+    },
+    {
+     "Id": 300000164778602,
+     "Name": "264514-CLIENT ONBOARDING INDIA",
+     "TotalCount": 2
+    },
+    {
+     "Id": 300000164791256,
+     "Name": "032767-WM TECH F&BM US",
+     "TotalCount": 2
+    },
+    {
+     "Id": 300000164794022,
+     "Name": "363069-PERES TORONTO",
+     "TotalCount": 2
+    },
+    {
+     "Id": 300000164797464,
+     "Name": "043748-BM COS F&BM US",
+     "TotalCount": 2
+    },
+    {
+     "Id": 300000164837065,
+     "Name": "012526-USPB MIAMI (PC) - BANKERS",
+     "TotalCount": 2
+    },
+    {
+     "Id": 300000164839168,
+     "Name": "254896-USPB FORT WORTH (SC) - 802",
+     "TotalCount": 2
+    },
+    {
+     "Id": 300000164843811,
+     "Name": "225883-US NY PIERPONT (SC) - EAST",
+     "TotalCount": 2
+    },
+    {
+     "Id": 300000164922407,
+     "Name": "254917-USPB NASHVILLE (SC) - 802",
+     "TotalCount": 2
+    },
+    {
+     "Id": 300000164971741,
+     "Name": "254881-USPB ST LOUIS (SC) - 802",
+     "TotalCount": 2
+    },
+    {
+     "Id": 300000165107402,
+     "Name": "408584-HFS FA OPS BROOKLYN",
+     "TotalCount": 2
+    },
+    {
+     "Id": 300000165114502,
+     "Name": "641125-CDB WEST CDRE",
+     "TotalCount": 2
+    },
+    {
+     "Id": 300000165175455,
+     "Name": "123939-AUTO FINANCE MGMT",
+     "TotalCount": 2
+    },
+    {
+     "Id": 300000165234974,
+     "Name": "254866-USPB ORANGE COUNTY (SC) - 802",
+     "TotalCount": 2
+    },
+    {
+     "Id": 300000165235360,
+     "Name": "423744-CCB ASSOCIATE PROGRAM - CAP",
+     "TotalCount": 2
+    }
+   ],
+   "workplaceTypesFacet": [
+    {
+     "Id": "ORA_ON_SITE",
+     "Name": "On-site",
+     "TotalCount": 249
+    }
+   ]
+  }
+ ],
+ "count": 1,
+ "hasMore": false,
+ "limit": 200,
+ "offset": 0,
+ "links": [
+  {
+   "rel": "self",
+   "href": "https://jpmc.fa.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions",
+   "name": "recruitingCEJobRequisitions",
+   "kind": "collection"
+  },
+  {
+   "rel": "action",
+   "href": "https://jpmc.fa.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/action/getRequisitionsLocationCoordinates",
+   "name": "getRequisitionsLocationCoordinates",
+   "kind": "other"
+  },
+  {
+   "rel": "action",
+   "href": "https://jpmc.fa.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/action/getRequisitionDetailsForMap",
+   "name": "getRequisitionDetailsForMap",
+   "kind": "other"
+  }
+ ]
+}

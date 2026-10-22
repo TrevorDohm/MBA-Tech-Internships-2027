@@ -1,0 +1,46 @@
+{
+ "took": 21,
+ "timed_out": false,
+ "_shards": {
+  "total": 20,
+  "successful": 20,
+  "skipped": 0,
+  "failed": 0
+ },
+ "hits": {
+  "total": {
+   "value": 3,
+   "relation": "eq"
+  },
+  "max_score": 72.94798,
+  "hits": [
+   {
+    "_index": "genesis-prod-1788036777996",
+    "_id": "1d169a38f95d223721ec0e68d9b14b84c4bb623cc6bf15f9b11b6aacde799c53",
+    "_score": 72.94798,
+    "_source": {
+     "url": "https://careers.ibm.com/careers/JobDetail?jobId=136426",
+     "title": "Product Management Intern 2027"
+    }
+   },
+   {
+    "_index": "genesis-prod-1788036777996",
+    "_id": "4d8e36a90e38707b2dc8bd50aa3f3de24c5d18bb861320ce9f1ea1338bb78337",
+    "_score": 71.04613,
+    "_source": {
+     "url": "https://careers.ibm.com/careers/JobDetail?jobId=134058",
+     "title": "Sales Operations Intern 2027"
+    }
+   },
+   {
+    "_index": "genesis-prod-1788036777996",
+    "_id": "b883954a399454991ec47b849d99c74f43a32918b54aec465fdf98b42da74d9f",
+    "_score": 70.6326,
+    "_source": {
+     "url": "https://careers.ibm.com/careers/JobDetail?jobId=128591",
+     "title": "Intern Oracle Cloud 2027"
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,68 @@
+{
+ "error": null,
+ "hits": 3,
+ "facets": {},
+ "content": {
+  "sidebar": {},
+  "search_results": {}
+ },
+ "jobs": [
+  {
+   "basic_qualifications": "- Currently enrolled in a full-time MBA program at time of application<br/>- • Graduating between December 1, 2025 and September 30, 2026<br/>- • 3+ years of full-time industry work experience, which occurred between the conferral date from your undergraduate program and prior to starting your MBA, OR 3+ years of military work experience prior to starting your MBA program",
+   "business_category": "eu3p_marketplace",
+   "city": "Barcelona",
+   "company_name": "Amazon EU SARL (Spain Branch)",
+   "country_code": "ESP",
+   "description": "Launch – Amazon’s corporate MBA program for Europe<br/>Opportunities in locations including: the UK, Luxembourg, France, Germany, Spain, Italy, Sweden and the Netherlands. While we will consider location preferences if possible, we ask you to be as location-agnostic as possible since you may receive an offer from any of these corporate locations. Fluency in English is essential for all roles in Europe and local language skills are highly desirable for some positions, but are not essential for every role.<br/>At Amazon, we are excited to offer MBA candidates the opportunity to launch into big careers with limitless possibilities. We know searching for a full-time role is as much about finding a company where you can picture yourself being successful as it is about finding the right role. We look forward to meeting you and your classmates this year. As we get to know you more, we invite you to get to know us better.  Visit www.amazon.com/about to learn more about...<br/>• Our businesses by reviewing Press Releases on our Investor Relations site, CEO Andy Jassy’s 2022 Letter to Shareholders, and the first letter shared in 1997, which is included in our annual report each year<br/>• Amazonians - and follow us on Facebook, Twitter, and LinkedIn<br/>• Our commitment to our communities, diversity and military veterans<br/>• Our European offices, our headquarters in Seattle, as well as where we operate around the world<br/>Important Notes<br/>• You will have the opportunity to specify location and business preference when you create your candidate profile and submit your application within the Amazon portal.<br/>• You need only to submit one Amazon job application for all roles listed below (please use your school e-mail).<br/>• We are looking for candidates who want to own, build and impact the customer experience over being tied to a specific role or team. The role and team placement will be based on business needs and as Amazon continues to grow we cannot guarantee that you will be based in the location or business area of your choice, but we will do our best to take your preferences into account.<br/>• Make sure to list your MBA program and expected conferral date (month and year) within the Education section of your online application and on your resume.<br/>• A cover letter is not necessary.<br/><br/>Key job responsibilities<br/>Launch, Amazon’s corporate MBA program for Europe, recruits top MBA international talent and builds broad, adaptable Amazonians across corporate businesses in Europe. The program provides a platform for MBAs to make the successful transition from their pre-MBA experience to Amazon. We run a three-year program offering two job rotations supported through on-boarding activities, core training modules, networking opportunities, and mentorship. Launch MBAs start by diving deep to understand customers and how the business is meeting their needs, then apply the learning from their MBA and their own creativity to identify the opportunities where they can make the biggest difference. At the end of the three-year program, MBAs have integrated into Amazon’s peculiar ways and have acquired a diverse set of experiences that enable them to take ownership of their next career move through Amazon’s extensive internal job opportunities. Through the rotation process, MBAs are able to move to a new function, business, and/or European location.<br/><br/>A day in the life<br/>Opportunities within different business areas vary each year, and can include: Advertising, Amazon Web Services (AWS), Amazon Prime Video, Consumer and Devices/Alexa.<br/>Example full-time job functions include: <br/>• Sr. Business Development Manager: Partners with business leaders to grow the business by creating new partnerships, leveraging existing relationships, and/or licensing assets to drive product improvements and innovation, enable distribution of our application, products and/or services, and reduce costs without sacrificing the customer experience.<br/>• Sr. Category Merchant Manager: Manage the portfolio of third-party merchant accounts, support revenue growth and traffic, conduct regular intensive business analysis and reporting, and support the development of the Fulfillment by Amazon (FBA) program, and manage projects working with our technology teams to build an extraordinary customer experience.<br/>• Sr. Instock Manager: Develop and execute inventory management strategies (including forecasting, capacity planning, and supply chain optimization), determine how to allocate resources for variable cost reduction and profit margin improvement to drive overall profitability for the business unit. <br/>• Sr. Marketing Manager: Develop and execute strategies for growing the size and lifetime value of the business unit’s customer base, through both acquisition and CRM strategies for targeting and communicating with customers. <br/>• Sr. Product Manager: Support the definition and launch of new products, services, or features in partnership with technical teams. Evaluate the existing experience(s) for customers on and off Amazon, identify areas for improvement, develop business requirements, craft and implement marketing plans, and own measures of success.<br/>• Sr. Program Manager: Find solutions to complex problems and innovate on leading edge solutions to manage programs broadly across businesses within Amazon. Given responsibility to own those business challenges and the autonomy to think strategically and make data driven decisions. Drive efforts independently and as part of larger project teams, and have a significant impact on the customer experience and the business.<br/>• Sr. Vendor Manager: Identify new brand and product business opportunities, manage relationships with key vendors, negotiate competitive business terms, and secure participation in promotions and marketing programs. ",
+   "department_cost_center": null,
+   "description_short": "Launch – Amazon’s corporate MBA program for EuropeOpportunities in locations including: the UK, Luxembourg, France, Germany, Spain, Italy, Sweden and the Netherlands. While we will consider location preferences",
+   "display_distance": null,
+   "id": "02e7b200-6ce4-4f17-af1f-c082259a27b9",
+   "id_icims": "10586117",
+   "is_intern": null,
+   "is_manager": null,
+   "job_category": "Buying, Planning, & Instock Management",
+   "job_family": "Buying/Planning",
+   "job_function_id": null,
+   "job_path": "/en/jobs/10586117/launch-mba-program",
+   "job_schedule_type": "full-time",
+   "location": "ES, B, Barcelona",
+   "locations": [
+    "{\"normalizedStateName\":\"Catalonia\",\"normalizedCountryCode\":\"ESP\",\"city\":\"Barcelona\",\"countryIso3a\":\"ESP\",\"countryIso2a\":\"ES\",\"locationNonStemming\":\"Spain, B, Barcelona\",\"coordinates\":\"41.38804,2.17001\",\"normalizedCountyName\":\"Barcelona\",\"type\":\"ONSITE\",\"normalizedCountryName\":\"Spain\",\"normalizedLocation\":\"Barcelona, Catalonia, ESP\",\"location\":\"ES, B, Barcelona\",\"region\":\"B\",\"buildingCodeList\":[\"BCN10\"],\"normalizedCityName\":\"Barcelona\"}",
+    "{\"normalizedStateName\":\"Community of Madrid\",\"normalizedCountryCode\":\"ESP\",\"city\":\"Madrid\",\"countryIso3a\":\"ESP\",\"countryIso2a\":\"ES\",\"locationNonStemming\":\"Spain, M, Madrid\",\"coordinates\":\"40.42024,-3.68755\",\"normalizedCountyName\":\"Madrid\",\"type\":\"ONSITE\",\"normalizedCountryName\":\"Spain\",\"normalizedLocation\":\"Madrid, Community of Madrid, ESP\",\"location\":\"ES, M, Madrid\",\"region\":\"M\",\"buildingCodeList\":[\"MAD12\"],\"normalizedCityName\":\"Madrid\"}"
+   ],
+   "normalized_location": "Barcelona, Catalonia, ESP",
+   "optional_search_labels": [],
+   "posted_date": "October 22, 2026",
+   "preferred_qualifications": "- • 4+ years of full-time industry/military work experience prior to your MBA • Fluency in a European language (e.g., German, French, Italian, Spanish) • Demonstration of interest in the technology industry, such as: Undergraduate/Master’s degree in computer science or engineering; prior work experience in a start-up or technology company; SQL or programming experience, etc. • Experience in sales or account management • Demonstrated capability of both high-level strategic thinking and detailed execution • Consistent track record of taking ownership and driving results • Comfortable with “hands-on” management of tasks, and proven ability to manage multiple, contending priorities simultaneously Amazon is an equal opportunities employer. We believe passionately that employing a diverse workforce is central to our success. We make recruiting decisions based on your experience and skills. We value your passion to discover, invent, simplify and build.<br/><br/>Amazon is an equal opportunities employer. We believe passionately that employing a diverse workforce is central to our success. We make recruiting decisions based on your experience and skills. We value your passion to discover, invent, simplify and build. Protecting your privacy and the security of your data is a longstanding top priority for Amazon. Please consult our Privacy Notice (<a href=\"https://www.amazon.jobs/en/privacy_page\">https://www.amazon.jobs/en/privacy_page</a>) to know more about how we collect, use and transfer the personal data of our candidates.<br/><br/>Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit <a href=\"https://amazon.jobs/content/en/how-we-hire/accommodations\">https://amazon.jobs/content/en/how-we-hire/accommodations</a> for more information. If the country/region you’re applying in isn’t listed, please contact your Recruiting Partner.",
+   "primary_search_label": "eu3p_marketplace.team-consumer-3p-job-posting",
+   "source_system": "JobCreator",
+   "state": "B",
+   "title": "Launch MBA Program",
+   "university_job": null,
+   "updated_time": "about 11 hours",
+   "url_next_step": "https://account.amazon.jobs/jobs/10586117/apply",
+   "team": {
+    "id": null,
+    "business_category_id": null,
+    "identifier": null,
+    "label": "team-consumer-3p-job-posting",
+    "created_at": null,
+    "updated_at": null,
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image_updated_at": null,
+    "thumbnail_file_name": null,
+    "thumbnail_content_type": null,
+    "thumbnail_file_size": null,
+    "thumbnail_updated_at": null,
+    "hide_jobs": null,
+    "title": null,
+    "headline": null,
+    "description": null
+   }
+  }
+ ],
+ "job_posting_search_request": "{\"jobPostingSearchRequest\":{\"query\":\"10586117\",\"excludeFacets\":[{\"name\":\"businessCategory\",\"values\":[{\"name\":\"a-confidential-job\"}]},{\"name\":\"isPostedExternally\",\"values\":[{\"name\":\"0\"}]},{\"name\":\"isUnsearchable\",\"values\":[{\"name\":\"1\"}]}],\"filterFacets\":[],\"start\":\"0\",\"size\":\"100\",\"sort\":{\"sortOrder\":\"DESCENDING\",\"sortType\":\"SCORE\"},\"location\":null,\"accessLevel\":\"EXTERNAL\",\"includeFacets\":[],\"locationFacets\":[],\"jobTypeFacets\":[],\"contentFilterFacets\":[],\"treatment\":\"OM\"}}"
+}
