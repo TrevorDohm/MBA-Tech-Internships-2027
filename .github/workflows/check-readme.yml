@@ -2,6 +2,7 @@ name: Check listings
 
 on:
   pull_request:
+    types: [opened, synchronize, reopened, labeled, unlabeled]
     paths: ["listings.json", "README.md", "scripts/**", "ignored.json", "watchlist.json", "tests/**"]
   push:
     branches: [main]
@@ -25,4 +26,4 @@ jobs:
         if: github.event_name == 'pull_request'
         env:
           LABELS: ${{ join(github.event.pull_request.labels.*.name, ',') }}
-        run: python3 scripts/validate_listings.py --base origin/${{ github.base_ref }} --labels "$LABELS"
+        run: python3 scripts/validate_listings.py --base origin/${{ github.base_ref }} --labels="$LABELS"

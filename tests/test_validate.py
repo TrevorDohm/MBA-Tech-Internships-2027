@@ -68,6 +68,12 @@ class CheckRowTests(unittest.TestCase):
                      "We do not offer any type of employment-based immigration sponsorship for this role"):
             self.assertEqual(check(row(sponsorship="no"), text), [], text)
             self.assertTrue(check(row(sponsorship="yes"), text), text)
+        for text in ("We don't offer visa sponsorship", "We don’t sponsor", "Sponsorship cannot be provided for this role",
+                     "Sponsorship is unable to be offered", "Sponsorship: No", "We sponsor no visas",
+                     "Applicants who now or in the future require sponsorship cannot be considered",
+                     "Must be able to work without sponsorship"):
+            self.assertTrue(check(row(sponsorship="yes"), text), text)
+            self.assertEqual(check(row(sponsorship="no"), text), [], text)
         for claim in ("yes", "no"):
             self.assertTrue(check(row(sponsorship=claim), "legally authorized to work in the US"))
 
@@ -92,7 +98,8 @@ class CheckRowTests(unittest.TestCase):
 
     def test_utc_end_date_is_local_evening(self):
         self.assertEqual(check(row(deadline="2026-10-31"), "Posting end date: 2026-11-01T03:59:00+00:00"), [])
-        self.assertTrue(check(row(deadline="2026-10-31"), "Posting end date: 2026-11-01T15:59:00+00:00"))
+        self.assertTrue(check(row(deadline="2026-10-31"), "Posting end date: 2026-11-01T11:59:00+00:00"))
+        self.assertTrue(check(row(deadline="2026-10-31"), "Posted 2026-11-01T08:00Z"))
 
     def test_malformed_deadline_is_an_error(self):
         errs = check(row(deadline="Nov 1"), "anything")

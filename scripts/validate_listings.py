@@ -172,9 +172,9 @@ def deadline_in(iso, text):
     m = r"(?:%s|%s)\.?" % (MONTHS[d.month - 1], MONTHS[d.month - 1][:3])
     if re.search(r"(?<!\d)%s-%02d-%02d(?!\d)" % (d.year, d.month, d.day), t):
         return True
-    # A UTC timestamp early in the day is the previous evening in the US ("2026-11-01T03:59:00+00:00").
-    for hit in re.finditer(r"(?<!\d)(\d{4}-\d{2}-\d{2})t(\d{2}):\d{2}(?::\d{2})?(?:z|\+00:?00)", t):
-        if int(hit.group(2)) < 12 and date.fromisoformat(hit.group(1)) - timedelta(days=1) == d:
+    # "Posting end date: 2026-11-01T03:59:00+00:00" is the previous evening in the US (R20).
+    for hit in re.finditer(r"posting end date:\s*(\d{4}-\d{2}-\d{2})t(\d{2}):\d{2}(?::\d{2})?(?:z|\+00:?00)", t):
+        if int(hit.group(2)) < 10 and date.fromisoformat(hit.group(1)) - timedelta(days=1) == d:
             return True
     year_after = r"(?:,?\s*(\d{4})(?!\d))?"
     pats = (r"\b%s\s+(?<!\d)%s(?!\d)(?:st|nd|rd|th)?%s" % (m, day, year_after),
@@ -197,13 +197,12 @@ def deadline_in(iso, text):
 
 # --- sponsorship ---------------------------------------------------------------------------------------------
 
-_NEG_BEFORE = re.compile(r"\b(?:not|no|unable|cannot|can't|won't|doesn't|ineligible|unavailable)\b")
-_NEG_AFTER = re.compile(r"\b(?:not|unavailable|ineligible)\b|n't\b")
+_NEG = re.compile(r"\b(?:not|no|unable|cannot|ineligible|unavailable)\b|n't\b")
 BEFORE, AFTER = 60, 40  # R16 says ~40 before; 60 covers "do not offer any type of employment-based immigration sponsorship"
 
 
 def _negated(t, i, j):
-    return bool(_NEG_BEFORE.search(t[max(0, i - BEFORE):i]) or _NEG_AFTER.search(t[j:j + AFTER]))
+    return bool(_NEG.search(t[max(0, i - BEFORE):i]) or _NEG.search(t[j:j + AFTER]))
 
 
 def sponsorship_supports(claim, text):
@@ -211,14 +210,11 @@ def sponsorship_supports(claim, text):
     t = _norm(text)
     hits = [(m.start(), m.end()) for m in re.finditer(r"sponsor\w*", t)]
     negated = [_negated(t, i, j) for i, j in hits]
+    without = any("without" in t[max(0, m.start() - 40):m.end() + 40]
+                  for m in re.finditer(r"sponsor|authori[zs]", t))
     if claim == "yes":
-        return bool(hits) and not any(negated)
-    if any(negated):
-        return True
-    for m in re.finditer(r"sponsor|authori[zs]", t):
-        if "without" in t[max(0, m.start() - 40):m.end() + 40]:
-            return True
-    return False
+        return bool(hits) and not any(negated) and not without
+    return any(negated) or without
 
 
 # --- per-row check -------------------------------------------------------------------------------------------
