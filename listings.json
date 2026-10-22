@@ -180,22 +180,29 @@
   },
   {
     "company": "Google",
-    "role": "MBA Intern, Summer 2027 (US; incl. Google Cloud, YouTube)",
+    "role": "MBA Intern, Summer 2027",
     "category": "Strategy & BizOps",
     "locations": [
       "Mountain View, CA",
       "New York, NY",
       "Seattle, WA",
+      "San Francisco, CA",
+      "Sunnyvale, CA",
+      "Kirkland, WA",
+      "San Bruno, CA",
       "Chicago, IL",
       "Atlanta, GA",
+      "Austin, TX",
+      "Boulder, CO",
       "Washington, DC"
     ],
-    "url": "https://www.google.com/about/careers/applications/students/business-internships/",
+    "url": "https://www.google.com/about/careers/applications/jobs/results/121103710599160518-mba-intern",
     "date_posted": null,
-    "status": "expected",
-    "pay": null,
+    "deadline": "2026-11-06",
+    "status": "open",
+    "pay": "$96,000–$125,000 (US)",
     "sponsorship": "unknown",
-    "notes": "No US 2027 MBA posting live as of 2026-10-11. Google ran a US 'MBA Intern, Summer 2026' (12 wks, first-year MBAs, PM/BizOps/marketing/finance tracks); its careers site still features MBA internships."
+    "notes": "Full-time MBA, first-year preferred. One application across BizOps, Finance, PM (CS/coding required), Program Mgmt, Corp Dev, Sales, People Ops, Public Sector. 12 consecutive wks from May/Jun 2027; must be US work-authorized."
   },
   {
     "company": "Meta",
@@ -530,17 +537,18 @@
   },
   {
     "company": "Airbnb",
-    "role": "Strategic Finance & Analytics Intern (MBA) (Summer 2027)",
+    "role": "Strategic Finance & Analytics Intern (MBA)",
     "category": "Finance & Corp Dev",
     "locations": [
       "Remote (US)"
     ],
-    "url": "https://careers.airbnb.com/",
-    "date_posted": null,
-    "status": "expected",
-    "pay": null,
+    "url": "https://careers.airbnb.com/positions/8285171/",
+    "date_posted": "2026-10-15",
+    "deadline": "2026-11-01",
+    "status": "open",
+    "pay": "$48/hr",
     "sponsorship": "unknown",
-    "notes": "2026 cycle: Strategic Finance & Analytics Intern (MBA/MS) for first-year MBAs at US schools; also other MBA roles. No interns on Airbnb Greenhouse board as of 2026-10-12."
+    "notes": "First-year full-time MBAs (grad Spring 2028) at accredited US schools; 3–5 yrs FP&A/corp dev/consulting/PE/IB exp; May 24–Aug 13, 2027; cover letter required; US remote (some states excluded)."
   },
   {
     "company": "Snap",
@@ -601,17 +609,17 @@
   },
   {
     "company": "Duolingo",
-    "role": "Product Manager, MBA Intern (Summer 2027)",
+    "role": "Product Manager, MBA Intern",
     "category": "PM",
     "locations": [
       "Pittsburgh, PA"
     ],
-    "url": "https://careers.duolingo.com/",
-    "date_posted": null,
-    "status": "expected",
-    "pay": null,
+    "url": "https://careers.duolingo.com/jobs/8888045002",
+    "date_posted": "2026-10-15",
+    "status": "open",
+    "pay": "$63–$65/hr",
     "sponsorship": "unknown",
-    "notes": "2026 cycle: Product Manager, MBA Intern (MBA grad Dec 2026/Spring 2027). 2027 cycle so far APM/SWE only; none MBA-tagged on Greenhouse as of 2026-10-12."
+    "notes": "MBA grad Dec 2027 or Spring 2028; 3+ yrs PM or related exp; 12 consecutive wks; relocation assistance."
   },
   {
     "company": "Disney",
@@ -877,12 +885,12 @@
       "Chicago, IL",
       "Richmond, VA"
     ],
-    "url": "https://www.capitalonecareers.com/job/mclean/mba-product-intern-summer-2027/1732/101404678752",
-    "date_posted": "2026-10-01",
+    "url": "https://www.capitalonecareers.com/job/mclean/mba-product-intern-summer-2027/1732/101906667360",
+    "date_posted": "2026-10-13",
     "status": "open",
     "pay": "$169,000–$203,000/yr annualized (Chicago/Richmond $169K, McLean $186K, NY $203K)",
     "sponsorship": "no",
-    "notes": "2-yr full-time MBA graduating by Aug 2028; 10 wks Jun-Aug 2027, hybrid. Interns evaluated for full-time MBA Development Program (PM)."
+    "notes": "2-yr full-time MBA graduating by Aug 2028; 10 wks Jun-Aug 2027, hybrid. Interns evaluated for full-time MBA Development Program (PM). Reposted Oct 13 as R244815 (original req taken down)."
   },
   {
     "company": "Robinhood",
@@ -985,12 +993,12 @@
       "New York, NY"
     ],
     "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/New-York---New-York/Summer-2027-Intern---MBA-Business-Value---Strategic-Selling-Consultant_JR362509-1",
-    "date_posted": "2026-10-01",
-    "deadline": "2026-10-20",
+    "date_posted": "2026-10-20",
+    "deadline": "2026-10-24",
     "status": "open",
     "pay": "$46–$57/hr",
     "sponsorship": "no",
-    "notes": "Currently enrolled in MBA graduating Spring 2028; 5+ yrs pre-MBA experience (value/mgmt consulting, IB or similar). Jun-Aug/Sep 2027."
+    "notes": "Currently enrolled in MBA graduating Spring 2028; 5+ yrs pre-MBA experience (value/mgmt consulting, IB or similar). Jun-Aug/Sep 2027. Reposted Oct 20; Workday end date Oct 24 (posting text still says Oct 20)."
   },
   {
     "company": "Salesforce",
@@ -1000,12 +1008,12 @@
       "New York, NY"
     ],
     "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/New-York---New-York/Summer-2027-Intern---MBA-Business-Value---Strategic-Selling-Consultant--Financial-Services-_JR362508-1",
-    "date_posted": "2026-10-01",
-    "deadline": "2026-10-20",
+    "date_posted": "2026-10-20",
+    "deadline": "2026-10-24",
     "status": "open",
     "pay": "$46–$57/hr",
     "sponsorship": "no",
-    "notes": "Currently enrolled in MBA graduating Spring 2028; 5+ yrs pre-MBA experience (value/mgmt consulting, IB or similar). Jun-Aug/Sep 2027."
+    "notes": "Currently enrolled in MBA graduating Spring 2028; 5+ yrs pre-MBA experience (value/mgmt consulting, IB or similar). Jun-Aug/Sep 2027. Reposted Oct 20; Workday end date Oct 24 (posting text still says Oct 20)."
   },
   {
     "company": "Salesforce",
@@ -1015,12 +1023,12 @@
       "New York, NY"
     ],
     "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/New-York---New-York/Summer-2027-Intern---MBA-Business-Value---Strategic-Selling-Consultant--Healthcare---Life-Sciences-_JR362499-1",
-    "date_posted": "2026-10-01",
-    "deadline": "2026-10-20",
+    "date_posted": "2026-10-20",
+    "deadline": "2026-10-24",
     "status": "open",
     "pay": "$46–$57/hr",
     "sponsorship": "no",
-    "notes": "Currently enrolled in MBA graduating Spring 2028; 5+ yrs pre-MBA experience (value/mgmt consulting, IB or similar). Jun-Aug/Sep 2027."
+    "notes": "Currently enrolled in MBA graduating Spring 2028; 5+ yrs pre-MBA experience (value/mgmt consulting, IB or similar). Jun-Aug/Sep 2027. Reposted Oct 20; Workday end date Oct 24 (posting text still says Oct 20)."
   },
   {
     "company": "Adobe",
@@ -1444,17 +1452,18 @@
   },
   {
     "company": "Sony Interactive Entertainment (PlayStation)",
-    "role": "MBA Summer Intern - Corporate Strategy / Corporate Development (Summer 2027)",
+    "role": "Strategy Intern – MBA",
     "category": "Strategy & BizOps",
     "locations": [
+      "Los Angeles, CA",
       "San Mateo, CA"
     ],
-    "url": "https://careers.playstation.com/early-careers",
-    "date_posted": null,
-    "status": "expected",
-    "pay": null,
-    "sponsorship": "unknown",
-    "notes": "Prior cycle: Corporate Strategy Intern (MBA) and Corporate Development Intern (MBA) on SIE's summer-internships Greenhouse board. Early-careers page lists MBA as eligible; 'accepting applications soon'."
+    "url": "https://job-boards.greenhouse.io/usinternshipspubliccareerssite/jobs/6221790004",
+    "date_posted": "2026-10-19",
+    "status": "open",
+    "pay": "$40.25–$43.75/hr",
+    "sponsorship": "no",
+    "notes": "Current MBA students; GMSBO Strategy team, intern leads own project. 12 wks (May 17–Aug 6 or Jun 14–Sep 3, 2027); cover letter encouraged; relocation assistance."
   },
   {
     "company": "Bose",
@@ -1472,17 +1481,17 @@
   },
   {
     "company": "NVIDIA",
-    "role": "MBA Intern (Summer 2027)",
+    "role": "Product Marketing Management MBA Intern - Summer 2027",
     "category": "PMM & GTM",
     "locations": [
       "Santa Clara, CA"
     ],
-    "url": "https://www.nvidia.com/en-us/about-nvidia/careers/university-recruiting/",
-    "date_posted": null,
-    "status": "expected",
-    "pay": null,
+    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Product-Marketing-Management-MBA-Intern---Summer-2027_JR2025672",
+    "date_posted": "2026-10-16",
+    "status": "open",
+    "pay": "$38–$94/hr",
     "sponsorship": "unknown",
-    "notes": "NVIDIA university page describes an MBA program for interns and new grads (12+ week internships). No 2027 MBA intern req live on Workday as of 2026-10-11."
+    "notes": "MBA grads winter or summer 2028. Enterprise Desktop Products group: GTM, positioning, sales enablement for OEM/channel partners."
   },
   {
     "company": "Dell Technologies",
@@ -1582,7 +1591,7 @@
     ],
     "url": "https://careers.bankofamerica.com/en-us/students/job-detail/14832/strategy-management-summer-associate-program-2027-multiple-locations",
     "date_posted": null,
-    "status": "open",
+    "status": "closed",
     "pay": null,
     "sponsorship": "no",
     "notes": "Full-time MBA/master's grad Dec 2027–Aug 2028, 3-5 yrs exp. Strategy & Business Ventures (Product, Digital, FinTech, Small Business).",
@@ -1672,5 +1681,261 @@
     "pay": null,
     "sponsorship": "unknown",
     "notes": "Prior cycle: Summer 2025 Product Marketing Intern (Dropbox Dash) required current MBA students. No 2027 intern posting on Dropbox's Greenhouse board as of Oct 2026."
+  },
+  {
+    "company": "Sony Interactive Entertainment (PlayStation)",
+    "role": "Marketing Intern - MBA",
+    "category": "PMM & GTM",
+    "locations": [
+      "San Mateo, CA"
+    ],
+    "url": "https://job-boards.greenhouse.io/usinternshipspubliccareerssite/jobs/6221783004",
+    "date_posted": "2026-10-19",
+    "status": "open",
+    "pay": "$43.75/hr",
+    "sponsorship": "no",
+    "notes": "MBA students; Global Brand Marketing (PlayStation brand messaging, not product marketing). 12 wks (May 17–Aug 6 or Jun 14–Sep 3, 2027); relocation assistance."
+  },
+  {
+    "company": "Teamworks",
+    "role": "Strategy MBA Intern",
+    "category": "Strategy & BizOps",
+    "locations": [
+      "Remote (US)",
+      "Durham, NC"
+    ],
+    "url": "https://jobs.ashbyhq.com/teamworks/ba8123e8-22f2-4898-a316-f479c5ac015b",
+    "date_posted": "2026-10-19",
+    "status": "open",
+    "pay": "$50–$60/hr",
+    "sponsorship": "no",
+    "notes": "Sports-tech SaaS; hiring 2 MBA students for its Strategy team; 3+ yrs strategy/consulting/IB exp; remote US or Durham office."
+  },
+  {
+    "company": "GoFundMe",
+    "role": "MBA Product Management Internship, Summer 2027",
+    "category": "PM",
+    "locations": [
+      "San Francisco, CA"
+    ],
+    "url": "https://job-boards.greenhouse.io/gofundme/jobs/8304644",
+    "date_posted": "2026-10-20",
+    "status": "open",
+    "pay": "$75/hr",
+    "sponsorship": "unknown",
+    "notes": "MBA students entering final year; 10 wks Jun 1–Aug 6, 2027; hybrid, onsite 3 days/wk."
+  },
+  {
+    "company": "Blue Origin",
+    "role": "Summer 2027 Terawave Product Management Internship - MBA",
+    "category": "PM",
+    "locations": [
+      "Kent, WA"
+    ],
+    "url": "https://blueorigin.wd5.myworkdayjobs.com/BlueOrigin/job/Kent-WA/Summer-2027-Terawave-Product-Management-Internship---MBA_R74200",
+    "date_posted": "2026-10-15",
+    "status": "open",
+    "pay": "$50/hr",
+    "sponsorship": "unknown",
+    "notes": "Graduate/MBA students with 1+ term left after the internship; technical bachelor's or equivalent experience. U.S. persons only (export control). Terawave satellite broadband."
+  },
+  {
+    "company": "C3 AI",
+    "role": "AI Product Manager - MBA Intern (Summer 2027)",
+    "category": "PM",
+    "locations": [
+      "Redwood City, CA"
+    ],
+    "url": "https://c3.ai/job-description/8860563002",
+    "date_posted": "2026-10-02",
+    "status": "open",
+    "pay": "$8,000–$10,000/month",
+    "sponsorship": "no",
+    "notes": "Currently pursuing an MBA; bachelor's in CS, engineering, statistics or similar required. PM on agentic AI platform and applications."
+  },
+  {
+    "company": "Vertiv",
+    "role": "DC Power Product Management MBA Intern (Summer 2027)",
+    "category": "PM",
+    "locations": [
+      "Delaware, OH"
+    ],
+    "url": "https://egup.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/20279952",
+    "date_posted": "2026-08-25",
+    "status": "open",
+    "pay": null,
+    "sponsorship": "no",
+    "notes": "MBA graduating within 12–24 months. Data center DC power portfolio, incl. 800V DC architectures."
+  },
+  {
+    "company": "Vannevar Labs",
+    "role": "MBA Intern Summer 2027 (Mission Lead - Clearance Required)",
+    "category": "Strategy & BizOps",
+    "locations": [
+      "Remote (US)"
+    ],
+    "url": "https://job-boards.greenhouse.io/vannevarlabs/jobs/5240982007",
+    "date_posted": "2026-09-17",
+    "status": "open",
+    "pay": null,
+    "sponsorship": "unknown",
+    "notes": "Incoming 1st/2nd-year MBA or MA students; active TS/SCI clearance and U.S. Persons status required. Defense AI; customer-facing BD/mission role, travel to customer sites 75%+."
+  },
+  {
+    "company": "Intuit",
+    "role": "Summer 2027: MBA Marketing Intern, Out-Market Investment Diagnostic (NTTF)",
+    "category": "PMM & GTM",
+    "locations": [
+      "Mountain View, CA"
+    ],
+    "url": "https://jobs.intuit.com/job/mountain-view/summer-2027-mba-marketing-intern-out-market-investment-diagnostic-nttf/27595/101999313376",
+    "date_posted": "2026-10-15",
+    "status": "open",
+    "pay": "$40–$53/hr (posting also lists $29.5–$56.5)",
+    "sponsorship": "unknown",
+    "notes": "Current MBA students graduating after the internship. B2B demand gen for mid-market (IES); onsite 3+ days/wk. 12-wk Summer 2027 internship; cohorts May 17-Aug 6 or Jun 14-Sep 3, 2027."
+  },
+  {
+    "company": "Macy's",
+    "role": "2027 MBA Internship – Customer & Digital Growth, Insights and Platforms – Strategy",
+    "category": "Strategy & BizOps",
+    "locations": [
+      "New York, NY"
+    ],
+    "url": "https://ebwh.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/93384",
+    "date_posted": "2026-10-06",
+    "status": "open",
+    "pay": "$18.15–$27.74/hr",
+    "sponsorship": "unknown",
+    "notes": "Currently enrolled in an MBA program. Customer & Digital Growth org strategy; Herald Square office. Pay as listed in the posting's requisition fields."
+  },
+  {
+    "company": "NVIDIA",
+    "role": "Product Management MBA Intern, Data Center GPU - Summer 2027",
+    "category": "PM",
+    "locations": [
+      "Santa Clara, CA"
+    ],
+    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Product-Management-MBA-Intern--Data-Center-GPU---Summer-2027_JR2025670-1",
+    "date_posted": "2026-10-13",
+    "status": "open",
+    "pay": "$38–$94/hr",
+    "sponsorship": "unknown",
+    "notes": "MBA grads winter or summer 2028. AI & Data Center PM team: market sizing, segmentation, pricing/value analyses; quant modeling experience required."
+  },
+  {
+    "company": "NVIDIA",
+    "role": "Product Management MBA Intern, Laptop - Summer 2027",
+    "category": "PM",
+    "locations": [
+      "Santa Clara, CA"
+    ],
+    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Product-Management-MBA-Intern--Laptop---Summer-2027_JR2025905",
+    "date_posted": "2026-10-15",
+    "status": "open",
+    "pay": "$38–$94/hr",
+    "sponsorship": "unknown",
+    "notes": "MBA grads winter 2027 or summer 2028. GeForce laptop / RTX Spark product team; working knowledge of PC hardware, graphics, or AI required."
+  },
+  {
+    "company": "NVIDIA",
+    "role": "Product Manager MBA Intern, Enterprise AI - Summer 2027",
+    "category": "PM",
+    "locations": [
+      "Santa Clara, CA"
+    ],
+    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Product-Manager-MBA-Intern--Enterprise-AI---Summer-2027_JR2026707",
+    "date_posted": "2026-10-19",
+    "status": "open",
+    "pay": "$38–$94/hr",
+    "sponsorship": "unknown",
+    "notes": "MBA grads Dec 2027 or May/Jun 2028. NVIDIA IT internal agentic-AI products; BS/MS in CS or related engineering and hands-on AI/ML PM experience required."
+  },
+  {
+    "company": "NVIDIA",
+    "role": "Product Management MBA Intern, Gaming, Content Creation, and PC AI - Summer 2027",
+    "category": "PM",
+    "locations": [
+      "Santa Clara, CA"
+    ],
+    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Product-Management-MBA-Intern--Gaming--Content-Creation--and-PC-AI---Summer-2027_JR2026962",
+    "date_posted": "2026-10-21",
+    "status": "open",
+    "pay": "$38–$94/hr",
+    "sponsorship": "unknown",
+    "notes": "MBA grads winter 2027 or summer 2028. GeForce/Spark product team (GPUs, laptops, software); working knowledge of PC hardware, graphics, or AI required."
+  },
+  {
+    "company": "Adobe",
+    "role": "2027 MBA Intern - Digital Strategy Associate, Strategic Advisory",
+    "category": "Strategy & BizOps",
+    "locations": [
+      "New York, NY"
+    ],
+    "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/New-York/XMLNAME-2027-MBA-Intern---Digital-Strategy-Associate--Strategic-Advisory_R172922",
+    "date_posted": "2026-10-21",
+    "status": "open",
+    "pay": "$37.00–$50.00/hr",
+    "sponsorship": "unknown",
+    "notes": "Full-time MBA students graduating Dec 2027-Jun 2028. Digital Strategy Group: client-facing CX-transformation strategy work with C-level customers; May-Sep 2027."
+  },
+  {
+    "company": "Google",
+    "role": "MBA Intern, 2027 (Hong Kong)",
+    "category": "Strategy & BizOps",
+    "locations": [
+      "Hong Kong"
+    ],
+    "url": "https://www.google.com/about/careers/applications/jobs/results/110899190426411718-mba-intern-2027",
+    "date_posted": null,
+    "deadline": "2026-11-15",
+    "status": "open",
+    "pay": null,
+    "sponsorship": "unknown",
+    "notes": "Currently enrolled MBA; 10-12 wks Summer 2027; hired into a job family then matched (strategy, finance, marketing, PM, sales, etc.); English required; may close early."
+  },
+  {
+    "company": "Google",
+    "role": "MBA Intern, 2027 (Shanghai)",
+    "category": "Strategy & BizOps",
+    "locations": [
+      "Shanghai, China"
+    ],
+    "url": "https://www.google.com/about/careers/applications/jobs/results/122745878459884230-mba-intern-2027",
+    "date_posted": null,
+    "deadline": "2026-12-31",
+    "status": "open",
+    "pay": null,
+    "sponsorship": "unknown",
+    "notes": "Currently enrolled MBA; 10-12 wks Summer 2027; hired into a job family then matched (strategy, finance, marketing, PM, sales, etc.); English required; may close early."
+  },
+  {
+    "company": "Google",
+    "role": "Business Program Manager MBA Intern, 2027",
+    "category": "Strategy & BizOps",
+    "locations": [
+      "London, UK"
+    ],
+    "url": "https://www.google.com/about/careers/applications/jobs/results/109231596359295686-business-program-manager-mba-intern-2027",
+    "date_posted": null,
+    "deadline": "2026-11-20",
+    "status": "open",
+    "pay": null,
+    "sponsorship": "no",
+    "notes": "EMEA-region MBA students (penultimate/final yr) only; gUP Operations Intake & Readiness team; 13-wk min from May/Jun/Jul 2027, must be in UK."
+  },
+  {
+    "company": "General Motors",
+    "role": "2027 Intern - Product Management, Vehicle Autonomy (MS or MBA)",
+    "category": "PM",
+    "locations": [
+      "Sunnyvale, CA"
+    ],
+    "url": "https://generalmotors.wd5.myworkdayjobs.com/Careers_GM/job/Sunnyvale-California-United-States-of-America/XMLNAME-2027-Intern---Product-Management--Vehicle-Autonomy--MS-or-MBA-_JR-202622449",
+    "date_posted": "2026-10-14",
+    "status": "open",
+    "pay": "$9,400–$11,100/mo",
+    "sponsorship": "unknown",
+    "notes": "Master's or MBA grad Dec 2027–Aug 2028 (eng/CS/data/HCI focus); Vehicle Autonomy PM org; starts May 24 or Jun 14, 2027; hybrid 3 days/wk; relocation stipend."
   }
 ]
