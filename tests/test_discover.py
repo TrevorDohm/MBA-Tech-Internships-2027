@@ -73,9 +73,37 @@ class IsCandidateTests(unittest.TestCase):
 
 class TitleStemTests(unittest.TestCase):
     def test_title_stem(self):
-        self.assertEqual(title_stem("Summer 2027: Strategy Intern (MBA) (Seattle, WA)"), "strategy intern")
-        self.assertEqual(title_stem("Strategy Intern - MBA"), "strategy intern")
+        self.assertEqual(title_stem("Summer 2027: Strategy Intern (MBA) (Seattle, WA)"), "strategy intern mba")
+        self.assertEqual(title_stem("Strategy Intern - MBA"), "strategy intern mba")
         self.assertEqual(title_stem("2027 Product Manager, Intern!"), "product manager intern")
+
+    def test_mba_forms_equal_each_other_but_not_no_mba(self):
+        forms = ["Strategy Intern (MBA)", "Strategy Intern - MBA", "MBA Strategy Intern", "Strategy Intern – MBA"]
+        self.assertEqual(len({title_stem(t) for t in forms}), 1, [title_stem(t) for t in forms])
+        self.assertNotEqual(title_stem("Strategy Intern (MBA)"), title_stem("Strategy Intern"))
+
+    def test_vertiv_mba_and_generic_roles_differ(self):
+        self.assertNotEqual(title_stem("Product Management Intern - MBA (Summer 2027)", ["Delaware, OH"]),
+                            title_stem("Product Management Intern (Summer 2027)", ["Delaware, OH"]))
+
+    def test_specialisation_parenthetical_is_kept(self):
+        base = "Summer 2027 Intern - MBA Business Value & Strategic Selling Consultant"
+        stems = {title_stem(t, ["New York, NY"]) for t in
+                 (base, base + " (Financial Services)", base + " (Healthcare & Life Sciences)")}
+        self.assertEqual(len(stems), 3, stems)
+
+    def test_location_parenthetical_is_stripped(self):
+        self.assertEqual(title_stem("MBA Intern, 2027 (Hong Kong)", ["Hong Kong"]),
+                         title_stem("MBA Intern, 2027 (Shanghai)", ["Shanghai, China"]))
+        self.assertEqual(title_stem("MBA Intern, 2027 (Hong Kong)", ["Hong Kong"]), title_stem("MBA Intern, 2027"))
+        self.assertEqual(title_stem("Strategy Intern (Austin TX)"), "strategy intern")  # state code
+        self.assertEqual(title_stem("Strategy Intern (Paris, France)"), "strategy intern")  # comma
+        self.assertNotEqual(title_stem("Strategy Intern (Hong Kong)"), "strategy intern")  # not known as a place
+
+    def test_degree_parenthetical_with_state_like_word_is_kept(self):
+        # "MS" is also Mississippi's code; a degree list is not a place.
+        gm = "2027 Intern - Product Management, Vehicle Autonomy (MS or MBA)"
+        self.assertEqual(title_stem(gm, ["Sunnyvale, CA"]), "intern product management vehicle autonomy ms or mba")
 
 
 class JobIdTests(unittest.TestCase):
@@ -99,6 +127,9 @@ class JobIdTests(unittest.TestCase):
             ("https://jobs.apple.com/en-us/details/200676091/mba-internships", "200676091"),
             ("https://lifeattiktok.com/search/7676283436713593093", "7676283436713593093"),
             ("https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/210766078", "210766078"),
+            ("https://enterpriseplatform.dell.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/R273257", "R273257"),
+            ("https://enterpriseplatform.dell.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/D11261", "D11261"),
+            ("https://careers.americanexpress.com/en/sites/CX_1/job/26012558", "26012558"),
             ("https://jobs.intuit.com/job/mountain-view/summer-2027-mba-x-intern/27595/101313094448", "101313094448"),
             ("https://jobs.ea.com/en_US/careers/JobDetail/Product-Manager-Intern-MBA-Level/216272", "216272"),
         ]:
@@ -140,6 +171,21 @@ for _name in ATS_TYPES:
     setattr(JobIdAdapterInvariant, f"test_job_id_equals_adapter_id_{_name}", _make_invariant(_name))
 
 
+def _dell_invariant(self):
+    """Dell's Oracle ids carry a letter prefix (R273257); the first oracle entry (JPMC) has only digits."""
+    feed = json.loads(fixture("oracle", "list"))
+    reqs = feed["items"][0]["requisitionList"]
+    for r, new_id in zip(reqs, ("R273257", "D11261")):
+        r["Id"] = new_id
+    jobs = list_jobs(ENTRIES["Dell Technologies"], http=serving(json.dumps(feed)))
+    self.assertEqual([j["id"] for j in jobs][:2], ["R273257", "D11261"])
+    for j in jobs:
+        self.assertEqual(job_id(j["url"]), j["id"], j["url"])
+
+
+JobIdAdapterInvariant.test_job_id_equals_adapter_id_oracle_dell = _dell_invariant
+
+
 class DiscoverTests(unittest.TestCase):
     def test_dedupes_listed_and_ignored(self):
         f = Feeds({"Acme": [job("1111111", "Strategy Intern"), job("2222222", "Finance Intern"),
@@ -155,7 +201,7 @@ class DiscoverTests(unittest.TestCase):
 
     def test_detects_repost(self):
         f = Feeds({"Acme": [job("9999999", "Strategy Intern (MBA) - Summer 2027")]})
-        r = f.run([W], listings=[row("https://x.com/jobs/1111111", role="Strategy Intern")])
+        r = f.run([W], listings=[row("https://x.com/jobs/1111111", role="Strategy Intern - MBA")])
         self.assertEqual(r["candidates"], [])
         self.assertEqual(r["reposts"], [{"company": "Acme", "old_url": "https://x.com/jobs/1111111",
                                          "new_url": "https://x.com/jobs/9999999",
@@ -169,7 +215,25 @@ class DiscoverTests(unittest.TestCase):
         f = Feeds({"Acme": [job("9999999", "Strategy Intern")]})
         r = f.run([W], listings=[row("https://x.com/jobs/1111111", role="Strategy Intern", status="closed")])
         self.assertEqual(r["reposts"], [])
-        self.assertEqual(r["candidates"], [])
+
+    def test_closed_row_does_not_suppress_same_role_posting(self):
+        # A closed role posted again is a candidate (AUTOMATION.md: reopen that row in place).
+        f = Feeds({"Acme": [job("9999999", "Strategy Intern", "Austin, TX")]})
+        r = f.run([W], listings=[row("https://x.com/jobs/1111111", role="Strategy Intern", status="closed")])
+        self.assertEqual(r["reposts"], [])
+        self.assertEqual([c["job_id"] for c in r["candidates"]], ["9999999"])
+
+    def test_mba_posting_not_suppressed_by_generic_row(self):
+        f = Feeds({"Acme": [job("2222222", "Product Management Intern - MBA (Summer 2027)", "Delaware, OH")]})
+        r = f.run([W], listings=[row("https://x.com/jobs/1111111", role="Product Management Intern (Summer 2027)")])
+        self.assertEqual([c["job_id"] for c in r["candidates"]], ["2222222"])
+
+    def test_specialisation_not_suppressed_by_base_row(self):
+        base = "Summer 2027 Intern - MBA Business Value & Strategic Selling Consultant"
+        f = Feeds({"Acme": [job("1111111", base, "New York, NY"),
+                            job("2222222", base + " (Financial Services)", "New York, NY")]})
+        r = f.run([W], listings=[row("https://x.com/jobs/1111111", role=base)])
+        self.assertEqual([c["job_id"] for c in r["candidates"]], ["2222222"])
 
     def test_landing_page_row_does_not_crash_and_matches_by_url(self):
         f = Feeds({"Acme": [job("5555555", "Strategy Intern", url="https://x.com/careers/")]})
@@ -189,9 +253,9 @@ class DiscoverTests(unittest.TestCase):
                           {"id": "2222222", "url": "https://x.com/jobs/2222222", "location": "Austin, TX"}])
 
     def test_listed_row_suppresses_sibling_city_postings(self):
-        f = Feeds({"Acme": [job("1111111", "Strategy Intern", "Seattle, WA"),
-                            job("2222222", "Strategy Intern (MBA)", "Austin, TX")]})
-        r = f.run([W], listings=[row("https://x.com/jobs/1111111", role="Summer 2027 Strategy Intern")])
+        f = Feeds({"Acme": [job("1111111", "Strategy Intern - MBA", "Seattle, WA"),
+                            job("2222222", "Strategy Intern (MBA) (Austin, TX)", "Austin, TX")]})
+        r = f.run([W], listings=[row("https://x.com/jobs/1111111", role="Summer 2027 Strategy Intern (MBA)")])
         self.assertEqual((r["candidates"], r["reposts"]), ([], []))
 
     def test_expected_placeholder_does_not_suppress_real_posting(self):

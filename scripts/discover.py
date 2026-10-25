@@ -37,6 +37,7 @@ MAX_WORKERS = 8  # companies fetched at once; the time is network wait, not CPU
 _UUID = r"[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}"
 # Path shapes, tried in order; group 1 is the id. Each mirrors what ats.py assigns as Job.id.
 _PATH_IDS = [re.compile(p, re.I) for p in (
+    r"/sites/[^/]+/job/([A-Z]*\d+)(?:[/?#]|$)",    # Oracle HCM (Dell ids carry a letter prefix: R273257)
     r"/jobs?/(\d+)(?:[/?#-]|$)",                   # Greenhouse, Duolingo, Amazon, Jibe, Oracle, Eightfold
     r"/positions/(\d+)(?:[/?#]|$)",                # Airbnb
     r"/job-description/(\d+)(?:[/?#]|$)",          # c3.ai
@@ -79,15 +80,45 @@ def norm_url(url):
 
 # --- title rules ---------------------------------------------------------------
 
-def title_stem(title):
-    """Lowercased title without year, MBA tags, trailing parenthetical locations or punctuation."""
-    s = title.lower()
-    s = re.sub(r"\(\s*mba\s*\)", " ", s)
-    s = re.sub(r"[-–—]\s*mba\b", " ", s)
-    s = re.sub(r"\([^)]*\)\s*$", " ", s)  # a trailing "(Seattle, WA)"
+_US_STATES = set(
+    "AL AK AZ AR CA CO CT DE DC FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ NM NY NC ND "
+    "OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY".split())
+_TRAILING_PAREN = re.compile(r"\(([^()]*)\)\s*$")
+_MBA_TAG = re.compile(r"\(\s*mba\s*\)|[-–—:]\s*mba\b|\bmba\b", re.I)
+
+
+def _is_place(text, locations):
+    """A parenthetical that names a location: has a comma, ends in a US state code ("Austin TX", not
+    "MS or MBA"), or matches a posting location."""
+    t = text.strip()
+    words = t.split()
+    if "," in t or (words and words[-1] in _US_STATES):
+        return True
+    t = t.lower()
+    for loc in locations or ():
+        loc = (loc or "").strip().lower()
+        if loc and t in (loc, loc.split(",")[0].strip()):
+            return True
+    return False
+
+
+def title_stem(title, locations=()):
+    """Normalised title for "same role" checks: lowercased, without the year or a trailing parenthetical
+    location, punctuation folded. "(MBA)", "- MBA" and "MBA" all become one trailing "mba" token, so an
+    MBA role never equals a generic one; a trailing parenthetical that is not a place (a specialisation
+    such as "(Financial Services)") is kept."""
+    s = title
+    while True:
+        m = _TRAILING_PAREN.search(s)
+        if not (m and _is_place(m.group(1), locations)):
+            break
+        s = s[:m.start()]
+    has_mba = bool(_MBA_TAG.search(s))
+    s = _MBA_TAG.sub(" ", s).lower()
     s = re.sub(r"\bsummer\s+2027\b", " ", s)
     s = re.sub(r"\b2027\b", " ", s)
-    return re.sub(r"\s+", " ", re.sub(r"[^a-z0-9]+", " ", s)).strip()
+    s = re.sub(r"\s+", " ", re.sub(r"[^a-z0-9]+", " ", s)).strip()
+    return f"{s} mba".strip() if has_mba else s
 
 
 _INTERN = re.compile(r"\b(intern|internship|summer associate|graduate internship)\b", re.I)
@@ -155,21 +186,23 @@ def _discover_company(entry, listings, known_ids, known_urls, http):
             gone.append(r)
     taken = set()
     for r in gone:
-        stem = title_stem(r["role"])
+        stem = title_stem(r["role"], r.get("locations"))
         for j in fresh:
-            if j["id"] not in taken and stem and title_stem(j["title"]) == stem:
+            if j["id"] not in taken and stem and title_stem(j["title"], [j["location"]]) == stem:
                 taken.add(j["id"])
                 out["reposts"].append({"company": company, "old_url": r["url"],
                                        "new_url": j["url"], "title": j["title"]})
                 break
 
-    # Sibling postings (same role, another city) of an open/closed row are covered by that row;
-    # expected placeholders have generic roles and must stay matchable by real postings.
-    listed_stems = {title_stem(r["role"]) for r in listings
-                     if r["company"] == company and r.get("status") in ("open", "closed")} - {""}
+    # Sibling postings (same role, another city) of an open row are covered by that row. Expected
+    # placeholders have generic roles and must stay matchable by real postings; a closed row must not
+    # hide the same role posted again (the run reopens that row in place, per AUTOMATION.md).
+    listed_stems = {title_stem(r["role"], r.get("locations")) for r in listings
+                    if r["company"] == company and r.get("status") == "open"} - {""}
     groups = {}
     for j in fresh:
-        if j["id"] in taken or not is_internship_title(j["title"]) or title_stem(j["title"]) in listed_stems:
+        stem = title_stem(j["title"], [j["location"]])
+        if j["id"] in taken or not is_internship_title(j["title"]) or stem in listed_stems:
             continue
         try:
             text = posting_text(entry, j, http=http)
@@ -179,7 +212,7 @@ def _discover_company(entry, listings, known_ids, known_urls, http):
             continue
         if not is_candidate(j["title"], text):
             continue
-        key = title_stem(j["title"])
+        key = stem
         c = groups.get(key)
         if c is None:
             groups[key] = {"company": company, "title": j["title"], "url": j["url"], "job_id": j["id"],
