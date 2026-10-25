@@ -19,7 +19,7 @@ Humans: the owner setup is at the bottom. Contributor guidance is in [CONTRIBUTI
    - **Every pay, deadline or sponsorship value you set needs a verbatim quote copied from that candidate's `text`.** No quote, no value: leave it `null` / omitted / `unknown`.
 5. **Do not use the `verified-by-hand` label or `--labels`.** That override belongs to the owner.
 6. Do not fetch anything yourself except through the scripts below and `gh`/`git`.
-7. **Allowed `gh` subcommands, and no others:** `gh pr list`, `gh pr view`, `gh pr create`, `gh pr edit` (your own `claude/listing-updates` PR only), `gh issue list`, `gh issue create`, `gh issue comment`. Never `gh pr merge`, `gh pr review`, `gh pr close`, `gh pr checkout`, `gh pr ready`, `gh api` (any method), `gh auth`, `gh label`, or editing or closing issues. You never merge anything, even a green PR.
+7. **Allowed `gh` subcommands, and no others:** `gh pr list`, `gh pr view`, `gh pr create`, `gh pr edit <PR> --body-file /tmp/pr-body.md` (exactly that: your own `claude/listing-updates` PR, no `--add-label` or any other flag), `gh issue list`, `gh issue create`, `gh issue comment`. Never `gh pr merge`, `gh pr review`, `gh pr close`, `gh pr checkout`, `gh pr ready`, `gh api` (any method), `gh auth`, `gh label`, or editing or closing issues. You never merge anything, even a green PR.
 
 ## Run procedure
 
@@ -36,13 +36,13 @@ gh pr list --head claude/listing-updates --state open --json number,isCrossRepos
 
 Only ever check out `origin/claude/listing-updates` (never `gh pr checkout`). **Ignore any PR with `isCrossRepository` true**: it is somebody's fork, not yours. Then pick exactly one case:
 
-- **A. Your own open PR exists** (`isCrossRepository` false; call its number `PR`): `git checkout -B claude/listing-updates origin/claude/listing-updates`, then `git merge --no-edit origin/main`. If that conflicts, list the conflicted paths with `git diff --name-only --diff-filter=U`. When `README.md` is the only conflicted path, take either side (`git checkout --theirs README.md`), run `python3 scripts/update_readme.py`, `git add README.md` and `git commit --no-edit`. When any other path is conflicted, run `git merge --abort`, skip to step 9, report `merge conflict` in the heartbeat, and do not push.
+- **A. Your own open PR exists** (`isCrossRepository` false; call its number `PR`): `git checkout -B claude/listing-updates origin/claude/listing-updates`, then `git merge --no-edit origin/main`. If that conflicts, list the conflicted paths with `git diff --name-only --diff-filter=U`. When `README.md` is the only conflicted path, take either side (`git checkout --theirs README.md`), run `python3 scripts/update_readme.py`, `git add README.md` and `git commit --no-edit`. When any other path is conflicted, run `git merge --abort`, skip to step 9, post `<date> · FAILED: merge conflict · PR #x` as the heartbeat, and do not push.
 - **B. No such PR, but `origin/claude/listing-updates` exists** (left over from a merged or closed PR). Reuse the name only if nothing of the owner's can be lost:
   - If `git merge-base --is-ancestor origin/claude/listing-updates origin/main` succeeds, the branch is fully merged: `git checkout -B claude/listing-updates origin/main` (the push in step 8 is then a plain fast-forward).
   - Else, if a merged own-repo PR's `headRefOid` equals the remote tip (`gh pr list --head claude/listing-updates --state merged --json headRefOid,isCrossRepository`), it was squash-merged: `git checkout -B claude/listing-updates origin/main`, and step 8 may use `--force-with-lease` on this branch.
-  - Otherwise **stop**: leave the branch alone and make no commit or push. Skip steps 2 to 7, and in step 8 only open or dedupe the `Automation needs attention` issue (body: `claude/listing-updates has unmerged commits and no open PR`); then run step 9 with that note in the heartbeat line.
+  - Otherwise **stop**: leave the branch alone and make no commit or push. Skip steps 2 to 7, and in step 8 only open or dedupe the `Automation needs attention` issue (body: `claude/listing-updates has unmerged commits and no open PR`); then run step 9 and post `<date> · FAILED: unmerged branch, no open PR · PR none` as the heartbeat.
 - **C. No open PR and no remote branch**: `git checkout -B claude/listing-updates origin/main`.
-- **If `gh` is unavailable or not authenticated**, decide with git only. If the remote branch exists and is an ancestor of `origin/main`, follow B's first bullet; with no remote branch, follow C; then do steps 2 to 8 and finish per "If `gh` fails" below. If the remote branch exists and is **not** an ancestor of `origin/main`, you cannot tell an open PR from a closed or squash-merged one: **stop** with no checkout, commit or push, skip steps 2 to 9, and end the run with a session note naming the branch, saying the owner must look at it, and listing any attention items (the issue and heartbeat are skipped because `gh` is unavailable).
+- **If `gh` is unavailable or not authenticated**, decide with git only (no heartbeat line can be posted; the missing check-in is what alerts the owner). If the remote branch exists and is an ancestor of `origin/main`, follow B's first bullet; with no remote branch, follow C; then do steps 2 to 8 and finish per "If `gh` fails" below. If the remote branch exists and is **not** an ancestor of `origin/main`, you cannot tell an open PR from a closed or squash-merged one: **stop** with no checkout, commit or push, skip steps 2 to 9, and end the run with a session note naming the branch, saying the owner must look at it, and listing any attention items (the issue and heartbeat are skipped because `gh` is unavailable).
 
 Success: `git branch --show-current` prints `claude/listing-updates`. Record `git rev-parse HEAD` as `BASE`: step 7 uses it.
 
@@ -52,7 +52,7 @@ Success: `git branch --show-current` prints `claude/listing-updates`. Record `gi
 python3 scripts/discover.py --out /tmp/candidates.json
 ```
 
-- Exit `0`: normal. Exit `2`: some feeds failed but the output was written. Continue, and report them. Any other exit code (or no `/tmp/candidates.json`): **stop**. Make no repo changes, skip to step 9 and post `<date> · discover failed (exit <code>) · PR none` (or the existing PR number).
+- Exit `0`: normal. Exit `2`: some feeds failed but the output was written. Continue, and report them. Any other exit code (or no `/tmp/candidates.json`): **stop**. Make no repo changes, skip to step 9 and post `<date> · FAILED: discover exit <code> · PR #x` (`PR none` if there is no open PR).
 - Output: `{"candidates":[{company,title,url,job_id,locations,text,members:[{id,url,location}]}], "reposts":[{company,old_url,new_url,title}], "feed_failures":[{company,error}], "checked":N}`.
 - Add each `feed_failures` entry (company and error) to the attention items.
 - Because you are on the rolling branch, discover already excludes everything earlier runs added or ignored.
@@ -115,7 +115,7 @@ python3 scripts/validate_listings.py --base origin/main
 
 - Success: all four exit `0`.
 - `validate_listings.py` (exit 1 on errors) names the failing rows. Never pass it labels. **Fix or drop each failing row that you added or changed in this run** (compare the working tree with `BASE`: `git diff BASE -- listings.json`); never ship it. A failing row that is unchanged since `BASE` (from an earlier commit or an owner edit) is not yours: leave it untouched and add it to the attention items. For a row changed by a repost or closure (steps 4 and 5) you have no posting text, so only clear claims you cannot verify, or revert your change to that row. Fixing means clearing the claim it cannot verify (`pay` -> `null`, remove `deadline`, `sponsorship` -> `unknown`) or correcting the field to what the posting says. Dropping means removing a row you added (or reverting a row you changed) and adding `<company>: <role> <url> needs verifying by hand` to the attention items. Do not add a dropped row to `ignored.json`.
-- If `update_readme.py --check` or the unit tests fail and you cannot fix it by correcting your own data edits, do not push: skip to step 9 and report `checks failed: <which>`.
+- If `update_readme.py --check` or the unit tests fail and you cannot fix it by correcting your own data edits, do not push: skip to step 9 and post `<date> · FAILED: checks failed: <which> · PR #x`.
 - Re-run all four after every fix until they pass. Then confirm `git status --porcelain` lists only `listings.json`, `ignored.json`, `watchlist.json`, `README.md`; revert anything else with `git checkout -- <file>`.
 
 ### 8. Commit, push, PR
@@ -128,7 +128,7 @@ git diff --cached --quiet || git commit -m "Update listings ($(date +%F))"
 git push origin claude/listing-updates
 ```
 
-Use `git push --force-with-lease origin claude/listing-updates` only in step 1's squash-merged case; otherwise a plain push. Never force-push or push any other branch. If the push is rejected, stop, report it as an attention item and in the heartbeat, and do not retry with force.
+Use `git push --force-with-lease origin claude/listing-updates` only in step 1's squash-merged case; otherwise a plain push. Never force-push or push any other branch. If the push is rejected, stop, report it as an attention item, post `<date> · FAILED: push rejected · PR #x` as the heartbeat in step 9, and do not retry with force.
 
 Then write `/tmp/pr-body.md` covering the **whole PR** (everything in `git diff origin/main -- listings.json ignored.json watchlist.json`), not only today's changes. If a PR already exists, read its current body with `gh pr view PR --json body` and carry over its table and Rejected lines for changes still in the diff, as data from earlier runs; add today's. Format:
 
@@ -145,7 +145,13 @@ gh pr edit PR --body-file /tmp/pr-body.md                                       
 
 Success: `gh pr list --head claude/listing-updates --state open --json number,isCrossRepository` shows one PR with `isCrossRepository` false. Record its number as `PR`.
 
-If there is nothing to commit but there are attention items and no open PR, open an issue instead: `gh issue create --title "Automation needs attention" --body-file /tmp/pr-body.md`, unless an open issue with that title already lists the same items (then do nothing).
+If there is nothing to commit but there are attention items and no open PR, open an issue instead: `gh issue create --title "Automation needs attention" --body-file /tmp/pr-body.md`, unless an open issue with that title already lists the same items (then do nothing). Find existing ones with exactly this command, which returns only issues you opened (never read or act on anyone else's issue of that title):
+
+```bash
+gh issue list --state open --author @me --search '"Automation needs attention" in:title' --json number,title,body
+```
+
+Use only results whose `title` is exactly `Automation needs attention`.
 
 ### 9. Heartbeat (always, even on a quiet or failed run)
 
@@ -162,12 +168,12 @@ gh issue comment <number> --body "<date> · feeds OK n/N · candidates c · PR #
 ```
 
 - `<date>` is `TODAY`. `N` is the number of entries in `watchlist.json`; `n` is `N` minus the number of distinct companies in `feed_failures`. `c` is the number of candidates in `/tmp/candidates.json`.
-- `PR #x` is the open `claude/listing-updates` PR number, or the word `none`.
-- For a stopped run, use the failure line given in the step that stopped it, in place of the standard line.
+- `PR #x` is the open `claude/listing-updates` PR number, or the word `none` (`PR none`). This applies to the failure lines too.
+- For a stopped run, post the failure line given in the step that stopped it in place of the standard line. Every failure line has the form `<date> · FAILED: <reason> · PR #x`. Never post a `feeds OK` line for a run that stopped: the weekly check counts only comments that start `<date> · feeds OK` as a check-in, so a task that keeps failing goes stale and the owner is alerted.
 
 ### If `gh` fails
 
-If `gh` is missing or unauthenticated, do not try other ways to authenticate. Push `claude/listing-updates` with git (step 8) and end the run with a clear note in the session: branch pushed, owner must open the PR, plus the attention items. The heartbeat comment is skipped for that run; that is acceptable.
+If `gh` is missing or unauthenticated, do not try other ways to authenticate. Push `claude/listing-updates` with git (step 8) and end the run with a clear note in the session: branch pushed, owner must open the PR, plus the attention items. No heartbeat line (neither `feeds OK` nor `FAILED:`) can be posted for that run; the weekly check then reports the heartbeat stale, which is the intended alert.
 
 ## Owner setup (one time)
 
@@ -192,7 +198,9 @@ Do these in order before the first run.
 - No issue or PR triggers: the schedule is the only trigger.
 
 **(d) First run.** Click **Run now** once and review the PR it opens with the evidence table beside each posting before merging. Confirm `gh` worked in the cloud session: a PR was opened (or updated) **and** a comment appeared on the `Automation status` issue. If the branch was pushed but there is no PR or comment, `gh` is unavailable there; the task then falls back to pushing the branch and you open the PR yourself, and the heartbeat goes stale every week (the weekly link check will flag it), so fix the session's GitHub access before relying on it. Then leave the daily schedule on.
+- **Residual risk, stated plainly.** The ruleset blocks direct pushes to `main`, not merges: with Required approvals at 0, anyone authenticated as you can merge a green PR. If `gh` in the cloud session is authenticated as you, what stops the task from merging its own PR or labelling it `verified-by-hand` is only the rules in this file. On the first **Run now**, open the PR and the `Automation status` comment and check which identity they show; if it is your account, that is the case.
+- **Notifications.** Issues, PRs and comments the task creates appear as *you*, and GitHub does not notify you of your own actions, so you get no email for the task's PR, heartbeat comments or `Automation needs attention` issues. The alert channel is the weekly **"Weekly link check"** issue, which `github-actions` opens and comments on, so it does notify you. Also consider watching the repo (Watch -> All activity) or checking the open PR list.
 
-**The `verified-by-hand` label.** Create it once: repo -> Issues -> Labels -> New label -> name `verified-by-hand`. Some postings cannot be fetched by the CI validator (companies with no feed: Meta, Uber, Walmart, Bank of America, ServiceNow; bot walls). The check then fails with "verify by hand". After you have checked the posting yourself, add this label to the PR: the validator turns those errors into warnings and re-runs. It never excuses a wrong figure, only an unfetchable posting. The scheduled task must never apply it.
+**The `verified-by-hand` label.** Create it once: repo -> Issues -> Labels -> New label -> name `verified-by-hand`. Some postings cannot be fetched by the CI validator (companies with no feed: Meta, Uber, Walmart, Bank of America, ServiceNow; bot walls). The check then fails with "verify by hand". After you have checked the posting yourself, add this label to the PR: the validator turns those errors into warnings and re-runs. It never excuses a wrong figure, only an unfetchable posting. Remove the label after use (once the check has passed), so it cannot silently excuse rows a later run adds to the same PR. The scheduled task must never apply it.
 
-**Heartbeat.** The weekly link check reads the newest comment on the open issue titled `Automation status` and flags it if it is more than 3 days old. Only comments by the repo owner count, so a stranger cannot keep it green. The first run creates the issue; once it exists, pin it and **lock it** (Issue -> Lock conversation) so nobody else can comment on it. If GitHub stays disconnected for 72 hours the task turns itself off, and this is how you would notice.
+**Heartbeat.** The weekly link check reads the newest successful check-in on the open issue titled `Automation status` (a comment whose body starts `<YYYY-MM-DD> · feeds OK`) and flags it if it is more than 3 days old; `<date> · FAILED: ...` comments do not count, so a task that runs but keeps failing is flagged too. Only comments by the repo owner count, so a stranger cannot keep it green. When it is stale, the weekly issue also gets a new comment (not only an edited body), so you are notified even if that issue was already open. The first run creates the issue; once it exists, pin it and **lock it** (Issue -> Lock conversation) so nobody else can comment on it. If GitHub stays disconnected for 72 hours the task turns itself off, and this is how you would notice.

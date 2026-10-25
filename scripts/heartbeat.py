@@ -32,8 +32,9 @@ def report(last_comment_iso, now, max_days=MAX_DAYS):
         else:
             what = "The automation has never checked in"
         return (f"## Automation heartbeat\n\n**Stale.** {what} "
-                f"(no `Automation status` comment in over {max_days} days). "
-                "The daily scheduled task may have turned itself off. "
+                f"(no successful `Automation status` check-in in over {max_days} days; "
+                "`FAILED:` comments on that issue do not count and say why a run stopped). "
+                "The daily scheduled task may have turned itself off or be failing every run. "
                 "Check https://claude.ai/code/routines.\n")
     return ("## Automation heartbeat\n\nOK. Last check-in "
             f"{parse(last_comment_iso).strftime('%Y-%m-%d')}.\n")
