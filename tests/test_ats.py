@@ -1,5 +1,7 @@
 import copy
 import json
+import threading
+import time
 import unittest
 from pathlib import Path
 from unittest import mock
@@ -352,6 +354,30 @@ class AdapterTests(unittest.TestCase):
             posting_text(entry, jobs[1], http=h)
         self.assertEqual(len(clock.requests), 3)
         self.assertGreaterEqual(min(b - a for a, b in zip(clock.requests, clock.requests[1:])), 4)
+
+    def test_eightfold_spacing_thread_safe(self):
+        # Real clock, scaled delay: concurrent callers on one host must still be spaced apart.
+        entry = dict(ENTRIES["Microsoft"], queries=["a"])
+        stamps, lock = [], threading.Lock()
+
+        def http(url, method="GET", body=None, headers=None):
+            with lock:
+                stamps.append(time.monotonic())
+            time.sleep(0.01)  # widen the race window
+            return 200, fixture("eightfold", "detail")
+
+        ats._EF_LAST.clear()
+        job = {"id": "1", "url": "https://x/careers/job/1"}
+        with mock.patch.object(ats, "EIGHTFOLD_DELAY", 0.2):
+            threads = [threading.Thread(target=lambda: [posting_text(entry, job, http=http) for _ in range(3)])
+                       for _ in range(2)]
+            for t in threads:
+                t.start()
+            for t in threads:
+                t.join()
+        stamps.sort()
+        self.assertEqual(len(stamps), 6)
+        self.assertGreaterEqual(min(b - a for a, b in zip(stamps, stamps[1:])), 0.19)
 
     def test_eightfold_spacing_is_per_host(self):
         clock = FakeClock()

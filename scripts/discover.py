@@ -20,6 +20,7 @@ import argparse
 import json
 import re
 import sys
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from urllib.parse import parse_qs, urlsplit
 
@@ -29,6 +30,7 @@ from watchlist import load_watchlist
 ROOT = Path(__file__).resolve().parent.parent
 LISTINGS = ROOT / "listings.json"
 IGNORED = ROOT / "ignored.json"
+MAX_WORKERS = 8  # companies fetched at once; the time is network wait, not CPU
 
 # --- ids ---------------------------------------------------------------------
 
@@ -129,77 +131,108 @@ def _known(listings, ignored):
     return ids, urls
 
 
+def _discover_company(entry, listings, known_ids, known_urls, http):
+    """One company's share of the result; touches only this company's feed, so it can run in a thread."""
+    out = {"candidates": [], "reposts": [], "feed_failures": [], "checked": 0}
+    company = entry["company"]
+    try:
+        jobs = list_jobs(entry, http=http)
+    except FeedError as e:
+        out["feed_failures"].append({"company": company, "error": str(e)})
+        return out
+    out["checked"] += len(jobs)
+    feed_ids = {j["id"] for j in jobs}
+    feed_urls = {norm_url(j["url"]) for j in jobs}
+    fresh = [j for j in jobs
+             if (company, j["id"]) not in known_ids and (company, norm_url(j["url"])) not in known_urls]
+
+    # Listed open rows that left the feed, matched to a fresh job with the same title stem.
+    gone = []
+    for r in listings:
+        i = job_id(r["url"])
+        if (r["company"] == company and r.get("status") == "open" and i
+                and i not in feed_ids and norm_url(r["url"]) not in feed_urls):
+            gone.append(r)
+    taken = set()
+    for r in gone:
+        stem = title_stem(r["role"])
+        for j in fresh:
+            if j["id"] not in taken and stem and title_stem(j["title"]) == stem:
+                taken.add(j["id"])
+                out["reposts"].append({"company": company, "old_url": r["url"],
+                                       "new_url": j["url"], "title": j["title"]})
+                break
+
+    # Sibling postings (same role, another city) of an open/closed row are covered by that row;
+    # expected placeholders have generic roles and must stay matchable by real postings.
+    listed_stems = {title_stem(r["role"]) for r in listings
+                     if r["company"] == company and r.get("status") in ("open", "closed")} - {""}
+    groups = {}
+    for j in fresh:
+        if j["id"] in taken or not is_internship_title(j["title"]) or title_stem(j["title"]) in listed_stems:
+            continue
+        try:
+            text = posting_text(entry, j, http=http)
+        except FeedError:
+            out["feed_failures"].append({"company": company,
+                                         "error": f"posting text unavailable: {j['url']}"})
+            continue
+        if not is_candidate(j["title"], text):
+            continue
+        key = title_stem(j["title"])
+        c = groups.get(key)
+        if c is None:
+            groups[key] = {"company": company, "title": j["title"], "url": j["url"], "job_id": j["id"],
+                           "locations": [], "members": [], "text": text}
+            c = groups[key]
+        c["members"].append({"id": j["id"], "url": j["url"], "location": j["location"]})
+        if j["location"] and j["location"] not in c["locations"]:
+            c["locations"].append(j["location"])
+    out["candidates"] += groups.values()
+    return out
+
+
+def _per_company(fn, entries):
+    """fn(entry) for every entry on a bounded pool, in watchlist order. An unexpected exception in
+    one company is returned as (entry, exception) rather than stopping the rest."""
+    def safe(entry):
+        try:
+            return fn(entry)
+        except Exception as e:  # isolation: one broken feed must not stop the others
+            return e
+    with ThreadPoolExecutor(MAX_WORKERS) as pool:
+        return list(pool.map(safe, entries))
+
+
 def discover(entries, listings, ignored, http=fetch):
     known_ids, known_urls = _known(listings, ignored)
     out = {"candidates": [], "reposts": [], "feed_failures": [], "checked": 0}
-    for entry in entries:
-        company = entry["company"]
-        try:
-            jobs = list_jobs(entry, http=http)
-        except FeedError as e:
-            out["feed_failures"].append({"company": company, "error": str(e)})
+    parts = _per_company(lambda e: _discover_company(e, listings, known_ids, known_urls, http), entries)
+    for entry, part in zip(entries, parts):
+        if isinstance(part, Exception):
+            out["feed_failures"].append({"company": entry["company"], "error": f"unexpected error: {part!r}"})
             continue
-        out["checked"] += len(jobs)
-        feed_ids = {j["id"] for j in jobs}
-        feed_urls = {norm_url(j["url"]) for j in jobs}
-        fresh = [j for j in jobs
-                 if (company, j["id"]) not in known_ids and (company, norm_url(j["url"])) not in known_urls]
-
-        # Listed open rows that left the feed, matched to a fresh job with the same title stem.
-        gone = []
-        for r in listings:
-            i = job_id(r["url"])
-            if (r["company"] == company and r.get("status") == "open" and i
-                    and i not in feed_ids and norm_url(r["url"]) not in feed_urls):
-                gone.append(r)
-        taken = set()
-        for r in gone:
-            stem = title_stem(r["role"])
-            for j in fresh:
-                if j["id"] not in taken and stem and title_stem(j["title"]) == stem:
-                    taken.add(j["id"])
-                    out["reposts"].append({"company": company, "old_url": r["url"],
-                                           "new_url": j["url"], "title": j["title"]})
-                    break
-
-        # Sibling postings (same role, another city) of an open/closed row are covered by that row;
-        # expected placeholders have generic roles and must stay matchable by real postings.
-        listed_stems = {title_stem(r["role"]) for r in listings
-                         if r["company"] == company and r.get("status") in ("open", "closed")} - {""}
-        groups = {}
-        for j in fresh:
-            if j["id"] in taken or not is_internship_title(j["title"]) or title_stem(j["title"]) in listed_stems:
-                continue
-            try:
-                text = posting_text(entry, j, http=http)
-            except FeedError:
-                out["feed_failures"].append({"company": company,
-                                             "error": f"posting text unavailable: {j['url']}"})
-                continue
-            if not is_candidate(j["title"], text):
-                continue
-            key = title_stem(j["title"])
-            c = groups.get(key)
-            if c is None:
-                groups[key] = {"company": company, "title": j["title"], "url": j["url"], "job_id": j["id"],
-                               "locations": [], "members": [], "text": text}
-                c = groups[key]
-            c["members"].append({"id": j["id"], "url": j["url"], "location": j["location"]})
-            if j["location"] and j["location"] not in c["locations"]:
-                c["locations"].append(j["location"])
-        out["candidates"] += groups.values()
+        out["candidates"] += part["candidates"]
+        out["reposts"] += part["reposts"]
+        out["feed_failures"] += part["feed_failures"]
+        out["checked"] += part["checked"]
     return out
 
 
 def recall(entries, listings, http=fetch):
     """(hits, total, misses, feed_failures) over open listed rows at companies whose feed loaded."""
     hit, total, misses, failures = 0, 0, [], []
-    for entry in entries:
-        company = entry["company"]
+
+    def load(entry):
         try:
-            jobs = list_jobs(entry, http=http)
+            return list_jobs(entry, http=http)
         except FeedError as e:
-            failures.append({"company": company, "error": str(e)})
+            return e
+
+    for entry, jobs in zip(entries, _per_company(load, entries)):
+        company = entry["company"]
+        if isinstance(jobs, Exception):
+            failures.append({"company": company, "error": str(jobs)})
             continue
         ids = {j["id"] for j in jobs}
         urls = {norm_url(j["url"]) for j in jobs}

@@ -15,6 +15,7 @@ import html
 import json
 import re
 import sys
+import threading
 import time
 from http.client import HTTPException, IncompleteRead
 from pathlib import Path
@@ -313,6 +314,13 @@ def _text_oracle(entry, job, http):
 # --- Eightfold: needs >= 4 s between requests ---------------------------------------
 
 _EF_LAST = {}  # host -> time.monotonic() of its last request; spacing holds across calls
+_EF_LOCKS = {}  # host -> lock held across wait-then-request, so threads on one host queue up
+_EF_LOCKS_GUARD = threading.Lock()
+
+
+def _ef_lock(host):
+    with _EF_LOCKS_GUARD:
+        return _EF_LOCKS.setdefault(host, threading.Lock())
 
 
 def _ef_json(http, url):
@@ -321,13 +329,14 @@ def _ef_json(http, url):
     for attempt in range(4):
         if attempt:
             time.sleep(EIGHTFOLD_DELAY * (1 + 2 * attempt))
-        last = _EF_LAST.get(host)
-        if last is not None:
-            wait = EIGHTFOLD_DELAY - (time.monotonic() - last)
-            if wait > 0:
-                time.sleep(wait)
-        status, text = http(url, method="GET", body=None, headers=None)
-        _EF_LAST[host] = time.monotonic()
+        with _ef_lock(host):
+            last = _EF_LAST.get(host)
+            if last is not None:
+                wait = EIGHTFOLD_DELAY - (time.monotonic() - last)
+                if wait > 0:
+                    time.sleep(wait)
+            status, text = http(url, method="GET", body=None, headers=None)
+            _EF_LAST[host] = time.monotonic()
         if status != 429:
             break
     if status != 200:

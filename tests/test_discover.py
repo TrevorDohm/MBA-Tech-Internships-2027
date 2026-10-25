@@ -1,4 +1,5 @@
 import json
+import time
 import unittest
 from unittest import mock
 
@@ -228,6 +229,53 @@ class DiscoverTests(unittest.TestCase):
     def test_non_candidate_text_is_dropped(self):
         f = Feeds({"Acme": [job("1111111", "Marketing Intern")]}, texts={"1111111": "Undergrads only. Fall."})
         self.assertEqual(f.run([W])["candidates"], [])
+
+
+class ParallelTests(unittest.TestCase):
+    def feeds(self, delay):
+        names = [f"Co{i}" for i in range(8)]
+        entries = [dict(W, company=n) for n in names]
+        feeds = {n: [job(f"{i}00000{k}", f"Strategy Intern {k}") for k in range(2)] for i, n in enumerate(names)}
+        feeds["Co3"] = FeedError("HTTP 500")
+        feeds["Co5"] = RuntimeError("boom")
+        f = Feeds(feeds)
+        orig_list, orig_text = f.list_jobs, f.posting_text
+
+        def slow_list(entry, http=None):
+            time.sleep(delay * (1 + int(entry["company"][2:]) % 3))  # finish out of order
+            return orig_list(entry, http)
+
+        def slow_text(entry, j, http=None):
+            time.sleep(delay / 2)
+            return orig_text(entry, j, http)
+
+        f.list_jobs, f.posting_text = slow_list, slow_text
+        return f, entries
+
+    def test_parallel_output_matches_sequential(self):
+        f, entries = self.feeds(0.02)
+        parallel = f.run(entries)
+        with mock.patch.object(discover, "MAX_WORKERS", 1):
+            sequential = f.run(entries)
+        self.assertEqual(parallel, sequential)
+        self.assertEqual([c["company"] for c in parallel["candidates"]],
+                         [e["company"] for e in entries if e["company"] not in ("Co3", "Co5") for _ in range(2)])
+        self.assertEqual([x["company"] for x in parallel["feed_failures"]], ["Co3", "Co5"])
+        self.assertEqual(parallel["checked"], 12)
+
+    def test_parallel_runs_concurrently(self):
+        names = [f"Co{i}" for i in range(8)]
+        f = Feeds({n: [job("1000001", "Strategy Intern")] for n in names})
+        orig = f.list_jobs
+
+        def slow(entry, http=None):
+            time.sleep(0.2)
+            return orig(entry, http)
+
+        f.list_jobs = slow
+        t0 = time.monotonic()
+        f.run([dict(W, company=n) for n in names])
+        self.assertLess(time.monotonic() - t0, 8 * 0.2 / 2)
 
 
 class ReplayTests(unittest.TestCase):
