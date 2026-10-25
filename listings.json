@@ -1777,9 +1777,9 @@
     "url": "https://blueorigin.wd5.myworkdayjobs.com/BlueOrigin/job/Greater-Seattle-Area/Summer-2027-Corporate-Development-Intern---Graduate_R71514",
     "date_posted": null,
     "status": "open",
-    "pay": "$50/hr",
+    "pay": "$34/hr (WA range); $50/hr also stated",
     "sponsorship": "unknown",
-    "notes": "Graduate students with 1+ term left after the internship; advanced business/finance degree desired (MBA-eligible, not MBA-specific). M&A diligence, valuation, strategic planning. U.S. persons only (export control). WA range also stated as $34/hr."
+    "notes": "Graduate students with 1+ term left after the internship; advanced business/finance degree desired (MBA-eligible, not MBA-specific). M&A diligence, valuation, strategic planning. U.S. persons only (export control)."
   },
   {
     "company": "Blue Origin",
@@ -1840,6 +1840,20 @@
   },
   {
     "company": "Vertiv",
+    "role": "Product Management Intern - MBA (Summer 2027)",
+    "category": "PM",
+    "locations": [
+      "Delaware, OH"
+    ],
+    "url": "https://egup.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/20278958",
+    "date_posted": "2026-08-12",
+    "status": "open",
+    "pay": null,
+    "sponsorship": "no",
+    "notes": "MBA graduating within 12–24 months. Power Solutions & Distribution (PSD) product strategy, portfolio and pricing work. Identical posting also up as req 20278959."
+  },
+  {
+    "company": "Vertiv",
     "role": "Energy Storage Product Management Intern (Summer 2027)",
     "category": "PM",
     "locations": [
@@ -1864,7 +1878,7 @@
     "status": "open",
     "pay": null,
     "sponsorship": "no",
-    "notes": "Engineering, business or product management degree, or an MBA program (MBA-eligible, not MBA-specific). Medium (three-phase) UPS portfolio: roadmap, business cases, pricing. Also posted as reqs 20278958 and 20278959."
+    "notes": "Engineering, business or product management degree, or an MBA program (MBA-eligible, not MBA-specific). Medium (three-phase) UPS portfolio: roadmap, business cases, pricing."
   },
   {
     "company": "Vannevar Labs",
