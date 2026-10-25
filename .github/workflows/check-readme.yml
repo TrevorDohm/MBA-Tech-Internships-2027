@@ -7,6 +7,9 @@ on:
     branches: [main]
     paths: ["listings.json", "README.md", "scripts/**", "ignored.json", "watchlist.json", "tests/**"]
 
+permissions:
+  contents: read
+
 jobs:
   check:
     runs-on: ubuntu-latest
@@ -17,12 +20,47 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Allow only data files on the automation branch
+        if: github.event_name == 'pull_request'
+        env:
+          HEAD_REF: ${{ github.head_ref }}
+          BASE_REF: ${{ github.base_ref }}
+        run: |
+          if [ "$HEAD_REF" != "claude/listing-updates" ]; then
+            echo "Not the automation branch; any file may change."
+            exit 0
+          fi
+          bad=$(git diff --name-only "origin/$BASE_REF...HEAD" \
+            | grep -vxE 'listings\.json|ignored\.json|watchlist\.json|README\.md' || true)
+          if [ -n "$bad" ]; then
+            echo "::error::claude/listing-updates may only change listings.json, ignored.json, watchlist.json and README.md. Also changed:"
+            echo "$bad"
+            exit 1
+          fi
+          echo "Only data files changed."
       - name: Validate listings.json and confirm README.md is regenerated
         run: python3 scripts/update_readme.py --check
       - name: Run unit tests
         run: python3 -m unittest discover tests
-      - name: Verify changed rows against their postings
+      - name: Verify changed rows against their postings (with the base branch's validator)
         if: github.event_name == 'pull_request'
         env:
+          BASE_REF: ${{ github.base_ref }}
           LABELS: ${{ join(github.event.pull_request.labels.*.name, ',') }}
-        run: python3 scripts/validate_listings.py --base origin/${{ github.base_ref }} --labels="$LABELS"
+        run: |
+          # Run the base branch's scripts so a PR cannot grade itself with an edited validator.
+          # They go in a folder beside scripts/ so their ROOT (parent of their folder) is still the
+          # checkout: they read this PR's listings.json and watchlist.json and diff against git here.
+          dir=.base-scripts
+          rm -rf "$dir"
+          mkdir "$dir"
+          if git cat-file -e "origin/$BASE_REF:scripts/validate_listings.py" 2>/dev/null; then
+            for f in $(git ls-tree --name-only "origin/$BASE_REF" scripts/ | grep '\.py$'); do
+              git show "origin/$BASE_REF:$f" > "$dir/$(basename "$f")"
+            done
+            echo "Using the validator from origin/$BASE_REF."
+          else
+            echo "::notice::origin/$BASE_REF has no scripts/validate_listings.py yet; using this PR's own validator (bootstrap)."
+            cp scripts/*.py "$dir/"
+          fi
+          python3 "$dir/validate_listings.py" --base "origin/$BASE_REF" --labels="$LABELS"
