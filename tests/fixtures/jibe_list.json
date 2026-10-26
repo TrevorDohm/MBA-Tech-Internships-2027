@@ -1,0 +1,715 @@
+{
+ "jobs": [
+  {
+   "data": {
+    "slug": "84741",
+    "language": "en-us",
+    "languages": [
+     "en-us"
+    ],
+    "req_id": "84741",
+    "title": "Director, Product Planning-ASIC/SoC",
+    "description": "WHAT YOU DO AT AMD CHANGES EVERYTHING At AMD, our mission is to build great products that accelerate next-generation computing experiences—from AI and data centers, to PCs, gaming and embedded systems. Grounded in a culture of innovation and collaboration, we believe real progress comes from bold ideas, human ingenuity and a shared passion to create something extraordinary. When you join AMD, you’ll discover the real differentiator is our culture. We push the limits of innovation to solve the world’s most important challenges—striving for execution excellence, while being direct, humble, collaborative, and inclusive of diverse perspectives. Join us as we shape the future of AI and beyond. Together, we advance your career. THE ROLE: Drive the Adaptive & Embedded Computing Group’s (AECG) business development and product definition efforts for semi-custom solutions: ASICs, custom SoCs and custom FPGAs, including derivatives of mainstream AMD standard products. This role will focus on identifying and winning strategic custom projects, managing complex customer engagements, and shaping AMD’s long-term custom business in embedded markets. THE PERSON: Will be able to work with & lead large cross-functional teams. Can develop, influence, and sell concepts to multiple teams including the AMD executive team. Strong business acumen to develop strong business case for concepts. Effective communicator. Strong presentation skills. Must be adaptable and thrive in ambiguous situations. KEY RESPONSIBILITIES: Strategic Deal Pursuit Partner with AECG business units and AMD sales teams to target and secure high-value custom opportunities. Lead proposal development and manage the large-deal sales process, including executive approvals and customer relationship management. Technical Solution Development Collaborate with AMD architects and design teams to define scope (die area, power, IP, packaging, software). Estimate development costs and schedules; prepare customer proposals and supporting materials. Customer & Executive Engagement Organize workshops and meetings to align on strategy. Maintain strong customer relationships throughout development to ensure compliance with agreements and pre-sales commitments. Cross-Functional Collaboration Align with product planning on IP and chiplet development needs. Build ecosystems with partners for IP, design services, supply chain, and chiplets. Coordinate with AMD legal for contract negotiations and NDA execution. Project & Financial Management Oversee architecture design-to-cost efforts, including COGS, NRE, power, and schedule trade-offs. Work with finance on pricing models and long-range financial goals. Marketing & Business Planning Develop marketing materials showcasing AMD custom technology and design methodology. Create executive presentations to guide business growth. Craft a 5-year business plan for the custom organization, including growth targets, technology roadmap, and market strategy. PREFERRED EXPERIENCE: Proven experience in semiconductor business development and custom ASIC solutions. Strong technical understanding of chip architecture, IP, packaging, and design ecosystems. Expertise in managing large-scale customer engagements and executive relationships. Ability to develop strategic business plans and financial models. Excellent communication, negotiation, and leadership skills. ACADEMIC CREDENTIALS: BS/MS in Electrical Engineering, Software Engineering, or Computer Engineering MBA preferred This role is not eligible for visa sponsorship. #LI-RL1 Benefits offered are described: AMD benefits at a glance. AMD does not accept unsolicited resumes from headhunters, recruitment agencies, or fee-based recruitment services. AMD and its subsidiaries are equal opportunity, inclusive employers and will consider all applicants without regard to age, ancestry, color, marital status, medical condition, mental or physical disability, national origin, race, religion, political and/or third-party affiliation, sex, pregnancy, sexual orientation, gender identity, military or veteran status, or any other characteristic protected by law. We encourage applications from all qualified candidates and will accommodate applicants’ needs under the respective laws throughout all stages of the recruitment and selection process. AMD may use Artificial Intelligence to help screen, assess or select applicants for this position. AMD’s “Responsible AI Policy” is available here. This posting is for an existing vacancy.",
+    "location_name": "US,CA,San Jose",
+    "street_address": "2100 Logic Drive",
+    "city": "San Jose",
+    "state": "California",
+    "country": "United States",
+    "country_code": "US",
+    "postal_code": "95124",
+    "location_type": "LAT_LNG",
+    "latitude": 37.2530641,
+    "longitude": -121.9362806,
+    "categories": [
+     {
+      "name": "Engineering"
+     }
+    ],
+    "tags1": [
+     "No"
+    ],
+    "tags2": [
+     "USD $203,770.00/Yr."
+    ],
+    "tags3": [
+     "USD $291,100.00/Yr."
+    ],
+    "tags4": [
+     "US Careers (External)"
+    ],
+    "tags5": [
+     "USD $232,880.00/Yr."
+    ],
+    "tags6": [
+     "USD $349,320.00/Yr."
+    ],
+    "tags7": [
+     "232880"
+    ],
+    "tags8": [
+     "349320"
+    ],
+    "promotion_value": 0,
+    "employment_type": "FULL_TIME",
+    "qualifications": "Benefits offered are described: AMD benefits at a glance. AMD does not accept unsolicited resumes from headhunters, recruitment agencies, or fee-based recruitment services. AMD and its subsidiaries are equal opportunity, inclusive employers and will consider all applicants without regard to age, ancestry, color, marital status, medical condition, mental or physical disability, national origin, race, religion, political and/or third-party affiliation, sex, pregnancy, sexual orientation, gender identity, military or veteran status, or any other characteristic protected by law. We encourage applications from all qualified candidates and will accommodate applicants’ needs under the respective laws throughout all stages of the recruitment and selection process. AMD may use Artificial Intelligence to help screen, assess or select applicants for this position. AMD’s “Responsible AI Policy” is available here. This posting is for an existing vacancy.",
+    "hiring_organization": "Advanced Micro Devices, Inc",
+    "hiring_organization_logo": "https://www.amd.com/content/dam/code/images/header/amd-header-logo.svg",
+    "responsibilities": "THE ROLE: Drive the Adaptive & Embedded Computing Group’s (AECG) business development and product definition efforts for semi-custom solutions: ASICs, custom SoCs and custom FPGAs, including derivatives of mainstream AMD standard products. This role will focus on identifying and winning strategic custom projects, managing complex customer engagements, and shaping AMD’s long-term custom business in embedded markets. THE PERSON: Will be able to work with & lead large cross-functional teams. Can develop, influence, and sell concepts to multiple teams including the AMD executive team. Strong business acumen to develop strong business case for concepts. Effective communicator. Strong presentation skills. Must be adaptable and thrive in ambiguous situations. KEY RESPONSIBILITIES: Strategic Deal Pursuit Partner with AECG business units and AMD sales teams to target and secure high-value custom opportunities. Lead proposal development and manage the large-deal sales process, including executive approvals and customer relationship management. Technical Solution Development Collaborate with AMD architects and design teams to define scope (die area, power, IP, packaging, software). Estimate development costs and schedules; prepare customer proposals and supporting materials. Customer & Executive Engagement Organize workshops and meetings to align on strategy. Maintain strong customer relationships throughout development to ensure compliance with agreements and pre-sales commitments. Cross-Functional Collaboration Align with product planning on IP and chiplet development needs. Build ecosystems with partners for IP, design services, supply chain, and chiplets. Coordinate with AMD legal for contract negotiations and NDA execution. Project & Financial Management Oversee architecture design-to-cost efforts, including COGS, NRE, power, and schedule trade-offs. Work with finance on pricing models and long-range financial goals. Marketing & Business Planning Develop marketing materials showcasing AMD custom technology and design methodology. Create executive presentations to guide business growth. Craft a 5-year business plan for the custom organization, including growth targets, technology roadmap, and market strategy. PREFERRED EXPERIENCE: Proven experience in semiconductor business development and custom ASIC solutions. Strong technical understanding of chip architecture, IP, packaging, and design ecosystems. Expertise in managing large-scale customer engagements and executive relationships. Ability to develop strategic business plans and financial models. Excellent communication, negotiation, and leadership skills. ACADEMIC CREDENTIALS: BS/MS in Electrical Engineering, Software Engineering, or Computer Engineering MBA preferred This role is not eligible for visa sponsorship. #LI-RL1",
+    "posted_date": "2026-04-30T20:07:00+0000",
+    "apply_url": "https://careers-amd.icims.com/jobs/84741/login",
+    "internal": false,
+    "external": false,
+    "searchable": true,
+    "applyable": true,
+    "li_easy_applyable": true,
+    "ats_code": "icims",
+    "isFrontLineAIJob": false,
+    "isApplyFlowJob": false,
+    "meta_data": {
+     "client_code": "amd",
+     "googlejobs": {
+      "jobName": "projects/helpful-passage-853/jobs/106821585419018950",
+      "companyName": "projects/helpful-passage-853/companies/8822ff4e-3d3a-4660-ae04-6ef3c02ac1f3",
+      "jobHash": "158c1b2f37c9d64c59d3a8a91feb4f3b",
+      "derivedInfo": {
+       "jobCategories": [
+        "MANAGEMENT",
+        "COMPUTER_AND_IT",
+        "BUSINESS_OPERATIONS",
+        "ADVERTISING_AND_MARKETING"
+       ],
+       "locations": [
+        {
+         "latLng": {
+          "latitude": 37.2530641,
+          "longitude": -121.9362806
+         },
+         "locationType": "STREET_ADDRESS",
+         "postalAddress": {
+          "addressLines": [
+           "2100 Logic Dr, San Jose, CA 95124, USA"
+          ],
+          "administrativeArea": "CA",
+          "languageCode": "",
+          "locality": "San Jose",
+          "organization": "",
+          "postalCode": "95124",
+          "recipients": [],
+          "regionCode": "US",
+          "revision": 0,
+          "sortingCode": "",
+          "sublocality": ""
+         },
+         "radiusInMiles": 7.609038706182947e-05
+        }
+       ]
+      },
+      "jobSummary": "THE ROLE: Drive the Adaptive & Embedded Computing Group’s (AECG) business development and product definition efforts for semi-custom solutions: ASICs, custom SoCs and custom FPGAs, including derivatives of mainstream AMD standard products. This role will focus on identifying and winning strategic custom projects, managing complex customer engagements, and shaping AMD’s long-term custom business in embedded markets. THE PERSON: Will be able to work with & lead large cross-functional teams. Can develop, influence, and sell concepts to multiple teams including the AMD executive team. Strong business acumen to develop strong business case for concepts. Effective communicator. Strong presentation skills. Must be adaptable and thrive in ambiguous situations. KEY RESPONSIBILITIES: Strategic Deal Pursuit Partner with AECG business units and AMD sales teams to target and secure high-value custom opportunities. Lead proposal development and manage the large-deal sales process, including executive approvals and customer relationship management. Technical Solution Development Collaborate with AMD architects and design teams to define scope (die area, power, IP, packaging, software). Estimate development costs and schedules; prepare customer proposals and supporting materials. Customer & Executive Engagement Organize workshops and meetings to align on strategy. Maintain strong customer relationships throughout development to ensure compliance with agreements and pre-sales commitments. Cross-Functional Collaboration Align with product planning on IP and chiplet development needs. Build ecosystems with partners for IP, design services, supply chain, and chiplets. Coordinate with AMD legal for contract negotiations and NDA execution. Project & Financial Management Oversee architecture design-to-cost efforts, including COGS, NRE, power, and schedule trade-offs. Work with finance on pricing models and long-range financial goals. Marketing & Business Planning Develop marketing materials showcasing AMD custom technology and design methodology. Create executive presentations to guide business growth. Craft a 5-year business plan for the custom organization, including growth targets, technology roadmap, and market strategy. PREFERRED EXPERIENCE: Proven experience in semiconductor business development and custom ASIC solutions. Strong technical understanding of chip architecture, IP, packaging, and design ecosystems. Expertise in managing large-scale customer engagements and executive relationships. Ability to develop strategic business plans and financial models. Excellent communication, negotiation, and leadership skills. ACADEMIC CREDENTIALS: BS/MS in Electrical Engineering, Software Engineering, or Computer Engineering MBA preferred This role is not eligible for visa sponsorship. #LI-RL1",
+      "jobTitleSnippet": "Director, Product Planning-ASIC/SoC.",
+      "searchTextSnippet": "... <b>MBA</b> preferred This role is not eligible for visa sponsorship. #LI-RL1 Benefits offered are described: AMD benefits at a glance. AMD does not accept unsolicited resumes from headhunters&nbsp;..."
+     },
+     "icims": {
+      "config_keys": {
+       "ccc.attract.portal.url": "https://careers.amd.com",
+       "icims.config.web.apply.jobpost": "1",
+       "icims.config.web.indeed.easy.apply": "0",
+       "icims.external.xml.feeds": "icims.adzuna.xml.enabled,icims.aeroemploiformation.xml.enabled,icims.apec.xml.enabled,icims.careerbuilder.xml.enabled,icims.careerarc.xml.enabled,icims.careerlink.xml.enabled,icims.clearbold.xml.enabled,icims.constructionjobs.xml.enabled,icims.craigslist.xml.enabled,icims.cv-library.xml.enabled,icims.cvaden.xml.enabled,icims.direct-employers.xml.enabled,icims.hireheroesusa.xml.enabled,icims.hireahero.xml.enabled,icims.hirepurpose.xml.enabled,icims.hospitalcareers.xml.enabled,icims.iberempleos.xml.enabled,icims.indeed.xml.enabled,icims.inhersight.xml.enabled,icims.irishjobs.xml.enabled,icims.itjobscafe.xml.enabled,icims.jobbio.xml.enabled,icims.jobcase.xml.enabled,icims.jobsite.xml.enabled,icims.linkedin.xml.enabled,icims.monster.xml.enabled,icims.msep.xml.enabled,icims.nijobs.xml.enabled,icims.oneten.xml.enabled,icims.pallet-labs.xml.enabled,icims.paradox.xml.enabled,icims.practicematch.xml.enabled,icims.prideatwork.xml.enabled,icims.professionaldiversitynetwork.xml.enabled,icims.propellum.xml.enabled,icims.qkly.xml.enabled,icims.radancy.xml.enabled,icims.recruitnet.xml.enabled,icims.recruitmilitary.xml.enabled,icims.regionsjob.xml.enabled,icims.resume-library.xml.enabled,icims.snagajob.xml.enabled,icims.upward.xml.enabled,icims.vonq.xml.enabled,icims.webengineering.xml.enabled,icims.webscribble.xml.enabled,icims.ziprecruiter.xml.enabled,icims.zippia.xml.enabled,icims.nexxt.xml.enabled",
+       "jobposting.external.company.name": "Advanced Micro Devices, Inc",
+       "jobposting.external.indeed.screenerquestions": "1",
+       "jobposting.external.parent.organization.name": "Advanced Micro Devices, Inc",
+       "portal.id": "17"
+      },
+      "date_updated": "2026-10-16T16:27:46Z",
+      "jps_is_public": true,
+      "primary_posted_site_object": {
+       "datePosted": "2026-04-30T20:07:00+0000",
+       "site": "careers-amd",
+       "siteId": "c0855819-5879-4b81-8974-83b570f1d047",
+       "siteType": "ATTRACT",
+       "tenantId": "12834"
+      },
+      "revision_int": 32,
+      "uuid": "1ad54322-33d7-4beb-8d5c-db311418dc8f"
+     },
+     "import_id": "ce0e3a53-3192-4731-88a7-72e72ff8602b",
+     "import_source": "ImporterService",
+     "redirectOnApply": true,
+     "canonical_url": "https://careers.amd.com/jobs/84741?lang=en-us",
+     "last_mod": "2026-10-19T11:46:05+0000",
+     "gdpr": false
+    },
+    "update_date": "2026-10-19T11:46:05+0000",
+    "create_date": "2026-04-30T20:08:12+0000",
+    "category": [
+     " Engineering"
+    ],
+    "full_location": "San Jose, California",
+    "short_location": "San Jose, California",
+    "multipleLocations": false
+   }
+  },
+  {
+   "data": {
+    "slug": "91924",
+    "language": "en-us",
+    "languages": [
+     "en-us"
+    ],
+    "req_id": "91924",
+    "title": "Strategic Sourcing Manager- Foundry and Advanced Packaging",
+    "description": "ADVANCE YOUR CAREER. ADVANCE THE WORLD. At AMD, we believe technology has the power to solve the world’s most important challenges. From advancing healthcare and scientific discovery to powering AI and the technologies people rely on every day, innovation at AMD is shaping the future. Whether you’re designing next-gen processors, enabling AI breakthroughs, or bringing leading edge products to market, every role at AMD contributes to something bigger — technology that moves the world forward. Join us and, together, we’ll advance your career. Foundry Advanced Packaging Sourcing Manager THE ROLE: Coordinate the management and spend of AMD’s strategic foundry suppliers with specific focus on post fab / advanced packaging services reporting to the Director Foundry Procurement. Develop the global procurement strategy for foundry with specific focus on post fab and advanced packaging; implementing a supplier development program that has a coordinated long-term approach on cost, quality, and service. Build and maintain supplier relationships. Provide analytical support and recommendations regarding sourcing strategies, requirements planning, and cost improvement. THE PERSON: Problem Solving Specialist Drives sophisticated solutions and recommendations for complex issues through the analysis of the situation and available data. Exercises judgment in selecting the methods, techniques, and evaluation criteria for acquiring results. Networks with key contacts outside area of expertise. Excellent communication & people skills. Capable of initiating and leading new projects to enable procurement scalability in support of AMD growth. KEY RESPONSIBILITIES: Collaborate with partners and foundry team members to understand and develop negotiation strategies to drive cost targets. Develop, implement, and lead critical foundry procurement management processes based on feedback from team members and partners. This may include (but not limited to): NPI/NRE procurement program management / order execution, Spend/Savings reporting, support emergency ordering process, tracking payables/receivables initiatives, ongoing critical action tracking/reporting and accountability. Own the overall driven bidding process including analysis, price negotiation, and driving business awards. Implement contracts to minimize AMD risk and enable supplier accountability for non-performance Lead Supplier Performance Management (SPM) and be responsible for the quarterly scorecard process to review service levels on cost, technology, quality, service, and flexibility. Develop and optimally communicate a foundry post fab / advanced packaging commodity strategy which fully reflects key partner inputs to AMD Senior Management Team. Provide updates on a regular basis to supervise progress against plan. Collaborate and formalize foundry post fab / advanced packaging market research and benchmarking processes. Collaborates with suppliers to communicate AMD requirements. Ownership of spend, savings and forecasting for Foundry post fab / advanced packaging supplier. PREFERRED EXPERIENCE: Extensive Founry or Semiconductor experience (specific to post fab and advanced packaging service offerings is ideal) Strong Engineering background is a plus Stong Negotiation and Sourcing skills Supply Chain Management (SCM) familiarity Experience working in an engineering or semiconductor company Understanding of regional and global markets and cultures ACADEMIC CREDENTIALS: BS/BA degree MBA Location: Austin, TX This role is not eligible for visa sponsorship. #LI-RD1 Benefits offered are described: AMD benefits at a glance. AMD does not accept unsolicited resumes from headhunters, recruitment agencies, or fee-based recruitment services. AMD and its subsidiaries are equal opportunity, inclusive employers and will consider all applicants without regard to age, ancestry, color, marital status, medical condition, mental or physical disability, national origin, race, religion, political and/or third-party affiliation, sex, pregnancy, sexual orientation, gender identity, military or veteran status, or any other characteristic protected by law. We encourage applications from all qualified candidates and will accommodate applicants’ needs under the respective laws throughout all stages of the recruitment and selection process. AMD may use Artificial Intelligence to help screen, assess or select applicants for this position. AMD’s “Responsible AI Policy” is available here. This posting is for an existing vacancy.",
+    "location_name": "US,CA,San Jose",
+    "street_address": "2100 Logic Drive",
+    "city": "San Jose",
+    "state": "California",
+    "country": "United States",
+    "country_code": "US",
+    "postal_code": "95124",
+    "location_type": "LAT_LNG",
+    "latitude": 37.25306399999999,
+    "longitude": -121.9362806,
+    "categories": [
+     {
+      "name": "General Management/ Administration/ Support"
+     }
+    ],
+    "tags1": [
+     "No"
+    ],
+    "tags2": [
+     "USD $128,100.00/Yr."
+    ],
+    "tags3": [
+     "USD $183,000.00/Yr."
+    ],
+    "tags4": [
+     "US Careers (External)"
+    ],
+    "tags5": [
+     "USD $146,400.00/Yr."
+    ],
+    "tags6": [
+     "USD $219,600.00/Yr."
+    ],
+    "tags7": [
+     "146400"
+    ],
+    "tags8": [
+     "219600"
+    ],
+    "promotion_value": 0,
+    "employment_type": "FULL_TIME",
+    "qualifications": "Benefits offered are described: AMD benefits at a glance. AMD does not accept unsolicited resumes from headhunters, recruitment agencies, or fee-based recruitment services. AMD and its subsidiaries are equal opportunity, inclusive employers and will consider all applicants without regard to age, ancestry, color, marital status, medical condition, mental or physical disability, national origin, race, religion, political and/or third-party affiliation, sex, pregnancy, sexual orientation, gender identity, military or veteran status, or any other characteristic protected by law. We encourage applications from all qualified candidates and will accommodate applicants’ needs under the respective laws throughout all stages of the recruitment and selection process. AMD may use Artificial Intelligence to help screen, assess or select applicants for this position. AMD’s “Responsible AI Policy” is available here. This posting is for an existing vacancy.",
+    "hiring_organization": "Advanced Micro Devices, Inc",
+    "hiring_organization_logo": "https://www.amd.com/content/dam/code/images/header/amd-header-logo.svg",
+    "responsibilities": "Foundry Advanced Packaging Sourcing Manager THE ROLE: Coordinate the management and spend of AMD’s strategic foundry suppliers with specific focus on post fab / advanced packaging services reporting to the Director Foundry Procurement. Develop the global procurement strategy for foundry with specific focus on post fab and advanced packaging; implementing a supplier development program that has a coordinated long-term approach on cost, quality, and service. Build and maintain supplier relationships. Provide analytical support and recommendations regarding sourcing strategies, requirements planning, and cost improvement. THE PERSON: Problem Solving Specialist Drives sophisticated solutions and recommendations for complex issues through the analysis of the situation and available data. Exercises judgment in selecting the methods, techniques, and evaluation criteria for acquiring results. Networks with key contacts outside area of expertise. Excellent communication & people skills. Capable of initiating and leading new projects to enable procurement scalability in support of AMD growth. KEY RESPONSIBILITIES: Collaborate with partners and foundry team members to understand and develop negotiation strategies to drive cost targets. Develop, implement, and lead critical foundry procurement management processes based on feedback from team members and partners. This may include (but not limited to): NPI/NRE procurement program management / order execution, Spend/Savings reporting, support emergency ordering process, tracking payables/receivables initiatives, ongoing critical action tracking/reporting and accountability. Own the overall driven bidding process including analysis, price negotiation, and driving business awards. Implement contracts to minimize AMD risk and enable supplier accountability for non-performance Lead Supplier Performance Management (SPM) and be responsible for the quarterly scorecard process to review service levels on cost, technology, quality, service, and flexibility. Develop and optimally communicate a foundry post fab / advanced packaging commodity strategy which fully reflects key partner inputs to AMD Senior Management Team. Provide updates on a regular basis to supervise progress against plan. Collaborate and formalize foundry post fab / advanced packaging market research and benchmarking processes. Collaborates with suppliers to communicate AMD requirements. Ownership of spend, savings and forecasting for Foundry post fab / advanced packaging supplier. PREFERRED EXPERIENCE: Extensive Founry or Semiconductor experience (specific to post fab and advanced packaging service offerings is ideal) Strong Engineering background is a plus Stong Negotiation and Sourcing skills Supply Chain Management (SCM) familiarity Experience working in an engineering or semiconductor company Understanding of regional and global markets and cultures ACADEMIC CREDENTIALS: BS/BA degree MBA Location: Austin, TX This role is not eligible for visa sponsorship. #LI-RD1",
+    "posted_date": "2026-09-14T19:40:00+0000",
+    "apply_url": "https://careers-amd.icims.com/jobs/91924/login",
+    "internal": false,
+    "external": false,
+    "searchable": true,
+    "applyable": true,
+    "li_easy_applyable": true,
+    "ats_code": "icims",
+    "isFrontLineAIJob": false,
+    "isApplyFlowJob": false,
+    "meta_data": {
+     "client_code": "amd",
+     "googlejobs": {
+      "jobName": "projects/helpful-passage-853/jobs/123030954766672582",
+      "companyName": "projects/helpful-passage-853/companies/8822ff4e-3d3a-4660-ae04-6ef3c02ac1f3",
+      "jobHash": "2bf195554a9015a82e45a83b0d87484a",
+      "derivedInfo": {
+       "jobCategories": [
+        "SALES_AND_RETAIL",
+        "MANAGEMENT"
+       ],
+       "locations": [
+        {
+         "latLng": {
+          "latitude": 37.25306399999999,
+          "longitude": -121.9362806
+         },
+         "locationType": "STREET_ADDRESS",
+         "postalAddress": {
+          "addressLines": [
+           "2100 Logic Dr, San Jose, CA 95124, USA"
+          ],
+          "administrativeArea": "CA",
+          "languageCode": "",
+          "locality": "San Jose",
+          "organization": "",
+          "postalCode": "95124",
+          "recipients": [],
+          "regionCode": "US",
+          "revision": 0,
+          "sortingCode": "",
+          "sublocality": ""
+         },
+         "radiusInMiles": 7.608681267165591e-05
+        }
+       ]
+      },
+      "jobSummary": "Foundry Advanced Packaging Sourcing Manager THE ROLE: Coordinate the management and spend of AMD’s strategic foundry suppliers with specific focus on post fab / advanced packaging services reporting to the Director Foundry Procurement. Develop the global procurement strategy for foundry with specific focus on post fab and advanced packaging; implementing a supplier development program that has a coordinated long-term approach on cost, quality, and service. Build and maintain supplier relationships. Provide analytical support and recommendations regarding sourcing strategies, requirements planning, and cost improvement. THE PERSON: Problem Solving Specialist Drives sophisticated solutions and recommendations for complex issues through the analysis of the situation and available data. Exercises judgment in selecting the methods, techniques, and evaluation criteria for acquiring results. Networks with key contacts outside area of expertise. Excellent communication & people skills. Capable of initiating and leading new projects to enable procurement scalability in support of AMD growth. KEY RESPONSIBILITIES: Collaborate with partners and foundry team members to understand and develop negotiation strategies to drive cost targets. Develop, implement, and lead critical foundry procurement management processes based on feedback from team members and partners. This may include (but not limited to): NPI/NRE procurement program management / order execution, Spend/Savings reporting, support emergency ordering process, tracking payables/receivables initiatives, ongoing critical action tracking/reporting and accountability. Own the overall driven bidding process including analysis, price negotiation, and driving business awards. Implement contracts to minimize AMD risk and enable supplier accountability for non-performance Lead Supplier Performance Management (SPM) and be responsible for the quarterly scorecard process to review service levels on cost, technology, quality, service, and flexibility. Develop and optimally communicate a foundry post fab / advanced packaging commodity strategy which fully reflects key partner inputs to AMD Senior Management Team. Provide updates on a regular basis to supervise progress against plan. Collaborate and formalize foundry post fab / advanced packaging market research and benchmarking processes. Collaborates with suppliers to communicate AMD requirements. Ownership of spend, savings and forecasting for Foundry post fab / advanced packaging supplier. PREFERRED EXPERIENCE: Extensive Founry or Semiconductor experience (specific to post fab and advanced packaging service offerings is ideal) Strong Engineering background is a plus Stong Negotiation and Sourcing skills Supply Chain Management (SCM) familiarity Experience working in an engineering or semiconductor company Understanding of regional and global markets and cultures ACADEMIC CREDENTIALS: BS/BA degree MBA Location: Austin, TX This role is not eligible for visa sponsorship. #LI-RD1",
+      "jobTitleSnippet": "Strategic Sourcing Manager- Foundry and Advanced Packaging.",
+      "searchTextSnippet": "... <b>MBA</b> Location: Austin, TX This role is not eligible for visa sponsorship. #LI-RD1 Benefits offered are described: AMD benefits at a glance. AMD does not accept unsolicited resumes from headhunters&nbsp;..."
+     },
+     "icims": {
+      "config_keys": {
+       "ccc.attract.portal.url": "https://careers.amd.com",
+       "icims.config.web.apply.jobpost": "1",
+       "icims.config.web.indeed.easy.apply": "0",
+       "icims.external.xml.feeds": "icims.adzuna.xml.enabled,icims.aeroemploiformation.xml.enabled,icims.apec.xml.enabled,icims.careerbuilder.xml.enabled,icims.careerarc.xml.enabled,icims.careerlink.xml.enabled,icims.clearbold.xml.enabled,icims.constructionjobs.xml.enabled,icims.craigslist.xml.enabled,icims.cv-library.xml.enabled,icims.cvaden.xml.enabled,icims.direct-employers.xml.enabled,icims.hireheroesusa.xml.enabled,icims.hireahero.xml.enabled,icims.hirepurpose.xml.enabled,icims.hospitalcareers.xml.enabled,icims.iberempleos.xml.enabled,icims.indeed.xml.enabled,icims.inhersight.xml.enabled,icims.irishjobs.xml.enabled,icims.itjobscafe.xml.enabled,icims.jobbio.xml.enabled,icims.jobcase.xml.enabled,icims.jobsite.xml.enabled,icims.linkedin.xml.enabled,icims.monster.xml.enabled,icims.msep.xml.enabled,icims.nijobs.xml.enabled,icims.oneten.xml.enabled,icims.pallet-labs.xml.enabled,icims.paradox.xml.enabled,icims.practicematch.xml.enabled,icims.prideatwork.xml.enabled,icims.professionaldiversitynetwork.xml.enabled,icims.propellum.xml.enabled,icims.qkly.xml.enabled,icims.radancy.xml.enabled,icims.recruitnet.xml.enabled,icims.recruitmilitary.xml.enabled,icims.regionsjob.xml.enabled,icims.resume-library.xml.enabled,icims.snagajob.xml.enabled,icims.upward.xml.enabled,icims.vonq.xml.enabled,icims.webengineering.xml.enabled,icims.webscribble.xml.enabled,icims.ziprecruiter.xml.enabled,icims.zippia.xml.enabled,icims.nexxt.xml.enabled",
+       "jobposting.external.company.name": "Advanced Micro Devices, Inc",
+       "jobposting.external.indeed.screenerquestions": "1",
+       "jobposting.external.parent.organization.name": "Advanced Micro Devices, Inc",
+       "portal.id": "17"
+      },
+      "date_updated": "2026-10-16T21:06:43Z",
+      "jps_is_public": true,
+      "primary_posted_site_object": {
+       "datePosted": "2026-09-14T19:40:00+0000",
+       "site": "careers-amd",
+       "siteId": "c0855819-5879-4b81-8974-83b570f1d047",
+       "siteType": "ATTRACT",
+       "tenantId": "12834"
+      },
+      "revision_int": 8,
+      "uuid": "1ba50359-7585-4475-849b-320fb56f562d"
+     },
+     "import_id": "ce0e3a53-3192-4731-88a7-72e72ff8602b",
+     "import_source": "ImporterService",
+     "redirectOnApply": true,
+     "canonical_url": "https://careers.amd.com/jobs/91924?lang=en-us",
+     "last_mod": "2026-10-19T11:47:17+0000",
+     "gdpr": false
+    },
+    "update_date": "2026-10-19T11:47:17+0000",
+    "create_date": "2026-09-14T19:40:51+0000",
+    "category": [
+     " General Management/ Administration/ Support"
+    ],
+    "full_location": "San Jose, California",
+    "short_location": "San Jose, California",
+    "multipleLocations": false
+   }
+  },
+  {
+   "data": {
+    "slug": "92141",
+    "language": "en-us",
+    "languages": [
+     "en-us"
+    ],
+    "req_id": "92141",
+    "title": "Senior Financial Accountant",
+    "description": "ADVANCE YOUR CAREER. ADVANCE THE WORLD. At AMD, we believe technology has the power to solve the world’s most important challenges. From advancing healthcare and scientific discovery to powering AI and the technologies people rely on every day, innovation at AMD is shaping the future. Whether you’re designing next-gen processors, enabling AI breakthroughs, or bringing leading edge products to market, every role at AMD contributes to something bigger — technology that moves the world forward. Join us and, together, we’ll advance your career. THE ROLE: In this role, you will be responsible for Global Marketing Operation process simplification, automation and cross team metric reporting leveraging AI tools THE PERSON: You are a results-oriented self-starter with excellent communication skills.  You possess attention to detail and well-developed analytical and problem-solving skills. You have the ability to adapt to changing priorities and are comfortable with ambiguity. KEY RESPONSIBILITIES: Understand overall process end to end and provide suggestions on automation and simplification Identify and implement improvements to business processes  Assume full ownership on ad hoc projects, reports and analyses as required  Refresh, debug and update scheduled operational metric report through PowerBi and Macro  Advanced knowledge and usage of AI tools to drive efficiency and automation PREFERRED EXPERIENCE: Experience working in a similar role in the hi-tech industry  Advanced knowledge of MS office tools , PowerBI, PowerQuery, Macro SAP S4 experience preferred   High attention to details, meticulous with sharp analytical skills  Assertive, creative and self-motivated with good interpersonal skills.  Able to work independently as well as a dynamic team player under a fast paced, deadline-driven environment.  Flexible, highly adaptable & responsive to changes  Fresh graduates are encouraged to apply  ACADEMIC CREDENTIALS: Bachelor’s degree in finance, accounting or data analytical. MBA or CPA preferred LOCATION: Cyberjaya, Selangor #LI-AR2 #LI-Onsite Benefits offered are described: AMD benefits at a glance. AMD does not accept unsolicited resumes from headhunters, recruitment agencies, or fee-based recruitment services. AMD and its subsidiaries are equal opportunity, inclusive employers and will consider all applicants without regard to age, ancestry, color, marital status, medical condition, mental or physical disability, national origin, race, religion, political and/or third-party affiliation, sex, pregnancy, sexual orientation, gender identity, military or veteran status, or any other characteristic protected by law. We encourage applications from all qualified candidates and will accommodate applicants’ needs under the respective laws throughout all stages of the recruitment and selection process. AMD may use Artificial Intelligence to help screen, assess or select applicants for this position. AMD’s “Responsible AI Policy” is available here. This posting is for an existing vacancy.",
+    "location_name": "MY,Cyberjaya",
+    "street_address": "Enterprise Block 3750, Persiaran APEC, Cyber 8",
+    "city": "Cyberjaya",
+    "state": "Selangor",
+    "country": "Malaysia",
+    "country_code": "MY",
+    "postal_code": "63000",
+    "location_type": "LAT_LNG",
+    "latitude": 2.9083531,
+    "longitude": 101.6558001,
+    "categories": [
+     {
+      "name": "Accounting/Finance"
+     }
+    ],
+    "tags1": [
+     "No"
+    ],
+    "tags2": [
+     "MYR RM65,100.00/Yr."
+    ],
+    "tags3": [
+     "MYR RM93,000.00/Yr."
+    ],
+    "tags4": [
+     "Global Careers (do not use for US or Canada)"
+    ],
+    "promotion_value": 0,
+    "employment_type": "FULL_TIME",
+    "qualifications": "Benefits offered are described: AMD benefits at a glance. AMD does not accept unsolicited resumes from headhunters, recruitment agencies, or fee-based recruitment services. AMD and its subsidiaries are equal opportunity, inclusive employers and will consider all applicants without regard to age, ancestry, color, marital status, medical condition, mental or physical disability, national origin, race, religion, political and/or third-party affiliation, sex, pregnancy, sexual orientation, gender identity, military or veteran status, or any other characteristic protected by law. We encourage applications from all qualified candidates and will accommodate applicants’ needs under the respective laws throughout all stages of the recruitment and selection process. AMD may use Artificial Intelligence to help screen, assess or select applicants for this position. AMD’s “Responsible AI Policy” is available here. This posting is for an existing vacancy.",
+    "hiring_organization": "Advanced Micro Devices, Inc",
+    "hiring_organization_logo": "https://www.amd.com/content/dam/code/images/header/amd-header-logo.svg",
+    "responsibilities": "THE ROLE: In this role, you will be responsible for Global Marketing Operation process simplification, automation and cross team metric reporting leveraging AI tools THE PERSON: You are a results-oriented self-starter with excellent communication skills.  You possess attention to detail and well-developed analytical and problem-solving skills. You have the ability to adapt to changing priorities and are comfortable with ambiguity. KEY RESPONSIBILITIES: Understand overall process end to end and provide suggestions on automation and simplification Identify and implement improvements to business processes  Assume full ownership on ad hoc projects, reports and analyses as required  Refresh, debug and update scheduled operational metric report through PowerBi and Macro  Advanced knowledge and usage of AI tools to drive efficiency and automation PREFERRED EXPERIENCE: Experience working in a similar role in the hi-tech industry  Advanced knowledge of MS office tools , PowerBI, PowerQuery, Macro SAP S4 experience preferred   High attention to details, meticulous with sharp analytical skills  Assertive, creative and self-motivated with good interpersonal skills.  Able to work independently as well as a dynamic team player under a fast paced, deadline-driven environment.  Flexible, highly adaptable & responsive to changes  Fresh graduates are encouraged to apply  ACADEMIC CREDENTIALS: Bachelor’s degree in finance, accounting or data analytical. MBA or CPA preferred LOCATION: Cyberjaya, Selangor #LI-AR2 #LI-Onsite",
+    "posted_date": "2026-09-15T08:34:00+0000",
+    "posting_expiry_date": "2026-11-29T16:00:00+0000",
+    "apply_url": "https://global-external-amd.icims.com/jobs/92141/login",
+    "internal": false,
+    "external": false,
+    "searchable": true,
+    "applyable": true,
+    "li_easy_applyable": true,
+    "ats_code": "icims",
+    "isFrontLineAIJob": false,
+    "isApplyFlowJob": false,
+    "meta_data": {
+     "client_code": "amd",
+     "googlejobs": {
+      "jobName": "projects/helpful-passage-853/jobs/116538503960896198",
+      "companyName": "projects/helpful-passage-853/companies/8822ff4e-3d3a-4660-ae04-6ef3c02ac1f3",
+      "jobHash": "8ef8c39132b508a52fadd3d80ba278cf",
+      "derivedInfo": {
+       "jobCategories": [
+        "ACCOUNTING_AND_FINANCE"
+       ],
+       "locations": [
+        {
+         "latLng": {
+          "latitude": 2.9083531,
+          "longitude": 101.6558001
+         },
+         "locationType": "STREET_ADDRESS",
+         "postalAddress": {
+          "addressLines": [
+           "CoInnov8, Cyberview Sdn Bhd, 3750, Persiaran APEC, Cyber 8, 63000 Cyberjaya, Selangor, Malaysia"
+          ],
+          "administrativeArea": "Selangor",
+          "languageCode": "",
+          "locality": "Cyberjaya",
+          "organization": "",
+          "postalCode": "63000",
+          "recipients": [],
+          "regionCode": "MY",
+          "revision": 0,
+          "sortingCode": "",
+          "sublocality": "Cyber 8"
+         },
+         "radiusInMiles": 8.335318445990965e-05
+        }
+       ]
+      },
+      "jobSummary": "THE ROLE: In this role, you will be responsible for Global Marketing Operation process simplification, automation and cross team metric reporting leveraging AI tools THE PERSON: You are a results-oriented self-starter with excellent communication skills. You possess attention to detail and well-developed analytical and problem-solving skills. You have the ability to adapt to changing priorities and are comfortable with ambiguity. KEY RESPONSIBILITIES: Understand overall process end to end and provide suggestions on automation and simplification Identify and implement improvements to business processes Assume full ownership on ad hoc projects, reports and analyses as required Refresh, debug and update scheduled operational metric report through PowerBi and Macro Advanced knowledge and usage of AI tools to drive efficiency and automation PREFERRED EXPERIENCE: Experience working in a similar role in the hi-tech industry Advanced knowledge of MS office tools , PowerBI, PowerQuery, Macro SAP S4 experience preferred High attention to details, meticulous with sharp analytical skills Assertive, creative and self-motivated with good interpersonal skills. Able to work independently as well as a dynamic team player under a fast paced, deadline-driven environment. Flexible, highly adaptable & responsive to changes Fresh graduates are encouraged to apply ACADEMIC CREDENTIALS: Bachelor’s degree in finance, accounting or data analytical. MBA or CPA preferred LOCATION: Cyberjaya, Selangor #LI-AR2 #LI-Onsite",
+      "jobTitleSnippet": "Senior Financial Accountant.",
+      "searchTextSnippet": "... <b>MBA</b> or CPA preferred LOCATION: Cyberjaya, Selangor #LI-AR2 #LI-Onsite Benefits offered are described: AMD benefits at a glance. AMD does not accept unsolicited resumes from headhunters&nbsp;..."
+     },
+     "icims": {
+      "config_keys": {
+       "ccc.attract.portal.url": "https://careers.amd.com",
+       "icims.config.web.apply.jobpost": "1",
+       "icims.config.web.indeed.easy.apply": "0",
+       "icims.external.xml.feeds": "icims.adzuna.xml.enabled,icims.aeroemploiformation.xml.enabled,icims.apec.xml.enabled,icims.careerbuilder.xml.enabled,icims.careerarc.xml.enabled,icims.careerlink.xml.enabled,icims.clearbold.xml.enabled,icims.constructionjobs.xml.enabled,icims.craigslist.xml.enabled,icims.cv-library.xml.enabled,icims.cvaden.xml.enabled,icims.direct-employers.xml.enabled,icims.hireheroesusa.xml.enabled,icims.hireahero.xml.enabled,icims.hirepurpose.xml.enabled,icims.hospitalcareers.xml.enabled,icims.iberempleos.xml.enabled,icims.indeed.xml.enabled,icims.inhersight.xml.enabled,icims.irishjobs.xml.enabled,icims.itjobscafe.xml.enabled,icims.jobbio.xml.enabled,icims.jobcase.xml.enabled,icims.jobsite.xml.enabled,icims.linkedin.xml.enabled,icims.monster.xml.enabled,icims.msep.xml.enabled,icims.nijobs.xml.enabled,icims.oneten.xml.enabled,icims.pallet-labs.xml.enabled,icims.paradox.xml.enabled,icims.practicematch.xml.enabled,icims.prideatwork.xml.enabled,icims.professionaldiversitynetwork.xml.enabled,icims.propellum.xml.enabled,icims.qkly.xml.enabled,icims.radancy.xml.enabled,icims.recruitnet.xml.enabled,icims.recruitmilitary.xml.enabled,icims.regionsjob.xml.enabled,icims.resume-library.xml.enabled,icims.snagajob.xml.enabled,icims.upward.xml.enabled,icims.vonq.xml.enabled,icims.webengineering.xml.enabled,icims.webscribble.xml.enabled,icims.ziprecruiter.xml.enabled,icims.zippia.xml.enabled,icims.nexxt.xml.enabled",
+       "jobposting.external.company.name": "Advanced Micro Devices, Inc",
+       "jobposting.external.indeed.screenerquestions": "1",
+       "jobposting.external.parent.organization.name": "Advanced Micro Devices, Inc",
+       "portal.id": "204"
+      },
+      "date_updated": "2026-10-16T07:58:04Z",
+      "jps_is_public": true,
+      "primary_posted_site_object": {
+       "datePosted": "2026-09-15T08:34:00+0000",
+       "site": "global-external-amd",
+       "siteId": "6245c1b1-1919-49a5-9362-f476371d191b",
+       "siteType": "ATTRACT",
+       "tenantId": "12834",
+       "validThrough": "2026-11-29T16:00:00+0000"
+      },
+      "revision_int": 9,
+      "uuid": "9ef73ab9-8f67-4bd9-9f9f-3581cdd638e9"
+     },
+     "import_id": "f45ffb79-e5e9-440b-815d-e5c358709fb8",
+     "import_source": "ImporterService",
+     "redirectOnApply": true,
+     "canonical_url": "https://careers.amd.com/jobs/92141?lang=en-us",
+     "last_mod": "2026-10-16T11:46:37+0000",
+     "gdpr": false
+    },
+    "update_date": "2026-10-16T11:46:37+0000",
+    "create_date": "2026-10-12T04:30:03+0000",
+    "category": [
+     " Accounting/Finance"
+    ],
+    "full_location": "Cyberjaya, Malaysia",
+    "short_location": "Cyberjaya, Malaysia",
+    "multipleLocations": false
+   }
+  }
+ ],
+ "locations": [],
+ "totalCount": 3,
+ "request_id": false,
+ "meta_data": {
+  "ResponseMetadata": {
+   "requestId": "709fb4e6-649a-473c-97a3-cde07b6cd57c:APAb7IQ1m4etADcyCYNZw1pq9M5KDNCpKA=="
+  }
+ },
+ "count": 3,
+ "languageCounts": {
+  "en-us": {
+   "displayName": "English",
+   "count": 49
+  }
+ },
+ "filter": {
+  "facetList": {
+   "city": [
+    {
+     "term": "Austin",
+     "count": 21
+    },
+    {
+     "term": "Cyberjaya",
+     "count": 2
+    },
+    {
+     "term": "Penang",
+     "count": 1
+    },
+    {
+     "term": "San Jose",
+     "count": 5
+    },
+    {
+     "term": "Santa Clara",
+     "count": 10
+    },
+    {
+     "term": "Seattle",
+     "count": 5
+    },
+    {
+     "term": "Shanghai",
+     "count": 1
+    },
+    {
+     "term": "Shenzhen",
+     "count": 1
+    },
+    {
+     "term": "Tokyo",
+     "count": 1
+    }
+   ],
+   "country": [
+    {
+     "term": "China",
+     "count": 2
+    },
+    {
+     "term": "Japan",
+     "count": 1
+    },
+    {
+     "term": "Malaysia",
+     "count": 3
+    },
+    {
+     "term": "Singapore",
+     "count": 1
+    },
+    {
+     "term": "United States",
+     "count": 42
+    }
+   ],
+   "tags1": [
+    {
+     "term": "No",
+     "count": 46
+    },
+    {
+     "term": "Yes",
+     "count": 3
+    }
+   ]
+  },
+  "displayLimit": 10,
+  "brands": {
+   "all": [],
+   "shortlist": []
+  },
+  "categories": {
+   "all": [
+    {
+     "category": "Accounting/Finance",
+     "numJobs": 3
+    },
+    {
+     "category": "Engineering",
+     "numJobs": 14
+    },
+    {
+     "category": "General Management/ Administration/ Support",
+     "numJobs": 16
+    },
+    {
+     "category": "Human Resources",
+     "numJobs": 1
+    },
+    {
+     "category": "Sales / Marketing",
+     "numJobs": 15
+    }
+   ],
+   "shortlist": [
+    {
+     "category": "Accounting/Finance",
+     "numJobs": 3
+    },
+    {
+     "category": "Engineering",
+     "numJobs": 14
+    },
+    {
+     "category": "General Management/ Administration/ Support",
+     "numJobs": 16
+    },
+    {
+     "category": "Human Resources",
+     "numJobs": 1
+    },
+    {
+     "category": "Sales / Marketing",
+     "numJobs": 15
+    }
+   ]
+  },
+  "locations": {
+   "all": [
+    {
+     "city": "Austin",
+     "state": "Texas",
+     "country": "United States",
+     "count": 21
+    },
+    {
+     "city": "Cyberjaya",
+     "state": "Selangor",
+     "country": "Malaysia",
+     "count": 2
+    },
+    {
+     "city": "Penang",
+     "state": "Pulau Pinang",
+     "country": "Malaysia",
+     "count": 1
+    },
+    {
+     "city": "San Jose",
+     "state": "California",
+     "country": "United States",
+     "count": 5
+    },
+    {
+     "city": "Santa Clara",
+     "state": "California",
+     "country": "United States",
+     "count": 10
+    },
+    {
+     "city": "Seattle",
+     "state": "Washington",
+     "country": "United States",
+     "count": 5
+    },
+    {
+     "city": "Shanghai",
+     "state": "Shanghai",
+     "country": "China",
+     "count": 1
+    },
+    {
+     "city": "Shenzhen",
+     "state": null,
+     "country": "China",
+     "count": 1
+    },
+    {
+     "city": "Tokyo",
+     "state": null,
+     "country": "Japan",
+     "count": 1
+    },
+    {
+     "city": null,
+     "state": "Singapore",
+     "country": "Singapore",
+     "count": 1
+    },
+    {
+     "city": null,
+     "state": "Virginia",
+     "country": "United States",
+     "count": 1
+    }
+   ],
+   "shortlist": [
+    {
+     "city": "Austin",
+     "state": "Texas",
+     "country": "United States",
+     "count": 21
+    },
+    {
+     "city": "Cyberjaya",
+     "state": "Selangor",
+     "country": "Malaysia",
+     "count": 2
+    },
+    {
+     "city": "Penang",
+     "state": "Pulau Pinang",
+     "country": "Malaysia",
+     "count": 1
+    },
+    {
+     "city": "San Jose",
+     "state": "California",
+     "country": "United States",
+     "count": 5
+    },
+    {
+     "city": "Santa Clara",
+     "state": "California",
+     "country": "United States",
+     "count": 10
+    },
+    {
+     "city": "Seattle",
+     "state": "Washington",
+     "country": "United States",
+     "count": 5
+    },
+    {
+     "city": "Shanghai",
+     "state": "Shanghai",
+     "country": "China",
+     "count": 1
+    },
+    {
+     "city": "Shenzhen",
+     "state": null,
+     "country": "China",
+     "count": 1
+    },
+    {
+     "city": "Tokyo",
+     "state": null,
+     "country": "Japan",
+     "count": 1
+    },
+    {
+     "city": null,
+     "state": "Singapore",
+     "country": "Singapore",
+     "count": 1
+    },
+    {
+     "city": null,
+     "state": "Virginia",
+     "country": "United States",
+     "count": 1
+    }
+   ]
+  },
+  "experienceLevels": {
+   "all": [],
+   "shortlist": []
+  }
+ }
+}

@@ -1,0 +1,122 @@
+{
+ "total": 3,
+ "jobPostings": [
+  {
+   "title": "Converse Social Community Impact Graduate Internship",
+   "externalPath": "/job/Boston-Massachusetts/Converse-Social-Community-Impact-Graduate-Internship_R-95789-1",
+   "timeType": "Full time",
+   "locationsText": "Boston, Massachusetts",
+   "postedOn": "Posted 6 Days Ago",
+   "bulletFields": [
+    "R-95789"
+   ]
+  },
+  {
+   "title": "Lead Technical Product Manager, ITC",
+   "externalPath": "/job/Karnataka-India/Lead-Technical-Product-Manager--ITC_R-94491",
+   "timeType": "Full time",
+   "locationsText": "Karnataka, India",
+   "postedOn": "Posted 8 Days Ago",
+   "bulletFields": [
+    "R-94491"
+   ]
+  },
+  {
+   "title": "Lead Technical Product Manager, ITC",
+   "externalPath": "/job/Karnataka-India/Lead-Technical-Product-Manager--ITC_R-94492",
+   "timeType": "Full time",
+   "locationsText": "Karnataka, India",
+   "postedOn": "Posted 8 Days Ago",
+   "bulletFields": [
+    "R-94492"
+   ]
+  }
+ ],
+ "facets": [
+  {
+   "facetParameter": "timeType",
+   "descriptor": "Full/Part-time",
+   "values": [
+    {
+     "descriptor": "Full time",
+     "id": "3f0087b6eae610190ce7473433900002",
+     "count": 14
+    }
+   ]
+  },
+  {
+   "facetParameter": "workerSubType",
+   "descriptor": "Job Type",
+   "values": [
+    {
+     "descriptor": "Intern (Fixed Term)",
+     "id": "cd128a2666561000ac472df272660000",
+     "count": 10
+    },
+    {
+     "descriptor": "Regular",
+     "id": "cd128a2666561000ac472d58c4990001",
+     "count": 4
+    }
+   ]
+  },
+  {
+   "facetParameter": "jobFamilyGroup",
+   "descriptor": "Job Category",
+   "values": [
+    {
+     "descriptor": "Analytics",
+     "id": "cd128a2666561000bad382c400280000",
+     "count": 1
+    },
+    {
+     "descriptor": "Business Operations",
+     "id": "cd128a2666561000bad3835fa2570000",
+     "count": 10
+    },
+    {
+     "descriptor": "Finance",
+     "id": "cd128a2666561000bad38228ca2e0000",
+     "count": 1
+    },
+    {
+     "descriptor": "Technology",
+     "id": "cd128a2666561000bad388d2f6030002",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "facetParameter": "locationMainGroup",
+   "values": [
+    {
+     "facetParameter": "locations",
+     "descriptor": "Locations",
+     "values": [
+      {
+       "descriptor": "Beaverton, Oregon",
+       "id": "53aa8f3ea4191001f60e8d141cd70000",
+       "count": 8
+      },
+      {
+       "descriptor": "Boston, Massachusetts",
+       "id": "53aa8f3ea4191001f60bfcab94480000",
+       "count": 3
+      },
+      {
+       "descriptor": "Karnataka, India",
+       "id": "53aa8f3ea4191001f60e07d9bcdd0000",
+       "count": 2
+      },
+      {
+       "descriptor": "Shanghai, China Mainland",
+       "id": "53aa8f3ea4191001f60c9df40b2b0000",
+       "count": 1
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "userAuthenticated": false
+}

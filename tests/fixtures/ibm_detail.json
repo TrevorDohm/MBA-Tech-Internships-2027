@@ -1,0 +1,30 @@
+{
+ "took": 7,
+ "timed_out": false,
+ "_shards": {
+  "total": 20,
+  "successful": 20,
+  "skipped": 0,
+  "failed": 0
+ },
+ "hits": {
+  "total": {
+   "value": 3,
+   "relation": "eq"
+  },
+  "max_score": 17.735489,
+  "hits": [
+   {
+    "_index": "genesis-prod-1788036777996",
+    "_id": "1d169a38f95d223721ec0e68d9b14b84c4bb623cc6bf15f9b11b6aacde799c53",
+    "_score": 17.735489,
+    "_source": {
+     "url": "https://careers.ibm.com/careers/JobDetail?jobId=136426",
+     "title": "Product Management Intern 2027",
+     "description": "IBM Quantum is building the world’s leading quantum computing systems, software, and cloud services. The Product team plays a critical role in helping shape the user experience and offerings for IBM Quantum.  As a Product Management Intern, you will...",
+     "body": "IBM Quantum is building the world’s leading quantum computing systems, software, and cloud services. The Product team plays a critical role in helping shape the user experience and offerings for IBM Quantum.  As a Product Management Intern, you will work with research and product teams to help build and deliver productive first class developer experience for how applied researchers use quantum computing services. As a Product Management Intern, you will: Identify unmet or unknown needs of customers (e.g., computational chemists, optimization and quantum information researchers, enterprise R&D teams, quantum algorithm developers).  Use quantitative analysis (e.g., usage data, job success rates, workload mix) and qualitative research (e.g., user interviews, support tickets, community forums). Scopes the impact of a problem, such as how many users it affects and what it costs them in time, QPU usage, or result quality.  Recommend features or experiences to prioritize on the roadmap that support the team's success criteria and Objectives and Key Results (OKRs). Weigh customer value against technical constraints.  Iterate on designs (e.g., APIs and SDK interfaces, workflow templates, documentation, results dashboards) with Design, Software Engineering, and Quantum Researchers.  Collaborate with Product Marketing, Business Planning, Developer Relations, and Engineering to define release criteria (e.g., performance benchmarks against classical baselines, reliability thresholds, documentation readiness) and plans for customer acquisition and adoption.  Build working knowledge of the quantum application stack (e.g., mapping a problem to a quantum algorithm, running circuits, error mitigation, classical post-processing). The goal is to translate accurately between what customers need and what the technology can do today. Bachelors or higher degree in a STEM area. Experience collecting, segmenting, and synthesizing user and client feedback. Strong analytical and problem-solving skills with the ability to navigate ambiguous business questions and deliver insights with limited guidance.  Ability to work collaboratively in a cross-functional environment with both technical and business stakeholders. Excellent written and verbal communication skills. Previous internship or work experience in product management, product design, software engineering, consulting, or at a startup. You've built and launched something with real users: an app, a side project, a tool for a club, a research project. Technical fluency from coursework or experience in computer science, engineering, or data science; comfortable talking through APIs, system constraints, or technical tradeoffs with engineers. SQL or Python for data analysis. Interest in physics, quantum computing and emerging technologies. United States Project Management Internship Yorktown Heights, US Yorktown Heights (0147) International Business Machines Corporation Computer Science Consulting Data Science Engineering Physics Product Design Product Management Research Structured Query Language Software Engineering Technical Proficiency Quantum Computing Verbal Communication Python for Data Analysis"
+    }
+   }
+  ]
+ }
+}

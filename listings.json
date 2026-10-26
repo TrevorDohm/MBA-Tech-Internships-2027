@@ -413,7 +413,7 @@
     "url": "https://lifeattiktok.com/search/7669921687043541253",
     "date_posted": null,
     "status": "open",
-    "pay": "$40/hr (NYC); $38/hr (LA)",
+    "pay": "$40/hr (NYC)",
     "sponsorship": "unknown",
     "notes": "Currently pursuing an MBA; 12 weeks Summer 2027. Max 2 applications across TikTok/ByteDance; rolling review. LA req 7669945864905492741."
   },
@@ -428,7 +428,7 @@
     "url": "https://lifeattiktok.com/search/7669924879914862901",
     "date_posted": null,
     "status": "open",
-    "pay": "$40/hr (NYC); $38/hr (LA)",
+    "pay": "$40/hr (NYC)",
     "sponsorship": "unknown",
     "notes": "Currently pursuing an MBA; 12 weeks Summer 2027. Max 2 applications across TikTok/ByteDance; rolling review. Multiple reqs: NYC 7688770038477801733; LA 7669925556293601541, 7688769993879030021."
   },
@@ -443,7 +443,7 @@
     "url": "https://lifeattiktok.com/search/7669945224375290165",
     "date_posted": null,
     "status": "open",
-    "pay": "$40/hr (NYC); $38/hr (LA)",
+    "pay": "$40/hr (NYC)",
     "sponsorship": "unknown",
     "notes": "Currently pursuing an MBA; 12 weeks Summer 2027. Max 2 applications across TikTok/ByteDance; rolling review. LA req 7670217990416058629."
   },
@@ -458,7 +458,7 @@
     "url": "https://lifeattiktok.com/search/7668751182047758597",
     "date_posted": null,
     "status": "open",
-    "pay": "$40/hr (NYC); $38/hr (LA)",
+    "pay": "$40/hr (NYC)",
     "sponsorship": "unknown",
     "notes": "Currently pursuing an MBA; 12 weeks Summer 2027. Max 2 applications across TikTok/ByteDance; rolling review. LA req 7668746534220024069."
   },
@@ -786,7 +786,7 @@
     "url": "https://jobs.intuit.com/job/mountain-view/summer-2027-mba-finance-strategy-intern/27595/101319972336",
     "date_posted": "2026-09-16",
     "status": "open",
-    "pay": "$37–$54/hr (Mountain View)",
+    "pay": "$37.50–$68/hr (Mountain View)",
     "sponsorship": "unknown",
     "notes": "Current MBA students (finance/econ emphasis); 3+ yrs experience, consulting/IB/BizOps/GTM strategy background preferred. 12-wk Summer 2027 internship; cohorts May 17-Aug 6 or Jun 14-Sep 3, 2027."
   },
@@ -842,7 +842,7 @@
     "url": "https://jobs.intuit.com/job/san-diego/summer-2027-strategic-mba-finance-intern-consumer-group/27595/101319962544",
     "date_posted": "2026-09-10",
     "status": "open",
-    "pay": "$48–$54/hr (San Diego)",
+    "pay": "$37–$56.50/hr (San Diego)",
     "sponsorship": "unknown",
     "notes": "Current MBA students (finance/accounting/econ emphasis). San Diego counterpart of the Mountain View Consumer Group req. 12-wk Summer 2027 internship; cohorts May 17-Aug 6 or Jun 14-Sep 3, 2027."
   },
@@ -885,7 +885,7 @@
       "Chicago, IL",
       "Richmond, VA"
     ],
-    "url": "https://www.capitalonecareers.com/job/mclean/mba-product-intern-summer-2027/1732/101906667360",
+    "url": "https://capitalone.wd12.myworkdayjobs.com/Capital_One/job/McLean-VA/MBA-Product-Intern---Summer-2027_R244815-1",
     "date_posted": "2026-10-13",
     "status": "open",
     "pay": "$169,000–$203,000/yr annualized (Chicago/Richmond $169K, McLean $186K, NY $203K)",
@@ -995,7 +995,7 @@
     "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/New-York---New-York/Summer-2027-Intern---MBA-Business-Value---Strategic-Selling-Consultant_JR362509-1",
     "date_posted": "2026-10-20",
     "deadline": "2026-10-24",
-    "status": "open",
+    "status": "closed",
     "pay": "$46–$57/hr",
     "sponsorship": "no",
     "notes": "Currently enrolled in MBA graduating Spring 2028; 5+ yrs pre-MBA experience (value/mgmt consulting, IB or similar). Jun-Aug/Sep 2027. Reposted Oct 20; Workday end date Oct 24 (posting text still says Oct 20)."
@@ -1010,7 +1010,7 @@
     "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/New-York---New-York/Summer-2027-Intern---MBA-Business-Value---Strategic-Selling-Consultant--Financial-Services-_JR362508-1",
     "date_posted": "2026-10-20",
     "deadline": "2026-10-24",
-    "status": "open",
+    "status": "closed",
     "pay": "$46–$57/hr",
     "sponsorship": "no",
     "notes": "Currently enrolled in MBA graduating Spring 2028; 5+ yrs pre-MBA experience (value/mgmt consulting, IB or similar). Jun-Aug/Sep 2027. Reposted Oct 20; Workday end date Oct 24 (posting text still says Oct 20)."
@@ -1025,7 +1025,7 @@
     "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/New-York---New-York/Summer-2027-Intern---MBA-Business-Value---Strategic-Selling-Consultant--Healthcare---Life-Sciences-_JR362499-1",
     "date_posted": "2026-10-20",
     "deadline": "2026-10-24",
-    "status": "open",
+    "status": "closed",
     "pay": "$46–$57/hr",
     "sponsorship": "no",
     "notes": "Currently enrolled in MBA graduating Spring 2028; 5+ yrs pre-MBA experience (value/mgmt consulting, IB or similar). Jun-Aug/Sep 2027. Reposted Oct 20; Workday end date Oct 24 (posting text still says Oct 20)."
@@ -1345,6 +1345,34 @@
     "pay": "$28–$32/hr",
     "sponsorship": "no",
     "notes": "MBA or master's students; <=24 months related prior work experience. Market opportunity, competitive and portfolio analysis for product marketing. Conversion-track."
+  },
+  {
+    "company": "HP",
+    "role": "Product Marketing / Portfolio Strategy Intern : Insight & Strategy (Agentic AI Focus)",
+    "category": "PMM & GTM",
+    "locations": [
+      "Spring, TX"
+    ],
+    "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Spring-Texas-United-States-of-America/Quality-Engineering-Intern_UNI4756-1",
+    "date_posted": null,
+    "status": "open",
+    "pay": "$40–$45/hr",
+    "sponsorship": "no",
+    "notes": "MBA or relevant master's (business, finance, CS); <=24 months related prior work experience. Personal Systems agentic-AI product opportunity research and MVP recommendation. Term not stated. Conversion-track; no CPT/OPT support."
+  },
+  {
+    "company": "HP",
+    "role": "Imaging and Print Business Internship",
+    "category": "PMM & GTM",
+    "locations": [
+      "Corvallis, OR"
+    ],
+    "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Corvallis-Oregon-United-States-of-America/Imaging-and-Print-Business-Internship_3168144",
+    "date_posted": null,
+    "status": "open",
+    "pay": "$23–$32/hr",
+    "sponsorship": "no",
+    "notes": "Pipeline req for 2027 summer internships, 12 weeks. Rising bachelor's seniors or master's/MBA students after year 1 (MBA-eligible, not MBA-specific). Print product management/marketing, pricing, positioning. No CPT/OPT support."
   },
   {
     "company": "Intel",
@@ -1740,6 +1768,49 @@
     "notes": "Graduate/MBA students with 1+ term left after the internship; technical bachelor's or equivalent experience. U.S. persons only (export control). Terawave satellite broadband."
   },
   {
+    "company": "Blue Origin",
+    "role": "Summer 2027 Corporate Development Intern - Graduate",
+    "category": "Finance & Corp Dev",
+    "locations": [
+      "Seattle, WA"
+    ],
+    "url": "https://blueorigin.wd5.myworkdayjobs.com/BlueOrigin/job/Greater-Seattle-Area/Summer-2027-Corporate-Development-Intern---Graduate_R71514",
+    "date_posted": null,
+    "status": "open",
+    "pay": "$34/hr (WA range); $50/hr also stated",
+    "sponsorship": "unknown",
+    "notes": "Graduate students with 1+ term left after the internship; advanced business/finance degree desired (MBA-eligible, not MBA-specific). M&A diligence, valuation, strategic planning. U.S. persons only (export control)."
+  },
+  {
+    "company": "Blue Origin",
+    "role": "Summer 2027 Corporate Strategy Intern - Graduate",
+    "category": "Strategy & BizOps",
+    "locations": [
+      "Arlington, VA",
+      "Seattle, WA"
+    ],
+    "url": "https://blueorigin.wd5.myworkdayjobs.com/BlueOrigin/job/Arlington-VA/Summer-2027-Corporate-Strategy-Intern---Graduate_R71501",
+    "date_posted": null,
+    "status": "open",
+    "pay": "$34–$50/hr",
+    "sponsorship": "unknown",
+    "notes": "Graduate students with 1+ term left after the internship; advanced business/finance degree desired (MBA-eligible, not MBA-specific). Market research, competitive landscape, business cases. U.S. persons only (export control)."
+  },
+  {
+    "company": "Blue Origin",
+    "role": "Summer 2027 Finance Intern - Graduate",
+    "category": "Finance & Corp Dev",
+    "locations": [
+      "Seattle, WA"
+    ],
+    "url": "https://blueorigin.wd5.myworkdayjobs.com/BlueOrigin/job/Greater-Seattle-Area/Summer-2027-Finance-Intern---Graduate_R71500",
+    "date_posted": null,
+    "status": "open",
+    "pay": "$34/hr",
+    "sponsorship": "unknown",
+    "notes": "Graduate students in business, finance, economics or engineering with 1+ term left (MBA-eligible, not MBA-specific). Business-unit financial analysis and planning. U.S. persons only (export control); housing and relocation support."
+  },
+  {
     "company": "C3 AI",
     "role": "AI Product Manager - MBA Intern (Summer 2027)",
     "category": "PM",
@@ -1766,6 +1837,48 @@
     "pay": null,
     "sponsorship": "no",
     "notes": "MBA graduating within 12–24 months. Data center DC power portfolio, incl. 800V DC architectures."
+  },
+  {
+    "company": "Vertiv",
+    "role": "Product Management Intern - MBA (Summer 2027)",
+    "category": "PM",
+    "locations": [
+      "Delaware, OH"
+    ],
+    "url": "https://egup.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/20278958",
+    "date_posted": "2026-08-12",
+    "status": "open",
+    "pay": null,
+    "sponsorship": "no",
+    "notes": "MBA graduating within 12–24 months. Power Solutions & Distribution (PSD) product strategy, portfolio and pricing work. Identical posting also up as req 20278959."
+  },
+  {
+    "company": "Vertiv",
+    "role": "Energy Storage Product Management Intern (Summer 2027)",
+    "category": "PM",
+    "locations": [
+      "Delaware, OH"
+    ],
+    "url": "https://egup.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/20279379",
+    "date_posted": "2026-10-09",
+    "status": "open",
+    "pay": null,
+    "sponsorship": "no",
+    "notes": "Engineering undergrads (3rd/4th yr), master's or MBA students (MBA-eligible, not MBA-specific). Energy storage product management: market, competitive and technical analysis."
+  },
+  {
+    "company": "Vertiv",
+    "role": "Product Management Intern (Summer 2027)",
+    "category": "PM",
+    "locations": [
+      "Delaware, OH"
+    ],
+    "url": "https://egup.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/20279046",
+    "date_posted": "2026-08-24",
+    "status": "open",
+    "pay": null,
+    "sponsorship": "no",
+    "notes": "Engineering, business or product management degree, or an MBA program (MBA-eligible, not MBA-specific). Medium (three-phase) UPS portfolio: roadmap, business cases, pricing."
   },
   {
     "company": "Vannevar Labs",

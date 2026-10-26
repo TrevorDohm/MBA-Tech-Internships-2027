@@ -75,6 +75,12 @@ A [weekly workflow](.github/workflows/check-links.yml) runs it every Monday and 
 
 When a posting comes down, set `"status": "closed"` instead of deleting it. Closed roles show up struck through with a 🔒, which helps next year's class see who hired and when.
 
+## Automated updates
+
+A daily scheduled Claude task scans the companies in [`watchlist.json`](watchlist.json) and keeps one open pull request (branch `claude/listing-updates`) with new postings, reposts and closures. Its instructions, and the one-time owner setup, are in [AUTOMATION.md](AUTOMATION.md). A human reviews and merges every change; each pay, deadline or sponsorship value in the PR carries a quote from the posting.
+
+[`ignored.json`](ignored.json) lists postings that were reviewed and rejected (out of scope, not MBA-level, full-time), so they are not proposed again. If a rejected posting is actually in scope, delete its entry and it will be picked up on the next run, or add it by hand.
+
 ## License
 
 This project is released under [CC0 1.0](LICENSE). By contributing, you agree to release your contribution under the same terms.
