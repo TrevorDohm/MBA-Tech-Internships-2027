@@ -545,7 +545,7 @@
     "url": "https://careers.airbnb.com/positions/8285171/",
     "date_posted": "2026-10-15",
     "deadline": "2026-11-01",
-    "status": "open",
+    "status": "closed",
     "pay": "$48/hr",
     "sponsorship": "unknown",
     "notes": "First-year full-time MBAs (grad Spring 2028) at accredited US schools; 3–5 yrs FP&A/corp dev/consulting/PE/IB exp; May 24–Aug 13, 2027; cover letter required; US remote (some states excluded)."
@@ -2050,5 +2050,62 @@
     "pay": "$9,400–$11,100/mo",
     "sponsorship": "unknown",
     "notes": "Master's or MBA grad Dec 2027–Aug 2028 (eng/CS/data/HCI focus); Vehicle Autonomy PM org; starts May 24 or Jun 14, 2027; hybrid 3 days/wk; relocation stipend."
+  },
+  {
+    "company": "Adobe",
+    "role": "2027 MBA Intern - Corporate Development",
+    "category": "Finance & Corp Dev",
+    "locations": [
+      "San Francisco, CA",
+      "San Jose, CA"
+    ],
+    "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Francisco/XMLNAME-2027-MBA-Intern---Corporate-Development_R172745",
+    "date_posted": "2026-10-26",
+    "status": "open",
+    "pay": "$37.00–$50.00/hr",
+    "sponsorship": "unknown",
+    "notes": "Full-time MBA students graduating Dec 2027–Jun 2028. Strategic investment themes and M&A target work with Corporate Strategy. Oct 8, 2026: DOL paused Adobe's PERM (green card) filings; H-1B not directly affected. See RESOURCES.md visa updates."
+  },
+  {
+    "company": "Micron",
+    "role": "Intern - Sales Strategy and Operations",
+    "category": "Strategy & BizOps",
+    "locations": [
+      "San Jose, CA"
+    ],
+    "url": "https://micron.wd1.myworkdayjobs.com/External/job/San-Jose-CA/Sales-Strategy-and-Operations-Summer-Intern_JR116055",
+    "date_posted": "2026-10-30",
+    "status": "open",
+    "pay": "$43.15/hr",
+    "sponsorship": "unknown",
+    "notes": "Open to MBA candidates or undergraduates (MBA preferred per posting). Sales strategy and operations projects with Sales Strategy & Operations leadership."
+  },
+  {
+    "company": "IBM",
+    "role": "Software and Go-To-Market Strategy Summer Intern",
+    "category": "Strategy & BizOps",
+    "locations": [
+      "Cambridge, MA"
+    ],
+    "url": "https://careers.ibm.com/careers/JobDetail?jobId=138967",
+    "date_posted": null,
+    "status": "open",
+    "pay": null,
+    "sponsorship": "unknown",
+    "notes": "Current MBA at a top school graduating May 2028; 7–10 yrs experience in strategy consulting, software, banking/finance or data science preferred. Software platform strategy. Hybrid."
+  },
+  {
+    "company": "IBM",
+    "role": "2027 Intern - Corporate Development, Global M&A",
+    "category": "Finance & Corp Dev",
+    "locations": [
+      "New York, NY"
+    ],
+    "url": "https://careers.ibm.com/careers/JobDetail?jobId=139671",
+    "date_posted": null,
+    "status": "open",
+    "pay": null,
+    "sponsorship": "unknown",
+    "notes": "Actively enrolled in an MBA program; 1+ yrs pre-MBA experience in IB, PE, corp dev, transaction advisory or software strategy. Live M&A deals with the global corp dev team. Hybrid."
   }
 ]

@@ -5059,5 +5059,572 @@
     "job_id": "216355",
     "reason": "Undergraduate placement year (posting: not a Masters or Graduate student); not MBA-level",
     "date": "2026-10-25"
+  },
+  {
+    "company": "Cloudflare",
+    "url": "https://boards.greenhouse.io/cloudflare/jobs/8274790",
+    "job_id": "8274790",
+    "reason": "PM intern for bachelor's/master's students; MBA not mentioned",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "Cloudflare",
+    "url": "https://boards.greenhouse.io/cloudflare/jobs/8332008",
+    "job_id": "8332008",
+    "reason": "Lisbon PM intern for bachelor's/master's; not MBA, non-US",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "Cloudflare",
+    "url": "https://boards.greenhouse.io/cloudflare/jobs/8328914",
+    "job_id": "8328914",
+    "reason": "London PM intern for bachelor's/master's; not MBA, non-US",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "Snowflake",
+    "url": "https://jobs.ashbyhq.com/snowflake/97e37c43-2298-42c8-bb4c-1bcfadc80af9",
+    "job_id": "97e37c43-2298-42c8-bb4c-1bcfadc80af9",
+    "reason": "Spring 2027 (not summer) master's internship; not MBA-specific",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "General Motors",
+    "url": "https://generalmotors.wd5.myworkdayjobs.com/Careers_GM/job/Sunnyvale-California-United-States-of-America/XMLNAME-2027-Summer-Intern---AI-ML-Engineer---Autonomous-Vehicles_JR-202623439",
+    "job_id": "JR-202623439",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "HP",
+    "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Singapore-South-West-Singapore/College-Intern---Regional-Product-Ops-Testing-Lead--Digital-Go-To-Market-_3166740-1",
+    "job_id": "3166740-1",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "HP",
+    "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/San-Francisco-California-United-States-of-America/Cloud-Engineering-Intern_UNI4799-1",
+    "job_id": "UNI4799-1",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "HP",
+    "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Sant-Cugat-del-Valles-Barcelona-Spain/Data-Science-Intern_UNI3977-1",
+    "job_id": "UNI3977-1",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "HP",
+    "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Singapore-South-West-Singapore/College-Intern---Technical-Marketing-Engineer_UNI4645-1",
+    "job_id": "UNI4645-1",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "HP",
+    "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Singapore-South-West-Singapore/College-Intern---Data-Science_UNI4644-2",
+    "job_id": "UNI4644-2",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "HP",
+    "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Sant-Cugat-del-Valles-Barcelona-Spain/AI---Data-Engineering-Intern_UNI4517-1",
+    "job_id": "UNI4517-1",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "HP",
+    "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Sant-Cugat-del-Valles-Barcelona-Spain/Data-Scientist-Intern---Supplier-Management-Analytics---AI_UNI4457-1",
+    "job_id": "UNI4457-1",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "HP",
+    "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Sant-Cugat-del-Valles-Barcelona-Spain/AI-Engineering-Intern_UNI4353-1",
+    "job_id": "UNI4353-1",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "HP",
+    "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Sant-Cugat-del-Valles-Barcelona-Spain/AI---Computer-Vision-Engineering-Intern_UNI4780-1",
+    "job_id": "UNI4780-1",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "HP",
+    "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Sant-Cugat-del-Valles-Barcelona-Spain/AI-Adoption-Intern_UNI4448-1",
+    "job_id": "UNI4448-1",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "HP",
+    "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/San-Francisco-California-United-States-of-America/Software-Product-Security-Intern---HP-IQ_UNI4810-2",
+    "job_id": "UNI4810-2",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "HP",
+    "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/San-Francisco-California-United-States-of-America/Software-Quality-Assurance-Intern_UNI4802-1",
+    "job_id": "UNI4802-1",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "HP",
+    "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Sant-Cugat-del-Valles-Barcelona-Spain/Data-Analysis-Intern---Supply-Chain_UNI4159-1",
+    "job_id": "UNI4159-1",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "HP",
+    "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Sant-Cugat-del-Valles-Barcelona-Spain/Business-Analyst-Intern_UNI4447-1",
+    "job_id": "UNI4447-1",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "HP",
+    "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Sant-Cugat-del-Valles-Barcelona-Spain/Process-Mining---Process-Improvement-Internship_UNI4458-1",
+    "job_id": "UNI4458-1",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "HP",
+    "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Sant-Cugat-del-Valles-Barcelona-Spain/AI---Automation-Intern_UNI3950-1",
+    "job_id": "UNI3950-1",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "Micron",
+    "url": "https://micron.wd1.myworkdayjobs.com/External/job/San-Jose-CA/Intern---AI---Product-Management--Mobile-Memory--LPDRAM-_JR115839",
+    "job_id": "JR115839",
+    "reason": "Bachelor's or master's PM internship; MBA not mentioned",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "Salesforce",
+    "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/California---San-Francisco/AI-Labs-Summer-Internship--Emerging-Talent_JR366248",
+    "job_id": "JR366248",
+    "reason": "Technical AI internship for CS/engineering students",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "Visa",
+    "url": "https://visa.wd5.myworkdayjobs.com/Visa_Early_Careers/job/SE---Stockholm-Sweden/Consulting---Analytics-Intern_REF090039W-1",
+    "job_id": "REF090039W-1",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "Visa",
+    "url": "https://visa.wd5.myworkdayjobs.com/Visa_Early_Careers/job/ES---Madrid-Spain/Consulting---Analytics-Summer-Intern_REF089917W",
+    "job_id": "REF089917W",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "Visa",
+    "url": "https://visa.wd5.myworkdayjobs.com/Visa_Early_Careers/job/US---Denver-CO/Network-and-Security-Engineering-Intern---2027--Highlands-Ranch--CO_REF089779W",
+    "job_id": "REF089779W",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "Visa",
+    "url": "https://visa.wd5.myworkdayjobs.com/Visa_Early_Careers/job/US---Ashburn-VA/Network-and-Security-Engineering-Intern---2027--Ashburn--VA_REF089778W-2",
+    "job_id": "REF089778W-2",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "Visa",
+    "url": "https://visa.wd5.myworkdayjobs.com/Visa_Early_Careers/job/US---Denver-CO/Technical-Product-Project-Management-Intern---2027--Highlands-Ranch--CO_REF089905W-1",
+    "job_id": "REF089905W-1",
+    "reason": "Bachelor's/master's technical PM internship; MBA not mentioned",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "Visa",
+    "url": "https://visa.wd5.myworkdayjobs.com/Visa_Early_Careers/job/US---Austin-TX/Business-Planning-Intern---2027--Austin--TX_REF089903W",
+    "job_id": "REF089903W",
+    "reason": "Bachelor's/master's business planning internship ($29–$33/hr); MBA not mentioned",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "Visa",
+    "url": "https://visa.wd5.myworkdayjobs.com/Visa_Early_Careers/job/DE---Frankfurt-Germany/Portfolio-optimization-Intern_REF089913W",
+    "job_id": "REF089913W",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "Visa",
+    "url": "https://visa.wd5.myworkdayjobs.com/Visa_Early_Careers/job/KE---Nairobi-Kenya/Intern_REF086786W",
+    "job_id": "REF086786W",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "Visa",
+    "url": "https://visa.wd5.myworkdayjobs.com/Visa_Early_Careers/job/CI---Abidjan-Cote-DIvoire/Intern_REF086769W",
+    "job_id": "REF086769W",
+    "reason": "Bachelor's/master's product internship in Côte d'Ivoire; not MBA",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "NVIDIA",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Go-to-Market-Strategy-Intern--NPN-AI-Consulting---Summer-2027_JR2028642",
+    "job_id": "JR2028642",
+    "reason": "GTM strategy intern open from freshman undergrads; not MBA-level",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "NVIDIA",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Taiwan-Hsinchu/System-Level-Test-Engineer--RDSS-Intern-_JR2025554",
+    "job_id": "JR2025554",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "NVIDIA",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Taiwan-Hsinchu/System-Level-Product-Engineer--RDSS-Intern-_JR2024119",
+    "job_id": "JR2024119",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "NVIDIA",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Taiwan-Hsinchu/Chip-Level-Defect-Localization-and-Failure-Analysis-Engineer---RDSS-Intern_JR2028296",
+    "job_id": "JR2028296",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "NVIDIA",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-WA-Redmond/Compiler-Software-Engineering-Intern---Summer-2027_JR2028607",
+    "job_id": "JR2028607",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "CrowdStrike",
+    "url": "https://crowdstrike.wd5.myworkdayjobs.com/crowdstrikecareers/job/United-Kingdom---Remote/Sales-Technical-Intern--Remote--GBR-_R30657-1",
+    "job_id": "R30657-1",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "CrowdStrike",
+    "url": "https://crowdstrike.wd5.myworkdayjobs.com/crowdstrikecareers/job/United-Kingdom---Reading/Sales-Excellence-Elite-Intern_R30656",
+    "job_id": "R30656",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "CrowdStrike",
+    "url": "https://crowdstrike.wd5.myworkdayjobs.com/crowdstrikecareers/job/United-Kingdom---Reading/Intelligence-Intern_R30591",
+    "job_id": "R30591",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "CrowdStrike",
+    "url": "https://crowdstrike.wd5.myworkdayjobs.com/crowdstrikecareers/job/United-Kingdom---Reading/Falcon-Complete-Analyst-Intern-Graduate---Summer-2027--Reading--GBR-_R30675",
+    "job_id": "R30675",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "Vertiv",
+    "url": "https://egup.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/20279603",
+    "job_id": "20279603",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "Qualcomm",
+    "url": "https://careers.qualcomm.com/careers/job/446721862542",
+    "job_id": "446721862542",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "Qualcomm",
+    "url": "https://careers.qualcomm.com/careers/job/446721876037",
+    "job_id": "446721876037",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "Qualcomm",
+    "url": "https://careers.qualcomm.com/careers/job/446721858024",
+    "job_id": "446721858024",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "Qualcomm",
+    "url": "https://careers.qualcomm.com/careers/job/446721828828",
+    "job_id": "446721828828",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "Electronic Arts",
+    "url": "https://jobs.ea.com/en_US/careers/JobDetail/FC-Social-Community-Intern/216512",
+    "job_id": "216512",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "Electronic Arts",
+    "url": "https://jobs.ea.com/en_US/careers/JobDetail/UI-Scripter-Intern/216359",
+    "job_id": "216359",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10588969/tech-ops-engineer-intern-2027-tech-ops-intern",
+    "job_id": "10588969",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10592767/ux-researcher-intern-summer-2027",
+    "job_id": "10592767",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10588719/program-manager-intern-6m-2027",
+    "job_id": "10588719",
+    "reason": "EU penultimate-year bachelor's/master's program management internship; not MBA",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10592766/ux-designer-intern-summer-2027",
+    "job_id": "10592766",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10555867/2027-software-dev-engineer-intern-italy",
+    "job_id": "10555867",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10593299/business-developer-intern-early-careers-2027",
+    "job_id": "10593299",
+    "reason": "EU early-careers business developer internship; not MBA",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10593322/business-developer-intern-early-careers-2027",
+    "job_id": "10593322",
+    "reason": "EU early-careers business developer internship; not MBA",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10592105/2027-software-dev-engineer-intern-haifa-israel",
+    "job_id": "10592105",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10537436/operations-engineering-intern-start-date-q1-2027",
+    "job_id": "10537436",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10592104/2027-software-dev-engineer-intern-tel-aviv-israel",
+    "job_id": "10592104",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10588998/2027-software-dev-engineer-intern-embedded-systems-uk",
+    "job_id": "10588998",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10588762/2027-software-dev-engineer-intern-machine-learning-uk",
+    "job_id": "10588762",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10592089/public-policy-manager-intern-q2-2027-eu-public-policy-team",
+    "job_id": "10592089",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10589645/operations-logistics-internship-mxp3-vercelli",
+    "job_id": "10589645",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10589684/operations-logistics-internship-fco5-ardea",
+    "job_id": "10589684",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10589643/operations-logistics-internship-mxp6-agognate",
+    "job_id": "10589643",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10589685/operations-logistics-internship-fco8-fiano-romano",
+    "job_id": "10589685",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10589682/operations-logistics-internship-fco2-colleferro",
+    "job_id": "10589682",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10589677/operations-logistics-internship-dly1-cisterna-di-latina",
+    "job_id": "10589677",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10589658/operations-logistics-internship-fco1-passo-corese",
+    "job_id": "10589658",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10532883/data-center-infrastructure-engineer-internship-2027",
+    "job_id": "10532883",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10589941/aws-commercial-sales-internship",
+    "job_id": "10589941",
+    "reason": "EU/Middle East early-careers AWS sales internship; not MBA",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10589654/aws-commercial-sales-internship",
+    "job_id": "10589654",
+    "reason": "EU/Middle East early-careers AWS sales internship; not MBA",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10589911/aws-commercial-sales-internship",
+    "job_id": "10589911",
+    "reason": "EU/Middle East early-careers AWS sales internship; not MBA",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10590080/aws-commercial-sales-internship",
+    "job_id": "10590080",
+    "reason": "EU/Middle East early-careers AWS sales internship; not MBA",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "Google",
+    "url": "https://www.google.com/about/careers/applications/jobs/results/136316541401473734-business-intern-2027-english-bahasa-indonesia",
+    "job_id": "136316541401473734",
+    "reason": "Jakarta business internship for bachelor's/master's; not MBA",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "Apple",
+    "url": "https://jobs.apple.com/en-us/details/200692415/finance-data-analyst-intern-6-month-full-time",
+    "job_id": "200692415",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "Apple",
+    "url": "https://jobs.apple.com/en-us/details/200691912/business-development-intern-apple-wallet-payments-and-commerce",
+    "job_id": "200691912",
+    "reason": "UK business development internship for graduate/postgraduate students; MBA not mentioned",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "IBM",
+    "url": "https://careers.ibm.com/careers/JobDetail?jobId=138995",
+    "job_id": "138995",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "IBM",
+    "url": "https://careers.ibm.com/careers/JobDetail?jobId=139617",
+    "job_id": "139617",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "IBM",
+    "url": "https://careers.ibm.com/careers/JobDetail?jobId=139002",
+    "job_id": "139002",
+    "reason": "UK early-associate strategy internship for 2027/2028 graduates; not MBA",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "IBM",
+    "url": "https://careers.ibm.com/careers/JobDetail?jobId=138998",
+    "job_id": "138998",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
+  },
+  {
+    "company": "IBM",
+    "url": "https://careers.ibm.com/careers/JobDetail?jobId=139652",
+    "job_id": "139652",
+    "reason": "Engineering, data, design, operations or non-US undergrad internship; not an MBA PM/strategy/PMM/finance role",
+    "date": "2026-11-02"
   }
 ]
