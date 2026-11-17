@@ -5059,5 +5059,978 @@
     "job_id": "216355",
     "reason": "Undergraduate placement year (posting: not a Masters or Graduate student); not MBA-level",
     "date": "2026-10-25"
+  },
+  {
+    "company": "Robinhood",
+    "url": "https://boards.greenhouse.io/robinhood/jobs/8197614",
+    "job_id": "8197614",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Epic Games",
+    "url": "https://epicgames.com/careers/jobs/6251540004",
+    "job_id": "6251540004",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Waymo",
+    "url": "https://careers.withwaymo.com/jobs?gh_jid=8350832",
+    "job_id": "8350832",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Airbnb",
+    "url": "https://careers.airbnb.com/positions/8376124",
+    "job_id": "8376124",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Cloudflare",
+    "url": "https://boards.greenhouse.io/cloudflare/jobs/8274790",
+    "job_id": "8274790",
+    "reason": "Not MBA-targeted: open to bachelor's or master's students",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Cloudflare",
+    "url": "https://boards.greenhouse.io/cloudflare/jobs/8332008",
+    "job_id": "8332008",
+    "reason": "Not MBA-targeted: open to bachelor's or master's students",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Cloudflare",
+    "url": "https://boards.greenhouse.io/cloudflare/jobs/8328914",
+    "job_id": "8328914",
+    "reason": "Not MBA-targeted: open to bachelor's or master's students",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Snowflake",
+    "url": "https://jobs.ashbyhq.com/snowflake/a1d72623-8c75-41ce-8980-760ffcbc050c",
+    "job_id": "a1d72623-8c75-41ce-8980-760ffcbc050c",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Snowflake",
+    "url": "https://jobs.ashbyhq.com/snowflake/aada80b0-a940-4441-89c0-08d929db38a7",
+    "job_id": "aada80b0-a940-4441-89c0-08d929db38a7",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Adobe",
+    "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/London/XMLNAME-2027-Intern---International-Sports-Partnerships-Intern_R173218",
+    "job_id": "R173218",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Adobe",
+    "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Bucharest/XMLNAME-2027-Intern--Security-Engineer_R172468",
+    "job_id": "R172468",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Adobe",
+    "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Paris/XMLNAME-2027-Intern---Solutions-Consulting_R173322",
+    "job_id": "R173322",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Adobe",
+    "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Bucharest/XMLNAME-2027-Intern---Technical-Support-Engineer_R172704-1",
+    "job_id": "R172704-1",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Adobe",
+    "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Bucharest/XMLNAME-2027-Intern---Technical-Support-Engineer_R172703-1",
+    "job_id": "R172703-1",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "General Motors",
+    "url": "https://generalmotors.wd5.myworkdayjobs.com/Careers_GM/job/Detroit-Michigan-United-States-of-America/XMLNAME-2027-Summer-Finance-Treasury-MBA-Intern_JR-202621977",
+    "job_id": "JR-202621977",
+    "reason": "Corporate treasury at a non-tech company - outside the tech/product org scope",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "General Motors",
+    "url": "https://generalmotors.wd5.myworkdayjobs.com/Careers_GM/job/Sunnyvale-California-United-States-of-America/XMLNAME-2027-Summer-Intern---AI-ML-Engineer---Autonomous-Vehicles_JR-202623439",
+    "job_id": "JR-202623439",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "HP",
+    "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/San-Francisco-California-United-States-of-America/Cloud-Engineering-Intern_UNI4799-1",
+    "job_id": "UNI4799-1",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "HP",
+    "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Singapore-South-West-Singapore/College-Intern---Regional-Product-Ops-Testing-Lead--Digital-Go-To-Market-_3166740-1",
+    "job_id": "3166740-1",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "HP",
+    "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Sant-Cugat-del-Valles-Barcelona-Spain/Data---AI-Intern---Intelligent-Operations_UNI4519-1",
+    "job_id": "UNI4519-1",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "HP",
+    "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Sant-Cugat-del-Valles-Barcelona-Spain/Software---AI-Product-Management-Intern_UNI4781-1",
+    "job_id": "UNI4781-1",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "HP",
+    "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Sant-Cugat-del-Valles-Barcelona-Spain/Data-Science-Intern_UNI3930-2",
+    "job_id": "UNI3930-2",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "HP",
+    "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Sant-Cugat-del-Valles-Barcelona-Spain/Data-Science-Intern_UNI3977-1",
+    "job_id": "UNI3977-1",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "HP",
+    "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Sant-Cugat-del-Valles-Barcelona-Spain/AI---Automation-Intern_UNI4612-1",
+    "job_id": "UNI4612-1",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "HP",
+    "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Sant-Cugat-del-Valles-Barcelona-Spain/AI---Automation-Intern_UNI3950-1",
+    "job_id": "UNI3950-1",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "HP",
+    "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Sant-Cugat-del-Valles-Barcelona-Spain/Business-Intelligence---Data-Analytics-Intern_UNI4522",
+    "job_id": "UNI4522",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "HP",
+    "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Sant-Cugat-del-Valles-Barcelona-Spain/Data-Analyst-Intern_UNI4613-1",
+    "job_id": "UNI4613-1",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "HP",
+    "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/San-Francisco-California-United-States-of-America/Software-Quality-Assurance-Intern_UNI4803-1",
+    "job_id": "UNI4803-1",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "HP",
+    "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Sant-Cugat-del-Valles-Barcelona-Spain/Data-Scientist-Intern---Supplier-Management-Analytics---AI_UNI4457-1",
+    "job_id": "UNI4457-1",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "HP",
+    "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Singapore-South-West-Singapore/College-Intern---Technical-Marketing-Engineer_UNI4645-1",
+    "job_id": "UNI4645-1",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "HP",
+    "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Singapore-South-West-Singapore/College-Intern---Data-Science_UNI4644-2",
+    "job_id": "UNI4644-2",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "HP",
+    "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Sant-Cugat-del-Valles-Barcelona-Spain/AI---Data-Engineering-Intern_UNI4517-1",
+    "job_id": "UNI4517-1",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "HP",
+    "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Sant-Cugat-del-Valles-Barcelona-Spain/AI-Engineering-Intern_UNI4353-1",
+    "job_id": "UNI4353-1",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "HP",
+    "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Sant-Cugat-del-Valles-Barcelona-Spain/AI---Computer-Vision-Engineering-Intern_UNI4780-1",
+    "job_id": "UNI4780-1",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "HP",
+    "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Sant-Cugat-del-Valles-Barcelona-Spain/AI-Adoption-Intern_UNI4448-1",
+    "job_id": "UNI4448-1",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "HP",
+    "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/San-Francisco-California-United-States-of-America/Software-Product-Security-Intern---HP-IQ_UNI4810-2",
+    "job_id": "UNI4810-2",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "HP",
+    "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/San-Francisco-California-United-States-of-America/Software-Quality-Assurance-Intern_UNI4802-1",
+    "job_id": "UNI4802-1",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "HP",
+    "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Sant-Cugat-del-Valles-Barcelona-Spain/Data-Analysis-Intern---Supply-Chain_UNI4159-1",
+    "job_id": "UNI4159-1",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "HP",
+    "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Sant-Cugat-del-Valles-Barcelona-Spain/Business-Analyst-Intern_UNI4447-1",
+    "job_id": "UNI4447-1",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "HP",
+    "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Sant-Cugat-del-Valles-Barcelona-Spain/Process-Mining---Process-Improvement-Internship_UNI4458-1",
+    "job_id": "UNI4458-1",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Micron",
+    "url": "https://micron.wd1.myworkdayjobs.com/External/job/Boise-ID---ID1/Intern---Category-Supply-Management_JR110644",
+    "job_id": "JR110644",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Micron",
+    "url": "https://micron.wd1.myworkdayjobs.com/External/job/Boise-ID---Main-Site/Intern---Corporate-Development_JR115817",
+    "job_id": "JR115817",
+    "reason": "Not MBA-targeted: bachelor's (junior/senior) or master's",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Micron",
+    "url": "https://micron.wd1.myworkdayjobs.com/External/job/Boise-ID---Main-Site/Intern---Process-Integration--Advanced-Packaging_JR115379",
+    "job_id": "JR115379",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Micron",
+    "url": "https://micron.wd1.myworkdayjobs.com/External/job/Boise-ID---Main-Site/Intern---Process-Integration--Advanced-Packaging_JR115377",
+    "job_id": "JR115377",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Micron",
+    "url": "https://micron.wd1.myworkdayjobs.com/External/job/Manassas-VA----Fab-6/Intern---Supply-Management-Analyst_JR116339",
+    "job_id": "JR116339",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Micron",
+    "url": "https://micron.wd1.myworkdayjobs.com/External/job/Meridian-ID/Intern---Supply-Management-Analyst_JR115942",
+    "job_id": "JR115942",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Salesforce",
+    "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/California---Palo-Alto/Summer-2027-Intern---AI-Foundry-Incubation_JR366655",
+    "job_id": "JR366655",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Salesforce",
+    "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/California---San-Francisco/AI-Labs-Summer-Internship--Emerging-Talent_JR366248",
+    "job_id": "JR366248",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "PayPal",
+    "url": "https://paypal.wd1.myworkdayjobs.com/jobs/job/San-Jose-California-United-States-of-America/Machine-Learning-Engineer-Intern---Summer-2027_R0138581",
+    "job_id": "R0138581",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Visa",
+    "url": "https://visa.wd5.myworkdayjobs.com/Visa_Early_Careers/job/DE---Frankfurt-Germany/Consulting---Analytics-Summer-Intern_REF089625W-1",
+    "job_id": "REF089625W-1",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Visa",
+    "url": "https://visa.wd5.myworkdayjobs.com/Visa_Early_Careers/job/ES---Madrid-Spain/Consulting---Analytics-Summer-Intern_REF089917W",
+    "job_id": "REF089917W",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Visa",
+    "url": "https://visa.wd5.myworkdayjobs.com/Visa_Early_Careers/job/PL---Warsaw-Poland/Software-Engineer-Intern_REF089675W-1",
+    "job_id": "REF089675W-1",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Visa",
+    "url": "https://visa.wd5.myworkdayjobs.com/Visa_Early_Careers/job/GB---Cambridge-United-Kingdom/Software-Engineer-Intern_REF090467W",
+    "job_id": "REF090467W",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Visa",
+    "url": "https://visa.wd5.myworkdayjobs.com/Visa_Early_Careers/job/PL---Warsaw-Poland/Consulting---Analytics-Intern_REF089690W-1",
+    "job_id": "REF089690W-1",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Visa",
+    "url": "https://visa.wd5.myworkdayjobs.com/Visa_Early_Careers/job/CZ---Prague-Czech-Republic/Consulting---Analytics-Intern_REF089750W-1",
+    "job_id": "REF089750W-1",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Visa",
+    "url": "https://visa.wd5.myworkdayjobs.com/Visa_Early_Careers/job/HU---Budapest-Hungary/Consulting---Analytics-Intern_REF089753W-1",
+    "job_id": "REF089753W-1",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Visa",
+    "url": "https://visa.wd5.myworkdayjobs.com/Visa_Early_Careers/job/SK---Bratislava-Slovakia/Consulting---Analytics-Intern_REF089754W-1",
+    "job_id": "REF089754W-1",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Visa",
+    "url": "https://visa.wd5.myworkdayjobs.com/Visa_Early_Careers/job/SE---Stockholm-Sweden/Consulting---Analytics-Intern_REF090039W-1",
+    "job_id": "REF090039W-1",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Visa",
+    "url": "https://visa.wd5.myworkdayjobs.com/Visa_Early_Careers/job/KE---Nairobi-Kenya/Intern_REF086786W",
+    "job_id": "REF086786W",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Visa",
+    "url": "https://visa.wd5.myworkdayjobs.com/Visa_Early_Careers/job/CI---Abidjan-Cote-DIvoire/Intern_REF086769W",
+    "job_id": "REF086769W",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "NVIDIA",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Taiwan-Hsinchu/System-Level-Test-Engineer--RDSS-Intern-_JR2025554",
+    "job_id": "JR2025554",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "NVIDIA",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Taiwan-Hsinchu/System-Level-Product-Engineer--RDSS-Intern-_JR2024119",
+    "job_id": "JR2024119",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "NVIDIA",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Taiwan-Hsinchu/Chip-Level-Defect-Localization-and-Failure-Analysis-Engineer---RDSS-Intern_JR2028296",
+    "job_id": "JR2028296",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "NVIDIA",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-WA-Redmond/Compiler-Software-Engineering-Intern---Summer-2027_JR2028607",
+    "job_id": "JR2028607",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "NVIDIA",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Switzerland-Zurich/AI-Compiler-Intern--CUDA-Tile-IR---Summer-2027_JR2029069",
+    "job_id": "JR2029069",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "NVIDIA",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Human-Resources-Intern---Summer-2027_JR2028740",
+    "job_id": "JR2028740",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "NVIDIA",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/VLSI-Timing-Methodology-Intern---Summer-2027_JR2026798",
+    "job_id": "JR2026798",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "NVIDIA",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Enterprise-Sales-Intern---Summer-2027_JR2029682",
+    "job_id": "JR2029682",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "CrowdStrike",
+    "url": "https://crowdstrike.wd5.myworkdayjobs.com/crowdstrikecareers/job/United-Kingdom---Reading/Intelligence-Intern_R30591",
+    "job_id": "R30591",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "CrowdStrike",
+    "url": "https://crowdstrike.wd5.myworkdayjobs.com/crowdstrikecareers/job/USA---Arlington-VA/Intelligence-Intern---Summer-2027_R30605",
+    "job_id": "R30605",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "CrowdStrike",
+    "url": "https://crowdstrike.wd5.myworkdayjobs.com/crowdstrikecareers/job/United-Kingdom---Reading/Sales-Excellence-Elite-Intern_R30656",
+    "job_id": "R30656",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "CrowdStrike",
+    "url": "https://crowdstrike.wd5.myworkdayjobs.com/crowdstrikecareers/job/United-Kingdom---Remote/Sales-Technical-Intern--Remote--GBR-_R30657-1",
+    "job_id": "R30657-1",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "CrowdStrike",
+    "url": "https://crowdstrike.wd5.myworkdayjobs.com/crowdstrikecareers/job/United-Kingdom---Reading/Falcon-Complete-Analyst-Intern-Graduate---Summer-2027--Reading--GBR-_R30675",
+    "job_id": "R30675",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Capital One",
+    "url": "https://capitalone.wd12.myworkdayjobs.com/Capital_One/job/Toronto-ON/Intern--Strategy-Analyst---Summer-2027_R243855-1",
+    "job_id": "R243855-1",
+    "reason": "Undergrad/postgrad generalist (Toronto), not MBA-targeted",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "JPMorgan Chase",
+    "url": "https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/210806333",
+    "job_id": "210806333",
+    "reason": "Private banking - outside the tech/product org scope",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Vertiv",
+    "url": "https://egup.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/20284817",
+    "job_id": "20284817",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Vertiv",
+    "url": "https://egup.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/20285130",
+    "job_id": "20285130",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Vertiv",
+    "url": "https://egup.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/20279603",
+    "job_id": "20279603",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Qualcomm",
+    "url": "https://careers.qualcomm.com/careers/job/446722001120",
+    "job_id": "446722001120",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Qualcomm",
+    "url": "https://careers.qualcomm.com/careers/job/446721979476",
+    "job_id": "446721979476",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Qualcomm",
+    "url": "https://careers.qualcomm.com/careers/job/446721989047",
+    "job_id": "446721989047",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Qualcomm",
+    "url": "https://careers.qualcomm.com/careers/job/446721913898",
+    "job_id": "446721913898",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Qualcomm",
+    "url": "https://careers.qualcomm.com/careers/job/446721828828",
+    "job_id": "446721828828",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Qualcomm",
+    "url": "https://careers.qualcomm.com/careers/job/446721862542",
+    "job_id": "446721862542",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Qualcomm",
+    "url": "https://careers.qualcomm.com/careers/job/446721876037",
+    "job_id": "446721876037",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Qualcomm",
+    "url": "https://careers.qualcomm.com/careers/job/446721858024",
+    "job_id": "446721858024",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Rivian",
+    "url": "https://careers.rivian.com/careers-home/jobs/35898",
+    "job_id": "35898",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Rivian",
+    "url": "https://careers.rivian.com/careers-home/jobs/35896",
+    "job_id": "35896",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Rivian",
+    "url": "https://careers.rivian.com/careers-home/jobs/36514",
+    "job_id": "36514",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10593773/mba-pathways-brazil-intern-2027",
+    "job_id": "10593773",
+    "reason": "Operations leadership (warehouse/logistics) - outside scope",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10596552/mba-pathways-mexico-intern-2027",
+    "job_id": "10596552",
+    "reason": "Operations leadership (warehouse/logistics) - outside scope",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10596728/senior-program-manager-intern-2027-amazon-university-talent-acquisition",
+    "job_id": "10596728",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10601090/pathways-operations-manager-intern-summer-2027-canada-wide-opportunities",
+    "job_id": "10601090",
+    "reason": "Operations leadership (warehouse/logistics) - outside scope",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10597425/project-engineer-intern",
+    "job_id": "10597425",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10588969/tech-ops-engineer-intern-2027-tech-ops-intern",
+    "job_id": "10588969",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10606898/sourcing-recruiter-intern-deu2027",
+    "job_id": "10606898",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10592766/ux-designer-intern-summer-2027",
+    "job_id": "10592766",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10592767/ux-researcher-intern-summer-2027",
+    "job_id": "10592767",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10555867/2027-software-dev-engineer-intern-italy",
+    "job_id": "10555867",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10593322/business-developer-intern-early-careers-2027",
+    "job_id": "10593322",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10593299/business-developer-intern-early-careers-2027",
+    "job_id": "10593299",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10603649/2027-software-dev-engineer-intern-finland",
+    "job_id": "10603649",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10541508/operations-engineering-intern-start-date-q2-2027",
+    "job_id": "10541508",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10599730/2027-account-rep-intern-amazon-payments",
+    "job_id": "10599730",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10594713/associate-engagement-manager-intern-aws-professional-services",
+    "job_id": "10594713",
+    "reason": "Delivery/consulting role open to bachelor's and master's, not MBA-targeted",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10537436/operations-engineering-intern-start-date-q1-2027",
+    "job_id": "10537436",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10600866/2027-facilities-coordinator-intern-reliability-maintenance-engineering",
+    "job_id": "10600866",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10600865/2027-facilities-coordinator-intern-reliability-maintenance-engineering",
+    "job_id": "10600865",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10592105/2027-software-dev-engineer-intern-haifa-israel",
+    "job_id": "10592105",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10588998/2027-software-dev-engineer-intern-embedded-systems-uk",
+    "job_id": "10588998",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10592104/2027-software-dev-engineer-intern-tel-aviv-israel",
+    "job_id": "10592104",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10604128/operations-intern-belgium-start-date-2027-amazon-logistics",
+    "job_id": "10604128",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10588762/2027-software-dev-engineer-intern-machine-learning-uk",
+    "job_id": "10588762",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10600868/2027-retail-vendor-manager-intern-mena-retail-consumer-electronics",
+    "job_id": "10600868",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10594729/amazon-finance-rotational-program-afrp-accounting-intern-summer-2027",
+    "job_id": "10594729",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10592089/public-policy-manager-intern-q2-2027-eu-public-policy-team",
+    "job_id": "10592089",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10599510/robotics-applied-scientist-ii-intern-co-op-2027-robotics-perception-manipulation-locomotion-planning-hri-and-more-amazon-development-center-taiwan",
+    "job_id": "10599510",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10589645/operations-logistics-internship-mxp3-vercelli",
+    "job_id": "10589645",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10551936/solutions-architect-internship-2027",
+    "job_id": "10551936",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10592018/2028-2029-graduates-non-tech-program-manager-internship-amazon-japan",
+    "job_id": "10592018",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10582552/associate-solutions-architect-internship-2027",
+    "job_id": "10582552",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10602204/data-engineer-internship",
+    "job_id": "10602204",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10602219/data-engineer-internship",
+    "job_id": "10602219",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10589643/operations-logistics-internship-mxp6-agognate",
+    "job_id": "10589643",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10589682/operations-logistics-internship-fco2-colleferro",
+    "job_id": "10589682",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10589677/operations-logistics-internship-dly1-cisterna-di-latina",
+    "job_id": "10589677",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10589658/operations-logistics-internship-fco1-passo-corese",
+    "job_id": "10589658",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10596377/2027-applied-scientist-internship-masters-amazon-university-talent-acquisition",
+    "job_id": "10596377",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10589659/aws-commercial-sales-internship",
+    "job_id": "10589659",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10589911/aws-commercial-sales-internship",
+    "job_id": "10589911",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10589941/aws-commercial-sales-internship",
+    "job_id": "10589941",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10589654/aws-commercial-sales-internship",
+    "job_id": "10589654",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Amazon",
+    "url": "https://www.amazon.jobs/en/jobs/10590080/aws-commercial-sales-internship",
+    "job_id": "10590080",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Google",
+    "url": "https://www.google.com/about/careers/applications/jobs/results/95046224276529862-software-engineering-intern-summer-2027",
+    "job_id": "95046224276529862",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Google",
+    "url": "https://www.google.com/about/careers/applications/jobs/results/135021615204180678-software-engineering-intern-summer-2027",
+    "job_id": "135021615204180678",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Google",
+    "url": "https://www.google.com/about/careers/applications/jobs/results/87678293779587782-data-center-technician-intern-2027",
+    "job_id": "87678293779587782",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Google",
+    "url": "https://www.google.com/about/careers/applications/jobs/results/96299220855595718-forward-deployed-engineer-intern-2027",
+    "job_id": "96299220855595718",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Google",
+    "url": "https://www.google.com/about/careers/applications/jobs/results/136316541401473734-business-intern-2027-english-bahasa-indonesia",
+    "job_id": "136316541401473734",
+    "reason": "Bachelor's or master's program, not MBA-targeted",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "IBM",
+    "url": "https://careers.ibm.com/careers/JobDetail?jobId=139617",
+    "job_id": "139617",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
+  },
+  {
+    "company": "Atlassian",
+    "url": "https://www.atlassian.com/company/careers/details/27474",
+    "job_id": "27474",
+    "reason": "Not an MBA-level PM/strategy/PMM/finance role (engineering, research, undergrad or other function)",
+    "date": "2026-11-17"
   }
 ]
