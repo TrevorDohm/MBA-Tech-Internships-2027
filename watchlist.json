@@ -795,5 +795,71 @@
     "hosts": [
       "www.atlassian.com"
     ]
+  },
+  {
+    "company": "Formlabs",
+    "ats": "greenhouse",
+    "board": "formlabs",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "boards-api.greenhouse.io",
+      "careers.formlabs.com"
+    ]
+  },
+  {
+    "company": "Duetti",
+    "ats": "lever",
+    "org": "duetti",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "api.lever.co",
+      "jobs.lever.co"
+    ]
+  },
+  {
+    "company": "Tapestry",
+    "ats": "workday",
+    "host": "tapestry.wd108.myworkdayjobs.com",
+    "tenant": "tapestry",
+    "site": "Tapestry_Careers",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "tapestry.wd108.myworkdayjobs.com"
+    ]
+  },
+  {
+    "company": "Honeywell",
+    "ats": "oracle",
+    "host": "ibqbjb.fa.ocs.oraclecloud.com",
+    "site_number": "Honeywell",
+    "queries": [
+      "MBA"
+    ],
+    "hosts": [
+      "ibqbjb.fa.ocs.oraclecloud.com"
+    ]
+  },
+  {
+    "company": "Rubrik",
+    "ats": "greenhouse",
+    "board": "rubrik",
+    "queries": [
+      "MBA",
+      "intern"
+    ],
+    "hosts": [
+      "boards-api.greenhouse.io",
+      "job-boards.greenhouse.io",
+      "www.rubrik.com"
+    ]
   }
 ]

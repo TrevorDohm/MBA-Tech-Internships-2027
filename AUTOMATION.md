@@ -97,7 +97,7 @@ In `links`, rows whose `result` is `DEAD` or `CLOSED`: set that row's `status` t
 
 ### 6. Watchlist gaps
 
-Find companies present in `listings.json` with no entry in `watchlist.json`. Ignore these five, which have no readable feed by design: Bank of America, Meta, ServiceNow, Uber, Walmart. For any other:
+Find companies present in `listings.json` with no entry in `watchlist.json`. Ignore these six, which have no readable feed by design: Bank of America, Meta, Netflix, ServiceNow, Uber, Walmart. For any other:
 
 - If its row `url` is a Greenhouse, Ashby or Lever job link, add an entry modelled on an existing entry of that `ats` (same keys, `queries` `["MBA", "intern"]`, `hosts` including the url's host and the API host), with the board or org token taken from the URL.
 - Otherwise do not guess: add `<company> has no watchlist entry (<url host>)` to the attention items.
