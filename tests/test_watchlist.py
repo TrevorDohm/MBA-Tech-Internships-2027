@@ -9,7 +9,7 @@ import watchlist
 from watchlist import ATS_TYPES, hosts_for, load_watchlist
 
 ROOT = Path(__file__).resolve().parent.parent
-EXEMPT = {"Meta", "Uber", "Walmart", "Bank of America"}
+EXEMPT = {"Meta", "Uber", "Walmart", "Bank of America", "ServiceNow", "Netflix"}
 
 REQUIRED_KEYS = {
     "greenhouse": {"board"},
